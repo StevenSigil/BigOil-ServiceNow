@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="95e0260b07e2301029a8f0269c1ed074" sys_domain="global" table="x_683715_big_oil_2_sales_order" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-17 01:33:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5de0260b07e2301029a8f0269c1ed083</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_683715_big_oil_2_sales_order" name="x_683715_big_oil_2_sales_order" sys_domain="global" view="d5e0260b07e2301029a8f0269c1ed069">95e0260b07e2301029a8f0269c1ed074</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_683715_big_oil_2_sales_order" sys_domain="global" view="d5e0260b07e2301029a8f0269c1ed069">dde0260b07e2301029a8f0269c1ed06e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-17 01:33:37</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_683715_big_oil_2_sales_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-17 01:33:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95e0260b07e2301029a8f0269c1ed074</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_683715_big_oil_2_sales_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_form_sections_95e0260b07e2301029a8f0269c1ed074</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-17 01:33:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="ConfirmationView" name="ConfirmationView">d5e0260b07e2301029a8f0269c1ed069</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

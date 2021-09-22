@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_683715_big_oil_2.basic_internal_user" name="x_683715_big_oil_2.basic_internal_user">5e38abd507ee301029a8f0269c1ed054</contains>
+        <role display_value="x_683715_big_oil_2.customer_support" name="x_683715_big_oil_2.customer_support">c698afd507ee301029a8f0269c1ed0b1</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-11 20:18:35</sys_created_on>
+        <sys_id>46d82fd507ee301029a8f0269c1ed04d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_683715_big_oil_2.basic_internal_user.x_683715_big_oil_2.customer_support</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_user_role_contains_46d82fd507ee301029a8f0269c1ed04d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-11 20:18:35</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

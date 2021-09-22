@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
+        <description/>
+        <fields/>
+        <icon/>
+        <name>Auth request</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>auth-request</route_type>
+        <screen_type display_value="Auth request">e63e55b80762301029a8f0269c1ed00c</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 20:56:02</sys_created_on>
+        <sys_id>fe3e1db80762301029a8f0269c1ed09e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auth request</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_app_route_fe3e1db80762301029a8f0269c1ed09e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 20:56:02</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe3e1db80762301029a8f0269c1ed09e"/>
+</record_update>

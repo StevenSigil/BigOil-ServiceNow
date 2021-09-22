@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="ffbe6384ece230104d8a6b2b3f40ce0a" sys_domain="global" table="sysapproval_approver" version="3" view="custom_portal_approval_x_683715_big_oil_2">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-09-07 23:32:00</sys_created_on>
+            <sys_id>f3be638425e23010c4ca01e71bae240b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="33be638400e230108fff62549a85f80b">ffbe6384ece230104d8a6b2b3f40ce0a</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-09-07 23:32:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sysapproval</element>
+            <position>1</position>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-09-07 23:32:00</sys_created_on>
+            <sys_id>37be6384b6e23010ac04aea78a28270b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysapproval_approver" sys_domain="global" view="33be638400e230108fff62549a85f80b">ffbe6384ece230104d8a6b2b3f40ce0a</sys_ui_section>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-09-07 23:32:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sysapproval_approver</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-09-07 23:32:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffbe6384ece230104d8a6b2b3f40ce0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysapproval_approver</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_section_ffbe6384ece230104d8a6b2b3f40ce0a</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2021-09-07 23:32:00</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Custom portal (x_683715_big_oil_2 )" name="custom_portal_approval_x_683715_big_oil_2">33be638400e230108fff62549a85f80b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

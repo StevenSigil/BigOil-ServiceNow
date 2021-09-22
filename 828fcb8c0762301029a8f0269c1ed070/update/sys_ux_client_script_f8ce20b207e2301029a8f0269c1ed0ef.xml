@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Sales Order Items">b0a0fbd607e2301029a8f0269c1ed0bb</macroponent>
+        <name>Create Line Item Record</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  console.log("Attempting submission");
+
+  const curLine = api.state.lineNumCount;
+  const nextLineNum = curLine + 1;
+
+  const soDet = api.state.salesOrderDetails;
+  const selItem = api.state.selectedItemDetails;
+
+  const sales_order = soDet.sys_id.value;
+  const purchase_order = soDet.purchase_order.value;
+  const line_number = nextLineNum;
+  const stage = soDet.status.value;
+  const item = selItem.sys_id.value;
+  const expected_delivery_date = soDet.requested_delivery_date.value;
+  const uom = selItem.uom.value;
+  const quantity_requested = api.state.quantityRequested;
+  const address_to = soDet.shipping_address.value;
+
+  // TODO: check if address_to is a warehouse - if so, set warehouse_to instead 
+
+  const submitData = `sales_order=${sales_order}^purchase_order=${purchase_order}^line_number=${line_number}^stage=${stage}^item=${item}^expected_delivery_date=${expected_delivery_date}^uom=${uom}^quantity_requested=${quantity_requested}^address_to=${address_to}`;
+
+  try {
+    api.data.create_transfer_line_record.execute({
+      table: "x_683715_big_oil_2_inventory_transfer_line",
+      templateFields: submitData,
+      useSetDisplayValue: false,
+    });
+    console.log("Everything looks good in the try block!");
+  } catch (err) {
+    console.log("Something unfortunate happened...");
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-15 22:36:30</sys_created_on>
+        <sys_id>f8ce20b207e2301029a8f0269c1ed0ef</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create Line Item Record</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_f8ce20b207e2301029a8f0269c1ed0ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:30:18</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

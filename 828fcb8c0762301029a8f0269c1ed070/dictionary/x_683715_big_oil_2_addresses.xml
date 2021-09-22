@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Addresses" max_length="40" name="x_683715_big_oil_2_addresses" sizeclass="2" type="collection">
+        <element label="Building" max_length="15" name="building" type="string"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Comment" max_length="4000" name="comment" type="journal_input"/>
+        <element dependent="comment" dependent_on_field="comment" label="Comments" max_length="4000" name="comments" type="journal_list" use_dependent_field="true"/>
+        <element label="Company" max_length="32" name="company" reference="x_683715_big_oil_2_companies" type="reference"/>
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element label="County" max_length="40" name="county" type="string"/>
+        <element display="true" label="Display Name" mandatory="true" max_length="40" name="display_name" type="string"/>
+        <element label="State" max_length="15" name="state" type="string"/>
+        <element label="Street 1" max_length="40" name="street_1" type="string"/>
+        <element label="Street 2" max_length="40" name="street_2" type="string"/>
+        <element label="Suite" max_length="15" name="suite" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="3" default="customer_shipping" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Customer Billing" sequence="100" value="customer_billing"/>
+                <element inactive_on_update="false" label="Customer Shipping" sequence="110" value="customer_shipping"/>
+                <element inactive_on_update="false" label="Internal Billing" sequence="200" value="internal_billing"/>
+                <element inactive_on_update="false" label="Internal Shipping" sequence="210" value="internal_shipping"/>
+                <element inactive_on_update="false" label="Warehouse" sequence="300" value="warehouse"/>
+                <element inactive_on_update="false" label="Other" sequence="999" value="other"/>
+            </choice>
+        </element>
+        <element label="Zip Code" max_length="15" name="zip_code" type="string"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

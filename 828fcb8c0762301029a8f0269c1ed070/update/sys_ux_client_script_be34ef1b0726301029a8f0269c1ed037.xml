@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Sales Order Items">b0a0fbd607e2301029a8f0269c1ed0bb</macroponent>
+        <name>Update Single Transfer Line Record</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  const { sys_id, line_number, item, quantity_requested, uom } =
+    api.state.editLineItemDetail;
+
+  const submitData = `line_number=${line_number}^item=${item}^quantity_requested=${quantity_requested}^uom=${uom}`;
+
+  try {
+    api.data.update_record.execute({
+      table: "x_683715_big_oil_2_inventory_transfer_line",
+      recordId: sys_id,
+      templateFields: submitData,
+      useSetDisplayValue: false,
+    });
+    console.log("The record should be updated!");
+  } catch (err) {
+    console.log("Something unfortunate happened...");
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-18 01:06:18</sys_created_on>
+        <sys_id>be34ef1b0726301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Update Single Transfer Line Record</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_be34ef1b0726301029a8f0269c1ed037</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-18 21:46:41</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

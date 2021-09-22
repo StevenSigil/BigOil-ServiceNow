@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Inventory Line Item" max_length="40" name="x_683715_big_oil_2_inventory_line_item" sizeclass="8" type="collection">
+        <element label="Item" max_length="32" name="item" reference="x_683715_big_oil_2_inventory_item" type="reference"/>
+        <element label="Quantity received" max_length="25" name="quantity_received" type="string"/>
+        <element label="Quantity requested" max_length="25" name="quantity_requested" type="string"/>
+        <element choice="3" label="Stage" max_length="40" name="stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Requested - Approved" sequence="10" value="requested_approved"/>
+                <element inactive_on_update="false" label="Requested - Denied" sequence="13" value="requested_denied"/>
+                <element inactive_on_update="false" label="Requested - Pending" sequence="16" value="requested_pending"/>
+                <element inactive_on_update="false" label="Preparation" sequence="20" value="preparation"/>
+                <element inactive_on_update="false" label="In Transit" sequence="30" value="in_transit"/>
+                <element inactive_on_update="false" label="Received" sequence="40" value="received"/>
+                <element inactive_on_update="false" label="Delivered" sequence="50" value="delivered"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="70" value="not_applicable"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="UOM" max_length="40" name="uom" type="string"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

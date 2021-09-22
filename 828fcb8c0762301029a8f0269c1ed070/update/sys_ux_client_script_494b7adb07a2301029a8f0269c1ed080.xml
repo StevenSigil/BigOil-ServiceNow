@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Sales Order">3b23b46d07a2701029a8f0269c1ed05c</macroponent>
+        <name>Check for stepIdx and act</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api,event,helpers,imports}) {
+    const stepIdx = api.context.props.stepidx;
+
+    if (stepIdx) {
+        const stepper = api.state.stepperDetails;
+        // var newPos = event.payload.nextStep;
+        var newPos = Number(stepIdx);
+
+        try {
+            if (newPos == 0) {
+                console.log("Not disabling net step...");
+            }
+            if (stepper[newPos].disabled) {
+                stepper[newPos].disabled = false;
+                stepper[newPos].progress = 'partial';
+                stepper[newPos - 1].progress = 'done';
+            }
+
+            api.setState("stepperDetails", stepper);
+            api.setState('step', newPos);
+
+        } catch (err) {
+            console.log("Yeah... this is the error block...");
+            console.log(err);
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-17 22:07:19</sys_created_on>
+        <sys_id>494b7adb07a2301029a8f0269c1ed080</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Check for stepIdx and act</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_494b7adb07a2301029a8f0269c1ed080</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 23:59:26</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

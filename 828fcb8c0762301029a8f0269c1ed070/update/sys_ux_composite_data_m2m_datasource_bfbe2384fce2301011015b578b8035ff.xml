@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - Popular Articles">7fbe2384ade23010eb073f24605258fe</dataset>
+        <datasource display_value="Custom Portal Landing - Popular articles Datasource">b3be238457e23010d19666d585de4eff</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-09-07 23:32:05</sys_created_on>
+        <sys_id>bfbe2384fce2301011015b578b8035ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_bfbe2384fce2301011015b578b8035ff</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-09-07 23:32:05</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="c2a010a00762301029a8f0269c1ed0fb" sys_domain="global" table="x_683715_big_oil_2_user_profile" version="3" view="newProfile">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>c16220ec0762301029a8f0269c1ed086</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>4d6220ec0762301029a8f0269c1ed086</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>c16220ec0762301029a8f0269c1ed087</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>8d6220ec0762301029a8f0269c1ed0ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>056220ec0762301029a8f0269c1ed0ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>external_company</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>896220ec0762301029a8f0269c1ed0ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 21:56:06</sys_created_on>
+            <sys_id>016220ec0762301029a8f0269c1ed0ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="06a010a00762301029a8f0269c1ed0c5">c2a010a00762301029a8f0269c1ed0fb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 21:56:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_683715_big_oil_2_user_profile</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 20:38:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2a010a00762301029a8f0269c1ed0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_683715_big_oil_2_user_profile</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_section_c2a010a00762301029a8f0269c1ed0fb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 20:38:37</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="newProfile" name="newProfile">06a010a00762301029a8f0269c1ed0c5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

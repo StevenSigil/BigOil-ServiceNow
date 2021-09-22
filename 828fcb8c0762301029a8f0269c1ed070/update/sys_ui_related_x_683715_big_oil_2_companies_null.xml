@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_683715_big_oil_2_companies" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Companies - Default view" name="x_683715_big_oil_2_companies" related_list="NULL" sys_domain="global" view="Default view">ac2fe90e0722301029a8f0269c1ed09f</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:d39bed4a0722301029a8f0269c1ed0e7</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-13 19:22:17</sys_created_on>
+            <sys_id>2c2fe90e0722301029a8f0269c1ed0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-13 19:22:17</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Companies - Default view" name="x_683715_big_oil_2_companies" related_list="NULL" sys_domain="global" view="Default view">ac2fe90e0722301029a8f0269c1ed09f</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:18dcad8a0722301029a8f0269c1ed0c3</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-13 19:22:17</sys_created_on>
+            <sys_id>a02fe90e0722301029a8f0269c1ed0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-13 19:22:17</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Companies - Default view" name="x_683715_big_oil_2_companies" related_list="NULL" sys_domain="global" view="Default view">ac2fe90e0722301029a8f0269c1ed09f</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:afaea50e0722301029a8f0269c1ed059</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-13 19:22:18</sys_created_on>
+            <sys_id>282fe90e0722301029a8f0269c1ed0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-13 19:22:18</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Companies - Default view</calculated_name>
+            <filter/>
+            <name>x_683715_big_oil_2_companies</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-13 19:22:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac2fe90e0722301029a8f0269c1ed09f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Companies - Default view</sys_name>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_related_x_683715_big_oil_2_companies_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-13 19:22:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

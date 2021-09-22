@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="DELETE">
+        <api_name>x_683715_big_oil_2.Get auth name choice field on authorizaiont_request table</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get auth name choice field on authorizaiont_request table</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <query>query {&#13;
+  GlideRecord_Query {&#13;
+    x_683715_big_oil_2_authorization_request(queryConditions: "-1") {&#13;
+      _results {&#13;
+        auth_name {&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:42:46</sys_created_on>
+        <sys_id>c07d038507e2301029a8f0269c1ed0d9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get auth name choice field on authorizaiont_request table</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_c07d038507e2301029a8f0269c1ed0d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:49:25</sys_updated_on>
+        <type>query</type>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="DELETE" query="documentkey=c07d038507e2301029a8f0269c1ed0d9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_data_broker_graphql_c07d038507e2301029a8f0269c1ed0d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_graphql"&gt;&lt;sys_ux_data_broker_graphql action="INSERT_OR_UPDATE"&gt;&lt;api_name&gt;x_683715_big_oil_2.Get auth name choice field on authorizaiont_request table&lt;/api_name&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Get auth name choice field on authorizaiont_request table&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props/&gt;&lt;query&gt;query {&amp;#13;
+  GlideRecord_Query {&amp;#13;
+    x_683715_big_oil_2_authorization_request(queryConditions: "-1") {&amp;#13;
+      _results {&amp;#13;
+        auth_name {&amp;#13;
+          value&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/query&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_graphql&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-10 23:42:46&lt;/sys_created_on&gt;&lt;sys_id&gt;c07d038507e2301029a8f0269c1ed0d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get auth name choice field on authorizaiont_request table&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_graphql_c07d038507e2301029a8f0269c1ed0d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-10 23:49:25&lt;/sys_updated_on&gt;&lt;type&gt;query&lt;/type&gt;&lt;/sys_ux_data_broker_graphql&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c07d038507e2301029a8f0269c1ed0d9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1018594804</payload_hash>
+        <record_name>Get auth name choice field on authorizaiont_request table</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:49:25</sys_created_on>
+        <sys_id>648f87c507e2301029a8f0269c1ed0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bd21daeac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:49:25</sys_updated_on>
+        <type>GraphQL Data Broker</type>
+        <update_guid>ac8f87c51ce23010a3d4607d742e0bdc</update_guid>
+        <update_guid_history>ac8f87c51ce23010a3d4607d742e0bdc:-1018594804,d57f8bc5ace230103d00074bd6d040e4:208593707,ce5fcf858ee2301040ae2d2287fd1669:1415249403,821f0f854ee23010c43394856f431fa4:366964882,cffd8f459de2301053ebdacc325769af:1562432285</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:56:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_graphql">sys_ux_data_broker_graphql</sys_db_object>
+        <sys_id>15969ca72cce4342b177e71b5b996261</sys_id>
+        <sys_metadata>c07d038507e2301029a8f0269c1ed0d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get auth name choice field on authorizaiont_request table</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_graphql_c07d038507e2301029a8f0269c1ed0d9</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_graphql_c07d038507e2301029a8f0269c1ed0d9">648f87c507e2301029a8f0269c1ed0dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:56:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

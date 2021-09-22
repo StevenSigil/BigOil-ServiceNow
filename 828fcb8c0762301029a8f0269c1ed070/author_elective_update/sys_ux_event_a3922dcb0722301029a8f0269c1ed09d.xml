@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <event_name>ERRALERT</event_name>
+        <interfaces/>
+        <label>ErrAlert</label>
+        <props>[{"name":"message","fieldType":"","label":"Message","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations>[{"message":"Message","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-16 21:01:31</sys_created_on>
+        <sys_id>a3922dcb0722301029a8f0269c1ed09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ErrAlert</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_event_a3922dcb0722301029a8f0269c1ed09d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:01:31</sys_updated_on>
+    </sys_ux_event>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_event_a3922dcb0722301029a8f0269c1ed09d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event"><sys_ux_event action="INSERT_OR_UPDATE"><event_name>ERRALERT</event_name><interfaces/><label>ErrAlert</label><props>[{"name":"message","fieldType":"","label":"Message","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props><required_translations>[{"message":"Message","comment":""}]</required_translations><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_event</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-16 21:01:31</sys_created_on><sys_id>a3922dcb0722301029a8f0269c1ed09d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ErrAlert</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_event_a3922dcb0722301029a8f0269c1ed09d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-16 21:01:31</sys_updated_on></sys_ux_event></record_update>]]></payload>
+        <payload_hash>2055810668</payload_hash>
+        <record_name>ErrAlert</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-16 21:01:32</sys_created_on>
+        <sys_id>eb922dcb0722301029a8f0269c1ed09f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bf06a20190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:01:32</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>27922dcb6e2230105b4714685343169f</update_guid>
+        <update_guid_history>27922dcb6e2230105b4714685343169f:2055810668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-16 21:11:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>01ca39754d6c4a6880d33cffe8986b04</sys_id>
+        <sys_metadata>a3922dcb0722301029a8f0269c1ed09d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ErrAlert</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_event_a3922dcb0722301029a8f0269c1ed09d</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_a3922dcb0722301029a8f0269c1ed09d">eb922dcb0722301029a8f0269c1ed09f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:11:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

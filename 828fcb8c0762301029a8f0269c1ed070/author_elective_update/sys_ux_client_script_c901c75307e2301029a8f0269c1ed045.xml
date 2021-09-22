@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Sales Order Items">b0a0fbd607e2301029a8f0269c1ed0bb</macroponent>
+        <name>Update stepper</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  console.log(event.payload);
+  const stepClicked = event.payload.value;
+  
+  try {
+    if (stepClicked < 2) {
+      const salesOrder = api.context.props.salesorder;
+
+      helpers.navigate.to(
+        "sales-order-new",
+        { sOrder: salesOrder },
+        { stepidx: stepClicked }
+      );
+      
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-17 22:32:26</sys_created_on>
+        <sys_id>c901c75307e2301029a8f0269c1ed045</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Update stepper</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_c901c75307e2301029a8f0269c1ed045</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 23:51:30</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_c901c75307e2301029a8f0269c1ed045</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Sales Order Items"&gt;b0a0fbd607e2301029a8f0269c1ed0bb&lt;/macroponent&gt;&lt;name&gt;Update stepper&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  console.log(event.payload);
+  const stepClicked = event.payload.value;
+  
+  try {
+    if (stepClicked &lt; 2) {
+      const salesOrder = api.context.props.salesorder;
+
+      helpers.navigate.to(
+        "sales-order-new",
+        { sOrder: salesOrder },
+        { stepidx: stepClicked }
+      );
+      
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-17 22:32:26&lt;/sys_created_on&gt;&lt;sys_id&gt;c901c75307e2301029a8f0269c1ed045&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update stepper&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c901c75307e2301029a8f0269c1ed045&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-17 23:51:30&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1101841907</payload_hash>
+        <record_name>Update stepper</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-17 23:51:30</sys_created_on>
+        <sys_id>1b131bdf07e2301029a8f0269c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bf62c1b6b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 23:51:30</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>13131bdf01e23010943f09594171ea74</update_guid>
+        <update_guid_history>13131bdf01e23010943f09594171ea74:1101841907,3451d39fbce23010416a0adaf8005b35:-997661883,ddb01f5b80e23010e405b3c9e8b32c66:102439134,f2a09b5fa8e23010df42253f679ca9e8:134451816,03af0f1fc5e2301023bdc0bf299ff5a2:29247139,88fa8b5bf3e23010e0431669a90f6d7f:1908609859,19aa0b5bb5e230105fecd46d2a512496:-1373872155,fa378b9709e2301094fb2bec1323282e:1099808355,73f60797cae23010fb7497330d9e83b6:1861879098,e186c75781e23010f86288a9ef32c75e:-1425750331,4644cfd388e230105a86a2f1b89fd02c:981638360,4ac30fd3dde23010a3a901054ec9f588:-2087329855,7c93cbd35fe230106e7a9464d633d2a3:-904513742,44734bd3a0e23010f24f3f5e7a03594e:-219125546,4d3347d377e230102565b3f85538b7f3:191934367,bb0343d389e230100c473d10b946d945:540393201,7cd2cf535ae230101f123c46e5a66801:-2027982388,83218f53b7e230109beec475da09f257:1247996619,c5010f53e9e23010c7e4d01f70f06d8a:1822444184</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-18 00:03:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2ebf5fc02c384cd8afbe1e80dca34d10</sys_id>
+        <sys_metadata>c901c75307e2301029a8f0269c1ed045</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update stepper</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c901c75307e2301029a8f0269c1ed045</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c901c75307e2301029a8f0269c1ed045">1b131bdf07e2301029a8f0269c1ed074</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-18 00:03:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

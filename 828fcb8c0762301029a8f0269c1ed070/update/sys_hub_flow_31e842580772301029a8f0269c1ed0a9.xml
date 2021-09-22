@@ -1,0 +1,2998 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Creates a (big oil 2) Task record asking for approval from Customer Support team to approve/deny a Sales Order (record)</description>
+        <internal_name>task_made_when_sales_order_set_to_pending</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.number","label":"Trigger➛Sales Order Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"number"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Sales Order Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"sys_id"},{"name":"Created or Updated_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.count","label":"9➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"d98f804e-4260-4d0e-9950-844c17e8ba90.table_name","label":"8➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d98f804e-4260-4d0e-9950-844c17e8ba90.record","label":"8➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.count","label":"6➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"2663c22b-ca82-4eb9-8c0b-c0870b3b2005.table_name","label":"5➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2663c22b-ca82-4eb9-8c0b-c0870b3b2005.record","label":"5➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59b1cb97-d73b-4ceb-9cf1-630a3a497510.table_name","label":"2➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59b1cb97-d73b-4ceb-9cf1-630a3a497510.record","label":"2➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_updated_on","label":"Trigger➛Sales Order Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"sys_updated_on"},{"name":"Created or Updated_1.current","label":"Trigger➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{}},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Table","label":"1➛Tasks Table","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record","label":"1➛Tasks Record","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.fa2dbf550722701029a8f0269c1ed0cb}}","label":"Big Oil 2 Customer Support Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record.due_date","label":"1➛Tasks Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_683715_big_oil_2_tasks","column_name":"due_date"},{"name":"03624d6c-3cf9-4d3b-9dbd-df32e1fbf914.record","label":"10➛Tasks Record","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"03624d6c-3cf9-4d3b-9dbd-df32e1fbf914.table_name","label":"10➛Tasks Table","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>e141aa1c07b2301029a8f0269c1ed0ea</latest_snapshot>
+        <master_snapshot>e141aa1c07b2301029a8f0269c1ed0ea</master_snapshot>
+        <name>Task made when Sales Order set to Pending</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>4741ea1c07b2301029a8f0269c1ed0ea</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:01:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>31e842580772301029a8f0269c1ed0a9</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Task made when Sales Order set to Pending</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_hub_flow_31e842580772301029a8f0269c1ed0a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=31e842580772301029a8f0269c1ed0a9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=31e842580772301029a8f0269c1ed0a9"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_683715_big_oil_2_sales_order">status=pending<item display_value="Pending" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="pending"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4741ea1c07b2301029a8f0269c1ed0ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:46</sys_updated_on>
+        <table>x_683715_big_oil_2_sales_order</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"8341ea1c07b2301029a8f0269c1ed0eb","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>31e842580772301029a8f0269c1ed0a9</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:46</sys_created_on>
+        <sys_id>8341ea1c07b2301029a8f0269c1ed0eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:47</sys_updated_on>
+        <trigger display_value="">4741ea1c07b2301029a8f0269c1ed0ea</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>8341ea1c07b2301029a8f0269c1ed0eb</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:46</sys_created_on>
+        <sys_id>8b41ea1c07b2301029a8f0269c1ed0eb</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN8341ea1c07b2301029a8f0269c1ed0eb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN8efb0ad80772301029a8f0269c1ed084"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Status must be Pending to trigger - Only runs the first time.</comment>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>8efb0ad80772301029a8f0269c1ed084</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8efb0ad80772301029a8f0269c1ed084"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8efb0ad80772301029a8f0269c1ed084</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>42fb0ad80772301029a8f0269c1ed086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:36</sys_updated_on>
+        <value>status=pending</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8efb0ad80772301029a8f0269c1ed084</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>cafb0ad80772301029a8f0269c1ed086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:36</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=31e842580772301029a8f0269c1ed0a9^sys_idNOT INb9e842580772301029a8f0269c1ed0ac"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>31e842580772301029a8f0269c1ed0a9</id>
+        <name>Task made when Sales Order set to Pending</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:01:12</sys_created_on>
+        <sys_id>b9e842580772301029a8f0269c1ed0ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:01:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN0afb0ad80772301029a8f0269c1ed077,86fb0ad80772301029a8f0269c1ed06e,c6fb0ad80772301029a8f0269c1ed07d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDcf412e1c5db23010ca1954617c20662c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</model>
+        <model_id>31e842580772301029a8f0269c1ed0a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>0afb0ad80772301029a8f0269c1ed077</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</model>
+        <model_id>31e842580772301029a8f0269c1ed0a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>86fb0ad80772301029a8f0269c1ed06e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</model>
+        <model_id>31e842580772301029a8f0269c1ed0a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>c6fb0ad80772301029a8f0269c1ed07d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN096012dc0772301029a8f0269c1ed067,29d1d21007b2301029a8f0269c1ed036,82fd065c0772301029a8f0269c1ed007,8d76d6d007b2301029a8f0269c1ed065,c56012dc0772301029a8f0269c1ed095,dafb0ad80772301029a8f0269c1ed08b,e9d1d21007b2301029a8f0269c1ed07c,febcc21c0772301029a8f0269c1ed034"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Sales Order Status field to Open</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>5</order>
+        <parent_ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>096012dc0772301029a8f0269c1ed067</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>2663c22b-ca82-4eb9-8c0b-c0870b3b2005</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=096012dc0772301029a8f0269c1ed067"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>096012dc0772301029a8f0269c1ed067</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>0d6012dc0772301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>096012dc0772301029a8f0269c1ed067</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>496012dc0772301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <value>status=open</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=096012dc0772301029a8f0269c1ed067"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>096012dc0772301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>056012dc0772301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>096012dc0772301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>416012dc0772301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>096012dc0772301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>c56012dc0772301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Sales Order Status field to Closed</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>8</order>
+        <parent_ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>29d1d21007b2301029a8f0269c1ed036</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>d98f804e-4260-4d0e-9950-844c17e8ba90</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=29d1d21007b2301029a8f0269c1ed036"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>29d1d21007b2301029a8f0269c1ed036</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>25d1d21007b2301029a8f0269c1ed038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>29d1d21007b2301029a8f0269c1ed036</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>61d1d21007b2301029a8f0269c1ed038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>status=closed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29d1d21007b2301029a8f0269c1ed036"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>29d1d21007b2301029a8f0269c1ed036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>2dd1d21007b2301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>29d1d21007b2301029a8f0269c1ed036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>69d1d21007b2301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>29d1d21007b2301029a8f0269c1ed036</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>edd1d21007b2301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment>Wait for approval on Task record from Customer Support Group (Big Oil 2)</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>82fd065c0772301029a8f0269c1ed007</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>edeca625-ccc9-4daa-a34a-1e0ba4236233</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82fd065c0772301029a8f0269c1ed007"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82fd065c0772301029a8f0269c1ed007</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>1afd065c0772301029a8f0269c1ed00a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82fd065c0772301029a8f0269c1ed007</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>56fd065c0772301029a8f0269c1ed00a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82fd065c0772301029a8f0269c1ed007</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>92fd065c0772301029a8f0269c1ed00a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82fd065c0772301029a8f0269c1ed007</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>dafd065c0772301029a8f0269c1ed00a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=82fd065c0772301029a8f0269c1ed007"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>5efd065c0772301029a8f0269c1ed009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.fa2dbf550722701029a8f0269c1ed0cb}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>52fd065c0772301029a8f0269c1ed009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>9afd065c0772301029a8f0269c1ed009</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:17:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>16fd065c0772301029a8f0269c1ed009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>d6fd065c0772301029a8f0269c1ed009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>82fd065c0772301029a8f0269c1ed007</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:23:21</sys_created_on>
+        <sys_id>12fd065c0772301029a8f0269c1ed00a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Close the Task record</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>8d76d6d007b2301029a8f0269c1ed065</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>03624d6c-3cf9-4d3b-9dbd-df32e1fbf914</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d76d6d007b2301029a8f0269c1ed065"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8d76d6d007b2301029a8f0269c1ed065</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>8976d6d007b2301029a8f0269c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:00:24</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8d76d6d007b2301029a8f0269c1ed065</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>c176d6d007b2301029a8f0269c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:00:24</sys_updated_on>
+        <value>state=3^work_notes=Task has been approved/denied/cancelled. Automatically closing this task.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d76d6d007b2301029a8f0269c1ed065"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8d76d6d007b2301029a8f0269c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>8d76d6d007b2301029a8f0269c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:00:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8d76d6d007b2301029a8f0269c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>c576d6d007b2301029a8f0269c1ed067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:00:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8d76d6d007b2301029a8f0269c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:00:24</sys_created_on>
+        <sys_id>4176d6d007b2301029a8f0269c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:00:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent/>
+        <comment>Update Inventory Transfer Lines -&gt; Stage fields to Requested - Approved</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>6</order>
+        <parent_ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>c56012dc0772301029a8f0269c1ed095</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>e0ed0892-56dd-4107-9022-bbb087e86fe5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c56012dc0772301029a8f0269c1ed095"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c56012dc0772301029a8f0269c1ed095</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:35:19</sys_created_on>
+        <sys_id>25b096dc0772301029a8f0269c1ed005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:35:19</sys_updated_on>
+        <value>stage=requested_approved</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c56012dc0772301029a8f0269c1ed095</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:35:19</sys_created_on>
+        <sys_id>61b096dc0772301029a8f0269c1ed005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:35:19</sys_updated_on>
+        <value>line_number</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c56012dc0772301029a8f0269c1ed095</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>896012dc0772301029a8f0269c1ed097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <value>x_683715_big_oil_2_inventory_transfer_line</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c56012dc0772301029a8f0269c1ed095"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>c56012dc0772301029a8f0269c1ed095</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>456012dc0772301029a8f0269c1ed097</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:13:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>sales_order={{2663c22b-ca82-4eb9-8c0b-c0870b3b2005.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>c56012dc0772301029a8f0269c1ed095</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:35:19</sys_created_on>
+        <sys_id>edb096dc0772301029a8f0269c1ed004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:35:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>c56012dc0772301029a8f0269c1ed095</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:35:19</sys_created_on>
+        <sys_id>e1b096dc0772301029a8f0269c1ed004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:35:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c56012dc0772301029a8f0269c1ed095</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>096012dc0772301029a8f0269c1ed097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment>Creates a task record with Due date field set to Updated date (when this runs) + 7 days</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>dafb0ad80772301029a8f0269c1ed08b</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>df2f769c-f5af-44c9-b984-7b0ddf4a91fe</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dafb0ad80772301029a8f0269c1ed08b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dafb0ad80772301029a8f0269c1ed08b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>56fb0ad80772301029a8f0269c1ed08f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:12</sys_updated_on>
+        <value/>
+        <variable display_value="Field Values">273a6335531003003bf1d9109ec5876b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dafb0ad80772301029a8f0269c1ed08b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>92fb0ad80772301029a8f0269c1ed08f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:37</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dafb0ad80772301029a8f0269c1ed08b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>dafb0ad80772301029a8f0269c1ed08b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>12fb0ad80772301029a8f0269c1ed08f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:44:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>group_assigned={"display":"Big Oil 2 Customer Support Group","value":"fa2dbf550722701029a8f0269c1ed0cb"}^reference_record={{Created or Updated_1.current}}^due_date={{fd_transform:e4a3bce4-dc14-43b0-8248-eb59837f1b1f}}^priority=2^state=1^short_description=A Sales Order has been set to Pending!^description=A new Sales Order (nubmer:  {{Created or Updated_1.current.number}}) has been submitted as Pending and is needing approval/rejection.
+
+Please investigate this immediately. Please see Reference Record field for the Sales Order in question.^work_notes=fd-scripted</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>dafb0ad80772301029a8f0269c1ed08b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>d6fb0ad80772301029a8f0269c1ed08e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dafb0ad80772301029a8f0269c1ed08b^sys_idNOT IN96fb0ad80772301029a8f0269c1ed08d"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>field_values</input_name>
+        <instance>dafb0ad80772301029a8f0269c1ed08b</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"due_date":{"scriptActive":false,"savedValue":""},"reference_record":{"scriptActive":false,"savedValue":"{{Created or Updated_1.current}}"},"work_notes":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar dt \u003d new Date().toGMTString();\nreturn \u0027Automatically created this task at \u0027 + dt + \u0027(GMT)\u0027;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>96fb0ad80772301029a8f0269c1ed08d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:12</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent/>
+        <comment>Update Inventory Transfer Lines -&gt; Stage fields to Requested - Denied</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>9</order>
+        <parent_ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>e9d1d21007b2301029a8f0269c1ed07c</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>1ab119cc-7192-4098-bd29-6884e34f6e57</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9d1d21007b2301029a8f0269c1ed07c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9d1d21007b2301029a8f0269c1ed07c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>21d1d21007b2301029a8f0269c1ed07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>x_683715_big_oil_2_inventory_transfer_line</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9d1d21007b2301029a8f0269c1ed07c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>6dd1d21007b2301029a8f0269c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>line_number</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9d1d21007b2301029a8f0269c1ed07c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>e1d1d21007b2301029a8f0269c1ed07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>stage=requested_denied</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9d1d21007b2301029a8f0269c1ed07c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e9d1d21007b2301029a8f0269c1ed07c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>65d1d21007b2301029a8f0269c1ed07e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:13:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>sales_order={{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>e9d1d21007b2301029a8f0269c1ed07c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>e9d1d21007b2301029a8f0269c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>e9d1d21007b2301029a8f0269c1ed07c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>a1d1d21007b2301029a8f0269c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e9d1d21007b2301029a8f0269c1ed07c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>29d1d21007b2301029a8f0269c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update the Sales Order Approval Task field to (1) the Task record</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>febcc21c0772301029a8f0269c1ed034</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>59b1cb97-d73b-4ceb-9cf1-630a3a497510</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=febcc21c0772301029a8f0269c1ed034"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>febcc21c0772301029a8f0269c1ed034</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>b2bcc21c0772301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:17:55</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>febcc21c0772301029a8f0269c1ed034</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>febcc21c0772301029a8f0269c1ed036</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:20</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=febcc21c0772301029a8f0269c1ed034"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>febcc21c0772301029a8f0269c1ed034</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>babcc21c0772301029a8f0269c1ed036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:17:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>febcc21c0772301029a8f0269c1ed034</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>f6bcc21c0772301029a8f0269c1ed036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:17:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>febcc21c0772301029a8f0269c1ed034</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:17:55</sys_created_on>
+        <sys_id>7ebcc21c0772301029a8f0269c1ed036</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>approval_task={{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN21d1d21007b2301029a8f0269c1ed030,c56012dc0772301029a8f0269c1ed052"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">69d1d21007b2301029a8f0269c1ed02f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>21d1d21007b2301029a8f0269c1ed030</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=21d1d21007b2301029a8f0269c1ed030"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>21d1d21007b2301029a8f0269c1ed030</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>add1d21007b2301029a8f0269c1ed032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <value>Approval Rejected or Cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=21d1d21007b2301029a8f0269c1ed030"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>21d1d21007b2301029a8f0269c1ed030</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>2dd1d21007b2301029a8f0269c1ed032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=rejected^NQ{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>21d1d21007b2301029a8f0269c1ed030</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:40:14</sys_created_on>
+        <sys_id>69d1d21007b2301029a8f0269c1ed032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:40:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">896012dc0772301029a8f0269c1ed051</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>c56012dc0772301029a8f0269c1ed052</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:48</sys_updated_on>
+        <ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c56012dc0772301029a8f0269c1ed052"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c56012dc0772301029a8f0269c1ed052</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>856012dc0772301029a8f0269c1ed063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <value>Approval Accepted</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c56012dc0772301029a8f0269c1ed052"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c56012dc0772301029a8f0269c1ed052</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>056012dc0772301029a8f0269c1ed063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c56012dc0772301029a8f0269c1ed052</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:33:55</sys_created_on>
+        <sys_id>4d6012dc0772301029a8f0269c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:33:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN2f38125407b2301029a8f0269c1ed01a,6b38125407b2301029a8f0269c1ed01b,9efb0ad80772301029a8f0269c1ed091,a738125407b2301029a8f0269c1ed01b,d6fb0ad80772301029a8f0269c1ed092,e338125407b2301029a8f0269c1ed01b"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.run_start_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:08:13</sys_created_on>
+        <sys_id>2f38125407b2301029a8f0269c1ed01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d72fad03-b0dc-4411-93e9-d71091f99abf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>e4a3bce4-dc14-43b0-8248-eb59837f1b1f</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:08:13</sys_created_on>
+        <sys_id>6b38125407b2301029a8f0269c1ed01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:13</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>4a9c3f08-aa6d-4468-9c3b-cd81fdbe0575</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.sys_updated_on}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>9efb0ad80772301029a8f0269c1ed091</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6a7b2250-ab93-4afa-8aee-984e0c9e0d4f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.run_start_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:08:13</sys_created_on>
+        <sys_id>a738125407b2301029a8f0269c1ed01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e4a3bce4-dc14-43b0-8248-eb59837f1b1f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>6a7b2250-ab93-4afa-8aee-984e0c9e0d4f</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:37</sys_created_on>
+        <sys_id>d6fb0ad80772301029a8f0269c1ed092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:37</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>6624a31d-58ce-4de4-a573-ac1fa09d37da</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31e842580772301029a8f0269c1ed0a9</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>d72fad03-b0dc-4411-93e9-d71091f99abf</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:08:13</sys_created_on>
+        <sys_id>e338125407b2301029a8f0269c1ed01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:08:13</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>c824f974-3941-4525-883a-b453618d44a6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9^sys_idNOT IN02fb0ad80772301029a8f0269c1ed07c,0efb0ad80772301029a8f0269c1ed075,8afb0ad80772301029a8f0269c1ed081"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>02fb0ad80772301029a8f0269c1ed07c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>0efb0ad80772301029a8f0269c1ed075</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31e842580772301029a8f0269c1ed0a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 21:14:36</sys_created_on>
+        <sys_id>8afb0ad80772301029a8f0269c1ed081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 21:14:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=31e842580772301029a8f0269c1ed0a9^sys_idNOT IN0741ea1c07b2301029a8f0269c1ed0ec"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>31e842580772301029a8f0269c1ed0a9</plan_id>
+        <snapshot>e141aa1c07b2301029a8f0269c1ed0ea</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0741ea1c07b2301029a8f0269c1ed0ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:47</sys_updated_on>
+        <trigger display_value="">4741ea1c07b2301029a8f0269c1ed0ea</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creates a (big oil 2) Task record asking for approval from Customer Support team to approve/deny a Sales Order (record)</description>
+        <internal_name>task_made_when_sales_order_set_to_pending</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.number","label":"Trigger➛Sales Order Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"number"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Sales Order Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"sys_id"},{"name":"Created or Updated_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"1ab119cc-7192-4098-bd29-6884e34f6e57.count","label":"9➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"d98f804e-4260-4d0e-9950-844c17e8ba90.table_name","label":"8➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d98f804e-4260-4d0e-9950-844c17e8ba90.record","label":"8➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.message","label":"6➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.status","label":"6➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"e0ed0892-56dd-4107-9022-bbb087e86fe5.count","label":"6➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"2663c22b-ca82-4eb9-8c0b-c0870b3b2005.table_name","label":"5➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2663c22b-ca82-4eb9-8c0b-c0870b3b2005.record","label":"5➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59b1cb97-d73b-4ceb-9cf1-630a3a497510.table_name","label":"2➛Sales Order Table","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"59b1cb97-d73b-4ceb-9cf1-630a3a497510.record","label":"2➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_updated_on","label":"Trigger➛Sales Order Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_683715_big_oil_2_sales_order","column_name":"sys_updated_on"},{"name":"Created or Updated_1.current","label":"Trigger➛Sales Order Record","reference":"x_683715_big_oil_2_sales_order","reference_display":"Sales Order","type":"reference","base_type":"reference","attributes":{}},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Table","label":"1➛Tasks Table","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record","label":"1➛Tasks Record","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.fa2dbf550722701029a8f0269c1ed0cb}}","label":"Big Oil 2 Customer Support Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record.due_date","label":"1➛Tasks Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_683715_big_oil_2_tasks","column_name":"due_date"},{"name":"03624d6c-3cf9-4d3b-9dbd-df32e1fbf914.record","label":"10➛Tasks Record","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"03624d6c-3cf9-4d3b-9dbd-df32e1fbf914.table_name","label":"10➛Tasks Table","reference":"x_683715_big_oil_2_tasks","reference_display":"Tasks","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Task made when Sales Order set to Pending</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Task made when Sales Order set to Pending">31e842580772301029a8f0269c1ed0a9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e141aa1c07b2301029a8f0269c1ed0ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:41</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e141aa1c07b2301029a8f0269c1ed0ea"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e141aa1c07b2301029a8f0269c1ed0ea"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN5241ea1c07b2301029a8f0269c1ed070"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Status must be Pending to trigger - Only runs the first time.</comment>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5241ea1c07b2301029a8f0269c1ed070</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:47</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5241ea1c07b2301029a8f0269c1ed070"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5241ea1c07b2301029a8f0269c1ed070</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5e41ea1c07b2301029a8f0269c1ed071</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5241ea1c07b2301029a8f0269c1ed070</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9a41ea1c07b2301029a8f0269c1ed071</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>status=pending</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN2141aa1c07b2301029a8f0269c1ed0eb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e141aa1c07b2301029a8f0269c1ed0ea</id>
+        <name>Task made when Sales Order set to Pending</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:41</sys_created_on>
+        <sys_id>2141aa1c07b2301029a8f0269c1ed0eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN3941ea1c07b2301029a8f0269c1ed010,6541aa1c07b2301029a8f0269c1ed0ee,fd41ea1c07b2301029a8f0269c1ed01a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD6141aa1c99b23010aeac2c70931dd5ec,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</model>
+        <model_id>e141aa1c07b2301029a8f0269c1ed0ea</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:41</sys_created_on>
+        <sys_id>3941ea1c07b2301029a8f0269c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</model>
+        <model_id>e141aa1c07b2301029a8f0269c1ed0ea</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:41</sys_created_on>
+        <sys_id>6541aa1c07b2301029a8f0269c1ed0ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</model>
+        <model_id>e141aa1c07b2301029a8f0269c1ed0ea</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>fd41ea1c07b2301029a8f0269c1ed01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN0e41ea1c07b2301029a8f0269c1ed03e,0e41ea1c07b2301029a8f0269c1ed04e,3141ea1c07b2301029a8f0269c1ed037,4241ea1c07b2301029a8f0269c1ed059,4a41ea1c07b2301029a8f0269c1ed047,5241ea1c07b2301029a8f0269c1ed06e,5e41ea1c07b2301029a8f0269c1ed067,ca41ea1c07b2301029a8f0269c1ed05f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Update the Sales Order Approval Task field to (1) the Task record</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>0e41ea1c07b2301029a8f0269c1ed03e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>59b1cb97-d73b-4ceb-9cf1-630a3a497510</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0e41ea1c07b2301029a8f0269c1ed03e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0e41ea1c07b2301029a8f0269c1ed03e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4a41ea1c07b2301029a8f0269c1ed040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0e41ea1c07b2301029a8f0269c1ed03e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed03e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0641ea1c07b2301029a8f0269c1ed040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed03e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4241ea1c07b2301029a8f0269c1ed040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed03e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c641ea1c07b2301029a8f0269c1ed040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>approval_task={{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Update Sales Order Status field to Open</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>5</order>
+        <parent_ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0e41ea1c07b2301029a8f0269c1ed04e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>2663c22b-ca82-4eb9-8c0b-c0870b3b2005</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0e41ea1c07b2301029a8f0269c1ed04e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0e41ea1c07b2301029a8f0269c1ed04e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0a41ea1c07b2301029a8f0269c1ed050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0e41ea1c07b2301029a8f0269c1ed04e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4641ea1c07b2301029a8f0269c1ed050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>status=open</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0e41ea1c07b2301029a8f0269c1ed04e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed04e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0241ea1c07b2301029a8f0269c1ed050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed04e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4e41ea1c07b2301029a8f0269c1ed04f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0e41ea1c07b2301029a8f0269c1ed04e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c241ea1c07b2301029a8f0269c1ed050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment>Creates a task record with Due date field set to Updated date (when this runs) + 7 days</comment>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>3141ea1c07b2301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <ui_id>df2f769c-f5af-44c9-b984-7b0ddf4a91fe</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3141ea1c07b2301029a8f0269c1ed037"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3141ea1c07b2301029a8f0269c1ed037</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>4641ea1c07b2301029a8f0269c1ed039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3141ea1c07b2301029a8f0269c1ed037"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>3141ea1c07b2301029a8f0269c1ed037</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>c241ea1c07b2301029a8f0269c1ed039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>group_assigned={"display":"Big Oil 2 Customer Support Group","value":"fa2dbf550722701029a8f0269c1ed0cb"}^reference_record={{Created or Updated_1.current}}^due_date={{fd_transform:e4a3bce4-dc14-43b0-8248-eb59837f1b1f}}^priority=2^state=1^short_description=A Sales Order has been set to Pending!^description=A new Sales Order (nubmer:  {{Created or Updated_1.current.number}}) has been submitted as Pending and is needing approval/rejection.
+
+Please investigate this immediately. Please see Reference Record field for the Sales Order in question.^work_notes=fd-scripted</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>3141ea1c07b2301029a8f0269c1ed037</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>0241ea1c07b2301029a8f0269c1ed039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3141ea1c07b2301029a8f0269c1ed037^sys_idNOT INf141ea1c07b2301029a8f0269c1ed038"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>field_values</input_name>
+        <instance>3141ea1c07b2301029a8f0269c1ed037</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"due_date":{"scriptActive":false,"savedValue":""},"reference_record":{"scriptActive":false,"savedValue":"{{Created or Updated_1.current}}"},"work_notes":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar dt \u003d new Date().toGMTString();\nreturn \u0027Automatically created this task at \u0027 + dt + \u0027(GMT)\u0027;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>f141ea1c07b2301029a8f0269c1ed038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment>Update Inventory Transfer Lines -&gt; Stage fields to Requested - Approved</comment>
+        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>6</order>
+        <parent_ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4241ea1c07b2301029a8f0269c1ed059</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>e0ed0892-56dd-4107-9022-bbb087e86fe5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4241ea1c07b2301029a8f0269c1ed059"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4241ea1c07b2301029a8f0269c1ed059</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4e41ea1c07b2301029a8f0269c1ed05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>stage=requested_approved</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4241ea1c07b2301029a8f0269c1ed059</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>8a41ea1c07b2301029a8f0269c1ed05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>x_683715_big_oil_2_inventory_transfer_line</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4241ea1c07b2301029a8f0269c1ed059</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c641ea1c07b2301029a8f0269c1ed05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>line_number</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4241ea1c07b2301029a8f0269c1ed059"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>4241ea1c07b2301029a8f0269c1ed059</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>ce41ea1c07b2301029a8f0269c1ed05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>sales_order={{2663c22b-ca82-4eb9-8c0b-c0870b3b2005.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>4241ea1c07b2301029a8f0269c1ed059</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4641ea1c07b2301029a8f0269c1ed05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>4241ea1c07b2301029a8f0269c1ed059</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0e41ea1c07b2301029a8f0269c1ed05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4241ea1c07b2301029a8f0269c1ed059</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>8241ea1c07b2301029a8f0269c1ed05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment>Wait for approval on Task record from Customer Support Group (Big Oil 2)</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4a41ea1c07b2301029a8f0269c1ed047</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>edeca625-ccc9-4daa-a34a-1e0ba4236233</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a41ea1c07b2301029a8f0269c1ed047"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a41ea1c07b2301029a8f0269c1ed047</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0a41ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a41ea1c07b2301029a8f0269c1ed047</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4641ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a41ea1c07b2301029a8f0269c1ed047</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>8e41ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a41ea1c07b2301029a8f0269c1ed047</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>ca41ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a41ea1c07b2301029a8f0269c1ed047"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0241ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.fa2dbf550722701029a8f0269c1ed0cb}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0641ea1c07b2301029a8f0269c1ed049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>4e41ea1c07b2301029a8f0269c1ed049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c641ea1c07b2301029a8f0269c1ed049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>8a41ea1c07b2301029a8f0269c1ed049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4a41ea1c07b2301029a8f0269c1ed047</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c241ea1c07b2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Close the Task record</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5241ea1c07b2301029a8f0269c1ed06e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <ui_id>03624d6c-3cf9-4d3b-9dbd-df32e1fbf914</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5241ea1c07b2301029a8f0269c1ed06e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5241ea1c07b2301029a8f0269c1ed06e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5e41ea1c07b2301029a8f0269c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>x_683715_big_oil_2_tasks</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5241ea1c07b2301029a8f0269c1ed06e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9a41ea1c07b2301029a8f0269c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>state=3^work_notes=Task has been approved/denied/cancelled. Automatically closing this task.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5241ea1c07b2301029a8f0269c1ed06e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5241ea1c07b2301029a8f0269c1ed06e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5641ea1c07b2301029a8f0269c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{df2f769c-f5af-44c9-b984-7b0ddf4a91fe.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5241ea1c07b2301029a8f0269c1ed06e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9241ea1c07b2301029a8f0269c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5241ea1c07b2301029a8f0269c1ed06e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>1a41ea1c07b2301029a8f0269c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment>Update Inventory Transfer Lines -&gt; Stage fields to Requested - Denied</comment>
+        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>9</order>
+        <parent_ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>5e41ea1c07b2301029a8f0269c1ed067</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>1ab119cc-7192-4098-bd29-6884e34f6e57</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5e41ea1c07b2301029a8f0269c1ed067"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5e41ea1c07b2301029a8f0269c1ed067</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5641ea1c07b2301029a8f0269c1ed06a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>stage=requested_denied</value>
+        <variable display_value="Fields">99af2a72c75100105312134c95c26082</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5e41ea1c07b2301029a8f0269c1ed067</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9241ea1c07b2301029a8f0269c1ed06a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>x_683715_big_oil_2_inventory_transfer_line</value>
+        <variable display_value="Table">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5e41ea1c07b2301029a8f0269c1ed067</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>de41ea1c07b2301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <value>line_number</value>
+        <variable display_value="Order by">e0f859a2c72200105312134c95c26007</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5e41ea1c07b2301029a8f0269c1ed067"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>5e41ea1c07b2301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>d641ea1c07b2301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>sales_order={{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>5e41ea1c07b2301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>5e41ea1c07b2301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sort_column</field>
+        <id>5e41ea1c07b2301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>1641ea1c07b2301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5e41ea1c07b2301029a8f0269c1ed067</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9a41ea1c07b2301029a8f0269c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Update Sales Order Status field to Closed</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <order>8</order>
+        <parent_ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>ca41ea1c07b2301029a8f0269c1ed05f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <ui_id>d98f804e-4260-4d0e-9950-844c17e8ba90</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ca41ea1c07b2301029a8f0269c1ed05f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca41ea1c07b2301029a8f0269c1ed05f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0641ea1c07b2301029a8f0269c1ed061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>status=closed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca41ea1c07b2301029a8f0269c1ed05f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>c641ea1c07b2301029a8f0269c1ed061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <value>x_683715_big_oil_2_sales_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ca41ea1c07b2301029a8f0269c1ed05f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ca41ea1c07b2301029a8f0269c1ed05f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>ce41ea1c07b2301029a8f0269c1ed060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{59b1cb97-d73b-4ceb-9cf1-630a3a497510.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ca41ea1c07b2301029a8f0269c1ed05f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>0e41ea1c07b2301029a8f0269c1ed060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ca41ea1c07b2301029a8f0269c1ed05f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:43</sys_created_on>
+        <sys_id>8241ea1c07b2301029a8f0269c1ed061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN7941ea1c07b2301029a8f0269c1ed028,7d41ea1c07b2301029a8f0269c1ed02d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">896012dc0772301029a8f0269c1ed051</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>7941ea1c07b2301029a8f0269c1ed028</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <ui_id>145b19e1-60c5-4406-aaec-7cc2549bf6a3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7941ea1c07b2301029a8f0269c1ed028"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7941ea1c07b2301029a8f0269c1ed028</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>f941ea1c07b2301029a8f0269c1ed02c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <value>Approval Accepted</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7941ea1c07b2301029a8f0269c1ed028"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7941ea1c07b2301029a8f0269c1ed028</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>7941ea1c07b2301029a8f0269c1ed02c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7941ea1c07b2301029a8f0269c1ed028</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>b141ea1c07b2301029a8f0269c1ed02c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">69d1d21007b2301029a8f0269c1ed02f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task made when Sales Order set to Pending">e141aa1c07b2301029a8f0269c1ed0ea</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>7d41ea1c07b2301029a8f0269c1ed02d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <ui_id>06f4dc48-de48-4270-ad21-0ca71f9ea45c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7d41ea1c07b2301029a8f0269c1ed02d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7d41ea1c07b2301029a8f0269c1ed02d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>f941ea1c07b2301029a8f0269c1ed030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <value>Approval Rejected or Cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7d41ea1c07b2301029a8f0269c1ed02d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7d41ea1c07b2301029a8f0269c1ed02d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>7941ea1c07b2301029a8f0269c1ed030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=rejected^NQ{{edeca625-ccc9-4daa-a34a-1e0ba4236233.approval_state}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7d41ea1c07b2301029a8f0269c1ed02d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>b541ea1c07b2301029a8f0269c1ed030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN1a41ea1c07b2301029a8f0269c1ed072,1a41ea1c07b2301029a8f0269c1ed08b,1e41ea1c07b2301029a8f0269c1ed08b,9241ea1c07b2301029a8f0269c1ed072,9a41ea1c07b2301029a8f0269c1ed08b,9e41ea1c07b2301029a8f0269c1ed08b"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.sys_updated_on}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>1a41ea1c07b2301029a8f0269c1ed072</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6a7b2250-ab93-4afa-8aee-984e0c9e0d4f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.run_start_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>1a41ea1c07b2301029a8f0269c1ed08b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d72fad03-b0dc-4411-93e9-d71091f99abf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>d72fad03-b0dc-4411-93e9-d71091f99abf</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>1e41ea1c07b2301029a8f0269c1ed08b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>c824f974-3941-4525-883a-b453618d44a6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>6a7b2250-ab93-4afa-8aee-984e0c9e0d4f</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9241ea1c07b2301029a8f0269c1ed072</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>6624a31d-58ce-4de4-a573-ac1fa09d37da</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.run_start_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9a41ea1c07b2301029a8f0269c1ed08b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e4a3bce4-dc14-43b0-8248-eb59837f1b1f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e141aa1c07b2301029a8f0269c1ed0ea</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>e4a3bce4-dc14-43b0-8248-eb59837f1b1f</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:44</sys_created_on>
+        <sys_id>9e41ea1c07b2301029a8f0269c1ed08b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:44</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-01-08 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>4a9c3f08-aa6d-4468-9c3b-cd81fdbe0575</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea^sys_idNOT IN7141ea1c07b2301029a8f0269c1ed021,bd41ea1c07b2301029a8f0269c1ed016,f541ea1c07b2301029a8f0269c1ed00c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>7141ea1c07b2301029a8f0269c1ed021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:42</sys_created_on>
+        <sys_id>bd41ea1c07b2301029a8f0269c1ed016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e141aa1c07b2301029a8f0269c1ed0ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-20 22:47:41</sys_created_on>
+        <sys_id>f541ea1c07b2301029a8f0269c1ed00c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-20 22:47:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

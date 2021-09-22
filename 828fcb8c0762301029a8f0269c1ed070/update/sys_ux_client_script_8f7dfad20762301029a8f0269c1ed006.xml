@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Sales Order">3b23b46d07a2701029a8f0269c1ed05c</macroponent>
+        <name>Set GlideForm Values, Save and Navigate</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  console.log("Attempting to set values...");
+
+  const data = api.state.submitData;
+  const form = api.data.sales_order_glide_form;
+  const profileData = api.state.userProfileData;
+
+  // Set fields to mandatory incase they aren't already
+  form.setMandatory({
+    fieldName: "shipping_address",
+    mandatory: true,
+  });
+  form.setMandatory({
+    fieldName: "billing_address",
+    mandatory: true,
+  });
+  form.setMandatory({
+    fieldName: "customer",
+    mandatory: true,
+  });
+  form.setMandatory({
+    fieldName: "auth_purchaser",
+    mandatory: true,
+  });
+
+  // Set data from profile data resource if not filled in
+  if (data.auth_purchaser == "") {
+    data.auth_purchaser = profileData.sys_id.value;
+  }
+  if (data.customer == "") {
+    data.customer = profileData.external_company.value;
+  }
+  if (data.status != "draft") {
+    data.status = "draft";
+  }
+
+  // Set form field values from data (state)
+  const keys = Object.keys(data);
+  keys.forEach((key) => {
+    const obj = {};
+    const val = data[key];
+    obj.fieldName = key;
+    obj.value = val;
+    form.setValue(obj);
+  });
+
+  // Input was mostly valid -> save form and continue
+  if (
+    data.shipping_address &&
+    data.billing_address &&
+    data.customer &&
+    data.auth_purchaser
+  ) {
+    form.save();
+    console.log("Form successfully saved!");
+
+    // Navigate to next page
+    helpers.navigate.to("sales-order-items-new", {
+      salesorder: api.state.newSalesOrderSysId,
+      tabidx: 2
+    });
+  }
+  // Prevent saving and set fields to invalid if applicable
+  else {
+    if (!data.shipping_address) {
+      api.setState("shippingAddrIsInvalid", true);
+    }
+    if (!data.billing_address) {
+      api.setState("billingAddrIsInvalid", true);
+    }
+
+    form.addErrorMessage({
+      message:
+        "There was a problem that prevented saving the form. Please try again or contact customer support to continue",
+    });
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-14 19:43:06</sys_created_on>
+        <sys_id>8f7dfad20762301029a8f0269c1ed006</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name>Set GlideForm Values, Save and Navigate</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_8f7dfad20762301029a8f0269c1ed006</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 23:04:25</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

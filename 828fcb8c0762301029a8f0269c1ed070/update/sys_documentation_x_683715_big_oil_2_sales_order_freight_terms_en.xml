@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="freight_terms" label="Freight Terms" language="en" table="x_683715_big_oil_2_sales_order">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>freight_terms</element>
+            <help/>
+            <hint/>
+            <label>Freight Terms</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <plural>Freight Terms</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:01</sys_created_on>
+            <sys_id>73f3238c07a2301029a8f0269c1ed0c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Freight Terms</sys_name>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_documentation_x_683715_big_oil_2_sales_order_freight_terms_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

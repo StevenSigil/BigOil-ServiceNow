@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Sales Order Items">b0a0fbd607e2301029a8f0269c1ed0bb</macroponent>
+        <name>Select Item in List</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    console.log(event.payload);
+    
+    const {part_number, description, uom} = event.payload.row.rowData.value;
+    const itemSysId = event.payload.sys_id;
+
+    const data = {
+        part_number,
+        description,
+        uom,
+        sys_id: itemSysId
+    };
+    
+    api.setState('itemFromModal', data);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-15 00:02:02</sys_created_on>
+        <sys_id>8cc83f1e07e2301029a8f0269c1ed0fb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Select Item in List</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_8cc83f1e07e2301029a8f0269c1ed0fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-15 00:34:25</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_8cc83f1e07e2301029a8f0269c1ed0fb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Sales Order Items"&gt;b0a0fbd607e2301029a8f0269c1ed0bb&lt;/macroponent&gt;&lt;name&gt;Select Item in List&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    console.log(event.payload);
+    
+    const {part_number, description, uom} = event.payload.row.rowData.value;
+    const itemSysId = event.payload.sys_id;
+
+    const data = {
+        part_number,
+        description,
+        uom,
+        sys_id: itemSysId
+    };
+    
+    api.setState('itemFromModal', data);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-15 00:02:02&lt;/sys_created_on&gt;&lt;sys_id&gt;8cc83f1e07e2301029a8f0269c1ed0fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Select Item in List&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_8cc83f1e07e2301029a8f0269c1ed0fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-15 00:34:25&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1236231228</payload_hash>
+        <record_name>Select Item in List</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-15 00:34:25</sys_created_on>
+        <sys_id>6a2048a20726301029a8f0269c1ed08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17be6e04f1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-15 00:34:25</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>622048a2ea2630105abc90ea90ae5e8a</update_guid>
+        <update_guid_history>622048a2ea2630105abc90ea90ae5e8a:1236231228,89df7b92a526301023202832691ab581:1708369159,3ed87f1e68e23010be5520b49ef76bd8:-754184179,c4c87b5e73e23010b3b1373b3d0d0362:1822444184</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-15 00:36:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>6782c7fa40e74bb4995531d5b03f3ae4</sys_id>
+        <sys_metadata>8cc83f1e07e2301029a8f0269c1ed0fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Select Item in List</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_8cc83f1e07e2301029a8f0269c1ed0fb</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_8cc83f1e07e2301029a8f0269c1ed0fb">6a2048a20726301029a8f0269c1ed08a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-15 00:36:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

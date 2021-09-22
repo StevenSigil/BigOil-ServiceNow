@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_683715_big_oil_2.unauthorized_oil_user_audience</api_name>
+        <description>Audience for the unauthorized_oil_user role.</description>
+        <name>unauthorized_oil_user_audience</name>
+        <roles name="x_683715_big_oil_2.unauthorized_oil_user">966aef8007e2301029a8f0269c1ed005</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 00:43:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10de37400726301029a8f0269c1ed0a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>unauthorized_oil_user_audience</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_applicability_10de37400726301029a8f0269c1ed0a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 00:43:11</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

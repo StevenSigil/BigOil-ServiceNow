@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_683715_big_oil_2_inventory_line_item" label="Inventory Transfer Line" max_length="40" name="x_683715_big_oil_2_inventory_transfer_line" sizeclass="8" type="collection">
+        <element label="Address from" max_length="32" name="address_from" reference="x_683715_big_oil_2_addresses" type="reference"/>
+        <element label="Address to" max_length="32" name="address_to" reference="x_683715_big_oil_2_addresses" type="reference"/>
+        <element label="Delivery date" max_length="40" name="delivery_date" type="glide_date"/>
+        <element label="Expected delivery date" max_length="40" name="expected_delivery_date" type="glide_date"/>
+        <element label="Line number" max_length="4" name="line_number" type="integer"/>
+        <element label="Purchase order" max_length="40" name="purchase_order" type="string"/>
+        <element label="Sales order" max_length="40" name="sales_order" reference="x_683715_big_oil_2_sales_order" type="reference"/>
+        <element label="Warehouse from" max_length="32" name="warehouse_from" reference="x_683715_big_oil_2_warehouses" type="reference"/>
+        <element label="Warehouse to" max_length="32" name="warehouse_to" reference="x_683715_big_oil_2_warehouses" type="reference"/>
+        <index name="index">
+            <element name="warehouse_from"/>
+        </index>
+        <index name="index2">
+            <element name="address_to"/>
+        </index>
+        <index name="index3">
+            <element name="address_from"/>
+        </index>
+        <index name="index4">
+            <element name="warehouse_to"/>
+        </index>
+    </element>
+</database>

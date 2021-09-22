@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Auth request">e63e55b80762301029a8f0269c1ed010</macroponent>
+        <name>HideLoading</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api,event,helpers,imports }) {
+    console.log('toggle loading element...');
+    if (!api.state.toggleLoading) {
+        api.setState('toggleLoading', true);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:03:31</sys_created_on>
+        <sys_id>c4054f0d07a2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HideLoading</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_c4054f0d07a2301029a8f0269c1ed04a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:10:57</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_c4054f0d07a2301029a8f0269c1ed04a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Auth request"&gt;e63e55b80762301029a8f0269c1ed010&lt;/macroponent&gt;&lt;name&gt;HideLoading&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api,event,helpers,imports }) {
+    console.log('toggle loading element...');
+    if (!api.state.toggleLoading) {
+        api.setState('toggleLoading', true);
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-10 23:03:31&lt;/sys_created_on&gt;&lt;sys_id&gt;c4054f0d07a2301029a8f0269c1ed04a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;HideLoading&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c4054f0d07a2301029a8f0269c1ed04a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-10 23:10:57&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1962465957</payload_hash>
+        <record_name>HideLoading</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:10:57</sys_created_on>
+        <sys_id>c5b6474107e2301029a8f0269c1ed0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bd1fa77480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:10:57</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>cdb64741dce23010e15768f686a260bd</update_guid>
+        <update_guid_history>cdb64741dce23010e15768f686a260bd:1962465957,867683414ae23010e30731683b491ede:-1598011995,c616cb0135e230109db4d9a34b25462c:-1999016865,dd95c701c5e23010e26c20ac13c0cce4:-1340001576,c8054301f4e230101f3c3a79a956cc58:-1672442607</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 23:11:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0af57959432b4e5485bfcaa646aa4990</sys_id>
+        <sys_metadata>c4054f0d07a2301029a8f0269c1ed04a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HideLoading</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c4054f0d07a2301029a8f0269c1ed04a</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c4054f0d07a2301029a8f0269c1ed04a">c5b6474107e2301029a8f0269c1ed0be</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 23:11:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

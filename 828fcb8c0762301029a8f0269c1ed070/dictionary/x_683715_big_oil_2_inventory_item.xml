@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Inventory Item" max_length="40" name="x_683715_big_oil_2_inventory_item" sizeclass="1" type="collection">
+        <element label="Catalog Cost" max_length="20" name="catalog_cost" type="currency"/>
+        <element label="Catalog Price" max_length="20" name="catalog_price" type="currency"/>
+        <element choice="3" default="refined_fuel" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Raw oil" sequence="10" value="raw_oil"/>
+                <element inactive_on_update="false" label="Refined fuel" sequence="20" value="refined_fuel"/>
+                <element inactive_on_update="false" label="Other" sequence="30" value="other"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="150" name="description" type="string"/>
+        <element default="true" label="Is Warehouse Item" max_length="40" name="is_warehouse_item" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Part number" max_length="15" name="part_number" type="string"/>
+        <element label="Quantity on site" max_length="40" name="quantity_on_site" type="float"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="UOM" max_length="40" name="uom" type="string"/>
+        <element label="Warehouse" max_length="32" name="warehouse" reference="x_683715_big_oil_2_warehouses" type="reference"/>
+        <index name="index">
+            <element name="warehouse"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sales Order" max_length="40" name="x_683715_big_oil_2_sales_order" sizeclass="3" type="collection">
+        <element label="Approval Task" max_length="32" name="approval_task" reference="x_683715_big_oil_2_tasks" type="reference"/>
+        <element label="Auth. Purchaser" max_length="32" name="auth_purchaser" reference="x_683715_big_oil_2_user_profile" type="reference"/>
+        <element label="Billing Address" max_length="32" name="billing_address" reference="x_683715_big_oil_2_addresses" reference_qual="companySAMEAScompany^EQ" reference_qual_condition="companySAMEAScompany^EQ" type="reference"/>
+        <element label="Contract" max_length="32" name="contract" type="string"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_683715_big_oil_2_companies" type="reference"/>
+        <element choice="3" default="destination" label="FOB" max_length="40" name="fob" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Destination" sequence="10" value="destination"/>
+                <element inactive_on_update="false" label="Origin" sequence="20" value="origin"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="30" value="not_applicable"/>
+            </choice>
+        </element>
+        <element choice="3" default="pre_paid_added" label="Freight Terms" max_length="40" name="freight_terms" type="choice">
+            <choice>
+                <element hint="The vendor pays the freight bill for the shipment it is moving for its customer, then charges its customer after delivery." inactive_on_update="false" label="Pre-paid &amp; added" sequence="10" value="pre_paid_added"/>
+                <element hint="The vendor shall include the cost of freight in the unit price." inactive_on_update="false" label="Pre-paid &amp; allowed" sequence="20" value="pre_paid_allowed"/>
+                <element hint="The customer is responsible for the freight charges and additional." inactive_on_update="false" label="Freight collected" sequence="30" value="freight_collected"/>
+                <element inactive_on_update="false" label="Not applicable" sequence="40" value="not_applicable"/>
+            </choice>
+        </element>
+        <element label="Line Items" max_length="4000" name="line_items" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="net_15" label="Payment Terms" max_length="40" name="payment_terms" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Net 60" sequence="10" value="net_60"/>
+                <element inactive_on_update="false" label="Net 30" sequence="20" value="net_30"/>
+                <element inactive_on_update="false" label="Net 15" sequence="30" value="net_15"/>
+                <element inactive_on_update="false" label="2/10 Net 30" sequence="40" value="2_10_net_30"/>
+                <element inactive_on_update="false" label="2/10 Net 60" sequence="50" value="2_10_net_60"/>
+                <element inactive_on_update="false" label="1/10 Net 30" sequence="60" value="1_10_net_30"/>
+                <element inactive_on_update="false" label="1/10 Net 60" sequence="70" value="1_10_net_60"/>
+                <element inactive_on_update="false" label="Due on Delivery" sequence="80" value="due_on_delivery"/>
+                <element inactive_on_update="false" label="Due before Shipping" sequence="90" value="due_before_shipping"/>
+            </choice>
+        </element>
+        <element label="Purchase Order" max_length="32" name="purchase_order" type="string"/>
+        <element label="Requested Delivery Date" max_length="40" name="requested_delivery_date" type="glide_date"/>
+        <element label="Shipping Address" max_length="32" name="shipping_address" reference="x_683715_big_oil_2_addresses" type="reference"/>
+        <element choice="3" default="buyers_choice" label="Shipping Via" max_length="40" name="shipping_via" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Buyers Choice" sequence="10" value="buyers_choice"/>
+                <element inactive_on_update="false" label="Sellers Choice" sequence="20" value="sellers_choice"/>
+            </choice>
+        </element>
+        <element choice="3" default="draft" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
+                <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
+                <element inactive_on_update="false" label="Open" sequence="30" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="40" value="closed"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="auth_purchaser"/>
+        </index>
+        <index name="index2">
+            <element name="billing_address"/>
+        </index>
+        <index name="index3">
+            <element name="shipping_address"/>
+        </index>
+        <index name="index4">
+            <element name="approval_task"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index6">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>
