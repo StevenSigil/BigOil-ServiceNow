@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
+        <description/>
+        <fields>redirectTo</fields>
+        <icon/>
+        <name>reload</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>reload</route_type>
+        <screen_type display_value="reload">3aea362e07f2701029a8f0269c1ed087</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:26:04</sys_created_on>
+        <sys_id>4fea762e07f2701029a8f0269c1ed08d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>reload</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_app_route_4fea762e07f2701029a8f0269c1ed08d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:26:49</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=4fea762e07f2701029a8f0269c1ed08d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_app_route_4fea762e07f2701029a8f0269c1ed08d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config><description/><fields>redirectTo</fields><icon/><name>reload</name><optional_parameters/><order>0</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><parent_macroponent_composition_element_id/><route_type>reload</route_type><screen_type display_value="reload">3aea362e07f2701029a8f0269c1ed087</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-28 00:26:04</sys_created_on><sys_id>4fea762e07f2701029a8f0269c1ed08d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>reload</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_app_route_4fea762e07f2701029a8f0269c1ed08d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-28 00:26:49</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=4fea762e07f2701029a8f0269c1ed08d"/></record_update>]]></payload>
+        <payload_hash>516980445</payload_hash>
+        <record_name>reload</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:26:49</sys_created_on>
+        <sys_id>4e1b762e07f2701029a8f0269c1ed037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c29cc07d60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:26:49</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>461b762e30f27010adc7caccb71b4037</update_guid>
+        <update_guid_history>461b762e30f27010adc7caccb71b4037:516980445,0fea762e8af27010d7d61c08d2a8928f:1214428047</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:39:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>56382bfde3c64a3da6517a45c14a4f71</sys_id>
+        <sys_metadata>4fea762e07f2701029a8f0269c1ed08d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reload</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_4fea762e07f2701029a8f0269c1ed08d</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_4fea762e07f2701029a8f0269c1ed08d">4e1b762e07f2701029a8f0269c1ed037</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:39:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

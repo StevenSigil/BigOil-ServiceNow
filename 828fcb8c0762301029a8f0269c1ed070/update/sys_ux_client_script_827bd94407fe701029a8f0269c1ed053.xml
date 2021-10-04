@@ -97,9 +97,9 @@
 
     // Move to next screen
     if (ePayload === "draft") {
-      // TODO: add list ID to List page params & view sales order in draft state
-      helpers.navigate.to("lists");
+      helpers.navigate.to("lists", null, { targetlist: "my-drafts" });
     }
+
     if (ePayload === "submit") {
       // Show final (step 5) part of process
       api.setState("finalStepHidden", false);
@@ -118,19 +118,20 @@
   } catch (err) {
     console.log(err);
   }
-}]]></script>
+}
+]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-19 23:04:13</sys_created_on>
         <sys_id>827bd94407fe701029a8f0269c1ed053</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Check and Update Line Item/SO Conflicts</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_client_script_827bd94407fe701029a8f0269c1ed053</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-20 21:33:05</sys_updated_on>
+        <sys_updated_on>2021-09-22 21:36:19</sys_updated_on>
     </sys_ux_client_script>
 </record_update>

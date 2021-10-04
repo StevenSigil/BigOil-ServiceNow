@@ -4,6 +4,34 @@
         <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
         <description/>
         <event_mappings>[ {
+  "eventMappingId" : "ckuddiiddhaalaaaafoddahhyzxffiikhwt",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_683715_big_oil_2.PORTAL_APP_SHELL_DATA_SOURCE_REFRESH_RELAY_e63e55b80762301029a8f0269c1ed010",
+  "sourceEventDefinition" : {
+    "apiName" : "x_683715_big_oil_2.PORTAL_APP_SHELL_DATA_SOURCE_REFRESH_RELAY_e63e55b80762301029a8f0269c1ed010",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "eaa5861c530210105a20ddeeff7b12fd",
+      "operationName" : "REFRESH",
+      "parentResourceId" : "portal_app_shell_data_source",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      }
+    },
+    "targetId" : "ckuddiiddhaalaaaafnddahhyoravbbdccgg",
+    "type" : "DATABROKER_OP"
+  } ]
+}, {
   "eventMappingId" : "cktestegfaaaacyddahhyaaejjmceeer",
   "isConfiguration" : false,
   "offRowStorageId" : null,
@@ -88,6 +116,7 @@
 } ]</event_mappings>
         <macroponent display_value="Auth request">e63e55b80762301029a8f0269c1ed010</macroponent>
         <macroponent_config>{
+  "sysid" : "",
   "label" : "",
   "bare" : false,
   "scrollable" : "y",
@@ -107,7 +136,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>223e55b80762301029a8f0269c1ed013</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Auth request default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
@@ -115,7 +144,7 @@
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_screen_223e55b80762301029a8f0269c1ed013</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-10 21:22:27</sys_updated_on>
+        <sys_updated_on>2021-09-27 22:29:11</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=223e55b80762301029a8f0269c1ed013"/>
 </record_update>

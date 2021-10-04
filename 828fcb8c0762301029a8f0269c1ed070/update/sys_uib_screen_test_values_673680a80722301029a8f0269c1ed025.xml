@@ -4,7 +4,7 @@
   "sysId" : "-1",
   "bare" : false
 }</macroponent_config>
-        <screen display_value="New Profile">b80548680722301029a8f0269c1ed06f</screen>
+        <screen/>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-08 19:53:07</sys_created_on>

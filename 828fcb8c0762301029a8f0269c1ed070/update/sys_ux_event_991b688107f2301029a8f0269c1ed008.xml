@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <event_name>NAVIGATE_FROM_LINK</event_name>
+        <interfaces/>
+        <label>Navigate from Link</label>
+        <props>[{"name":"targetSysID","fieldType":"","label":"Target SysID","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations>[{"message":"Target SysID","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-22 22:06:45</sys_created_on>
+        <sys_id>991b688107f2301029a8f0269c1ed008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Navigate from Link</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_event_991b688107f2301029a8f0269c1ed008</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-22 22:06:45</sys_updated_on>
+    </sys_ux_event>
+</record_update>

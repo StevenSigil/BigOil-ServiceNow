@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="DELETE">
+        <description/>
+        <name>reload</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:26:03</sys_created_on>
+        <sys_id>3aea362e07f2701029a8f0269c1ed087</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reload</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_screen_type_3aea362e07f2701029a8f0269c1ed087</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:26:03</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_translated_text action="DELETE" query="documentkey=3aea362e07f2701029a8f0269c1ed087"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_screen_type_3aea362e07f2701029a8f0269c1ed087</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type"><sys_ux_screen_type action="INSERT_OR_UPDATE"><description/><name>reload</name><sys_class_name>sys_ux_screen_type</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-28 00:26:03</sys_created_on><sys_id>3aea362e07f2701029a8f0269c1ed087</sys_id><sys_mod_count>0</sys_mod_count><sys_name>reload</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_screen_type_3aea362e07f2701029a8f0269c1ed087</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-28 00:26:03</sys_updated_on></sys_ux_screen_type><sys_translated_text action="delete_multiple" query="documentkey=3aea362e07f2701029a8f0269c1ed087"/></record_update>]]></payload>
+        <payload_hash>1058566145</payload_hash>
+        <record_name>reload</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:26:03</sys_created_on>
+        <sys_id>36ea362e07f2701029a8f0269c1ed08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c29cb52d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:26:03</sys_updated_on>
+        <type>UX Screen Collection</type>
+        <update_guid>7eea362e59f270103faafa8ef340e689</update_guid>
+        <update_guid_history>7eea362e59f270103faafa8ef340e689:1058566145</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 00:39:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_type">sys_ux_screen_type</sys_db_object>
+        <sys_id>a212d0da0cf44818b1bddb9da833d040</sys_id>
+        <sys_metadata>3aea362e07f2701029a8f0269c1ed087</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reload</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_type_3aea362e07f2701029a8f0269c1ed087</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_type_3aea362e07f2701029a8f0269c1ed087">36ea362e07f2701029a8f0269c1ed08a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 00:39:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

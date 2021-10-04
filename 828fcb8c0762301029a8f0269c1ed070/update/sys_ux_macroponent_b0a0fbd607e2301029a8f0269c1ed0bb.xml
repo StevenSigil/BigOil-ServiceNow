@@ -2015,7 +2015,7 @@
                   "container" : {
                     "route" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "sales-order-new-confirm"
+                      "value" : "sales-order-confirm"
                     },
                     "fields" : {
                       "type" : "MAP_CONTAINER",
@@ -2043,7 +2043,7 @@
                     },
                     "title" : {
                       "type" : "JSON_LITERAL",
-                      "value" : null
+                      "value" : ""
                     },
                     "multiInstField" : {
                       "type" : "JSON_LITERAL",
@@ -4842,13 +4842,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-14 23:26:35</sys_created_on>
         <sys_id>b0a0fbd607e2301029a8f0269c1ed0bb</sys_id>
-        <sys_mod_count>233</sys_mod_count>
+        <sys_mod_count>234</sys_mod_count>
         <sys_name>Sales Order Items</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_b0a0fbd607e2301029a8f0269c1ed0bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-19 02:14:23</sys_updated_on>
+        <sys_updated_on>2021-09-22 22:04:13</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

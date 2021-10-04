@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
         <description/>
         <event_mappings>[ {
-  "eventMappingId" : "cktataaaccaaaaggsddahhybxaaaaadduh",
+  "eventMappingId" : "ckuddcfuwuaaaamhddahhycaeefkshii",
   "isConfiguration" : false,
   "offRowStorageId" : null,
-  "sourceEventApiName" : "x_683715_big_oil_2.SCREEN_STATUS_CHANGED_RELAY_fc3540940726301029a8f0269c1ed0da",
+  "sourceEventApiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_7eea362e07f2701029a8f0269c1ed08c",
   "sourceEventDefinition" : {
-    "apiName" : "x_683715_big_oil_2.SCREEN_STATUS_CHANGED_RELAY_fc3540940726301029a8f0269c1ed0da",
+    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_7eea362e07f2701029a8f0269c1ed08c",
     "id" : null,
     "type" : "UXEVENT"
   },
@@ -19,20 +19,38 @@
     "clientScript" : null,
     "declarativeAction" : null,
     "event" : {
-      "apiName" : "sn_canvas_core.SCREEN_STATUS_CHANGED",
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
       "payload" : {
         "type" : "MAP_CONTAINER",
         "container" : {
-          "screenKey" : {
+          "route" : {
             "type" : "EVENT_PAYLOAD_BINDING",
             "binding" : {
-              "address" : [ "screenKey" ]
+              "address" : [ "route" ]
             }
           },
-          "status" : {
+          "fields" : {
             "type" : "EVENT_PAYLOAD_BINDING",
             "binding" : {
-              "address" : [ "status" ]
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
             }
           },
           "title" : {
@@ -41,62 +59,36 @@
               "address" : [ "title" ]
             }
           },
-          "icon" : {
+          "multiInstField" : {
             "type" : "EVENT_PAYLOAD_BINDING",
             "binding" : {
-              "address" : [ "icon" ]
+              "address" : [ "multiInstField" ]
             }
           },
-          "message" : {
+          "targetRoute" : {
             "type" : "EVENT_PAYLOAD_BINDING",
             "binding" : {
-              "address" : [ "message" ]
+              "address" : [ "targetRoute" ]
             }
           },
-          "isDirty" : {
+          "external" : {
             "type" : "EVENT_PAYLOAD_BINDING",
             "binding" : {
-              "address" : [ "isDirty" ]
-            }
-          },
-          "hasError" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "hasError" ]
-            }
-          },
-          "hasUpdate" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "hasUpdate" ]
-            }
-          },
-          "dirtyModalId" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "dirtyModalId" ]
-            }
-          },
-          "tooltipPreview" : {
-            "type" : "EVENT_PAYLOAD_BINDING",
-            "binding" : {
-              "address" : [ "tooltipPreview" ]
+              "address" : [ "external" ]
             }
           }
         }
       },
-      "sysId" : "f71f58643791ec0183da148626eb757d"
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
     },
     "operation" : null,
-    "targetId" : "cktataaaccaaaaggrddahhyiihpffzccgf",
+    "targetId" : "ckuddcfuwuaaaamgddahhyggggggbbddlp",
     "type" : "EVENT"
   } ]
 } ]</event_mappings>
-        <macroponent display_value="Record">fc3540940726301029a8f0269c1ed0da</macroponent>
+        <macroponent display_value="reload">7eea362e07f2701029a8f0269c1ed08c</macroponent>
         <macroponent_config>{
-  "table" : "",
-  "views" : "",
-  "selectedTabIndex" : 0,
+  "redirectTo" : "",
   "label" : "",
   "bare" : true,
   "scrollable" : "y",
@@ -104,27 +96,27 @@
   "interceptNotifications" : false,
   "propagateNotifications" : false
 }</macroponent_config>
-        <name>Profile default</name>
-        <order>999</order>
+        <name>reload default</name>
+        <order>0</order>
         <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
         <required_translations>[]</required_translations>
         <screen_condition/>
-        <screen_type display_value="Profile">bc3504140726301029a8f0269c1ed0e1</screen_type>
+        <screen_type/>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-09-08 01:10:05</sys_created_on>
+        <sys_created_on>2021-09-28 00:26:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>fc3540940726301029a8f0269c1ed0dd</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Profile default</sys_name>
+        <sys_id>7eea762e07f2701029a8f0269c1ed088</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>reload default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
-        <sys_update_name>sys_ux_screen_fc3540940726301029a8f0269c1ed0dd</sys_update_name>
+        <sys_update_name>sys_ux_screen_7eea762e07f2701029a8f0269c1ed088</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-08 02:03:33</sys_updated_on>
+        <sys_updated_on>2021-09-28 00:30:46</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=fc3540940726301029a8f0269c1ed0dd"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7eea762e07f2701029a8f0269c1ed088"/>
 </record_update>

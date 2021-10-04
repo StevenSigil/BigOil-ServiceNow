@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="lists">50c6d1740762301029a8f0269c1ed08c</macroponent>
+        <name>Handle Click with SysID</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  var listMenuIDs = api.context.props.listMenuIDs;
+  const currList = api.state.currList;
+
+  // Replacing hyphen for underscore for already completed pages.
+  var targetID = event.payload.targetSysID;
+
+  if (targetID != -1) {
+    targetID = targetID.replaceAll("-", "_");
+  }
+
+  // var listMenuIDs = {
+  //   my_sales_orders: "1dd1665c07b2301029a8f0269c1ed0a2",
+  //   my_drafts: "bad064c907b2301029a8f0269c1ed01f",
+  //   all_sales_orders: "cba4a0e107a2701029a8f0269c1ed01e",
+  //   my_authorization_requests: "16ccf4b00722301029a8f0269c1ed0d2",
+  // };
+
+  const newURLs = {
+    salesOrder_existing: { page: "sales-order-confirm", salesorder: targetID },
+    salesOrder_new: { page: "sales-order-new", sOrder: targetID },
+    auth_req: { page: "auth-request" },
+    auth_req_exist: { page: "auth-request-existing", sysid: targetID },
+  };
+
+  const listIds = {
+    salesOrder: [
+      listMenuIDs.my_sales_orders,
+      listMenuIDs.my_drafts,
+      listMenuIDs.all_sales_orders,
+    ],
+    authReq: [listMenuIDs.my_authorization_requests],
+  };
+
+  // check if selected list is sales order
+  const isSO = listIds.salesOrder.some((so) => so == currList);
+
+  if (isSO) {
+    if (targetID == -1) {
+      helpers.navigate.to(newURLs.salesOrder_new.page, { sOrder: targetID });
+      return;
+    }
+    helpers.navigate.to(newURLs.salesOrder_existing.page, {
+      salesorder: targetID,
+    });
+    return;
+  }
+
+  // check if selected list is auth request
+  const isAuth = listIds.authReq.some((a) => a == currList);
+
+  if (isAuth) {
+    if (targetID == -1) {
+      helpers.navigate.to(newURLs.auth_req.page);
+      return;
+    }
+    // NAVIGATE TO EXISTING AUTH PAGE
+    helpers.navigate.to(newURLs.auth_req_exist.page, { sysid: targetID });
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-22 22:07:24</sys_created_on>
+        <sys_id>4b3b284107f2301029a8f0269c1ed071</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Handle Click with SysID</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_4b3b284107f2301029a8f0269c1ed071</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 05:30:00</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

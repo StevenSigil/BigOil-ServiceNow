@@ -138,7 +138,7 @@
             "text" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "message" : "Use the buttons on either section to edit or confirm the order on the right.",
+                "message" : "Click \"Edit this section\" to edit. When finished, confirm the order to the right.",
                 "comment" : ""
               }
             },
@@ -1492,7 +1492,9 @@
                   "value" : {
                     "route" : "lists",
                     "fields" : null,
-                    "params" : null,
+                    "params" : {
+                      "targetlist" : "my-sales-orders"
+                    },
                     "redirect" : null,
                     "passiveNavigation" : null,
                     "title" : null,
@@ -1748,38 +1750,6 @@
       "targetId" : "cktryvmcpaaaaddaddaiijjffdjlrcctz",
       "type" : "EVENT"
     } ]
-  }, {
-    "eventMappingId" : "cktryupueaaaaddhhddaiijjazlfjjvfr",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : null,
-      "declarativeAction" : null,
-      "event" : {
-        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
-        "payload" : {
-          "type" : "JSON_LITERAL",
-          "value" : {
-            "items" : [ {
-              "type" : "info",
-              "message" : "Record has been updated"
-            } ]
-          }
-        },
-        "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
-      },
-      "operation" : null,
-      "targetId" : "cktryupueaaaaddiiddaiijjydffggmlrk",
-      "type" : "EVENT"
-    } ]
   } ],
   "inputValues" : { },
   "readEvaluationMode" : "EXPLICIT"
@@ -1863,7 +1833,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Use the buttons on either section to edit or confirm the order on the right.","comment":""},{"message":"Continue","comment":""},{"message":"Sales order","comment":""},{"message":"On behalf of Big Oil,","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.","comment":""},{"message":"Button","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Enter a label","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
+        <required_translations>[{"message":"Click \"Edit this section\" to edit. When finished, confirm the order to the right.","comment":""},{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Continue","comment":""},{"message":"Sales order","comment":""},{"message":"On behalf of Big Oil,","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.","comment":""},{"message":"Button","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Enter a label","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -1942,13 +1912,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-16 23:18:27</sys_created_on>
         <sys_id>e9f10e8307a2301029a8f0269c1ed092</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>Sales Order New Confirm</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_e9f10e8307a2301029a8f0269c1ed092</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-20 03:33:49</sys_updated_on>
+        <sys_updated_on>2021-09-27 19:11:08</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
