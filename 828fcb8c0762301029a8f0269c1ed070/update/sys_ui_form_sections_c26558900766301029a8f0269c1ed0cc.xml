@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c26558900766301029a8f0269c1ed0cc" sys_domain="global" table="x_683715_big_oil_2_user_profile" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 02:20:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c66558900766301029a8f0269c1ed0cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_683715_big_oil_2_user_profile" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="20b354500766301029a8f0269c1ed0f5">c26558900766301029a8f0269c1ed0cc</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_683715_big_oil_2_user_profile" sys_domain="global" view="20b354500766301029a8f0269c1ed0f5">60b354500766301029a8f0269c1ed0f9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 02:20:53</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_683715_big_oil_2_user_profile</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-08 02:20:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c26558900766301029a8f0269c1ed0cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_683715_big_oil_2_user_profile</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c26558900766301029a8f0269c1ed0cc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-08 02:20:53</sys_updated_on>
+            <sys_user/>
+            <view display_value="externalUser" name="externalUser">20b354500766301029a8f0269c1ed0f5</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

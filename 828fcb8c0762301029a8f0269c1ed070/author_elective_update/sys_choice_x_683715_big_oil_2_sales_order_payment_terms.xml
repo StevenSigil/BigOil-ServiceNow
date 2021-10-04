@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="payment_terms" table="x_683715_big_oil_2_sales_order" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>payment_terms</element>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_id>2804638c07a2301029a8f0269c1ed0a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>payment_terms</sys_name>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_choice_x_683715_big_oil_2_sales_order_payment_terms</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Net 60</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a004638c07a2301029a8f0269c1ed0a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+            <value>net_60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Net 30</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a004638c07a2301029a8f0269c1ed097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+            <value>net_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Net 15</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c04638c07a2301029a8f0269c1ed0ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+            <value>net_15</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2/10 Net 30</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac04638c07a2301029a8f0269c1ed0b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+            <value>2_10_net_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2/10 Net 60</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a804638c07a2301029a8f0269c1ed0af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:04</sys_updated_on>
+            <value>2_10_net_60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1/10 Net 30</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c04638c07a2301029a8f0269c1ed0b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:05</sys_updated_on>
+            <value>1_10_net_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1/10 Net 60</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc04638c07a2301029a8f0269c1ed0bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:05</sys_updated_on>
+            <value>1_10_net_60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Due on Delivery</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b804638c07a2301029a8f0269c1ed0bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:05</sys_updated_on>
+            <value>due_on_delivery</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Due before Shipping</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c04638c07a2301029a8f0269c1ed0c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:05</sys_updated_on>
+            <value>due_before_shipping</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="external_name" label="External Name" language="en" table="x_683715_big_oil_2_warehouses">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>external_name</element>
+            <help/>
+            <hint/>
+            <label>External Name</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_warehouses</name>
+            <plural>External Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:16:37</sys_created_on>
+            <sys_id>f37d9f0807a2301029a8f0269c1ed042</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>External Name</sys_name>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_documentation_x_683715_big_oil_2_warehouses_external_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:16:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

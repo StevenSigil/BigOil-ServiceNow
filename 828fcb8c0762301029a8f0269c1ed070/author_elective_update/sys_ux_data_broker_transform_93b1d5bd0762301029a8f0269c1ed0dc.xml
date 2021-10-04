@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_683715_big_oil_2.mapChoiceListFromGlideFormData</api_name>
+        <description>Filters fieldElements list in nowRecordFormBlob for name === property. Returns a list of Choices from the field.</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>mapChoiceListFromGlideFormData</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+      "name": "fieldName",&#13;
+      "label": "Field Name",&#13;
+      "description": "Name of field containing choices",&#13;
+      "readOnly": false,&#13;
+      "fieldType": "string",&#13;
+      "mandatory": true&#13;
+    },&#13;
+    {&#13;
+      "name": "fieldElements",&#13;
+      "label": "Field Elements",&#13;
+      "description": "List of field elements from GlideForm data",&#13;
+      "readOnly": false,&#13;
+      "fieldType": "object",&#13;
+      "mandatory": true&#13;
+    }&#13;
+  ]</props>
+        <required_translations>[{"message":"Field Elements","comment":""},{"message":"Name of field containing choices","comment":""},{"message":"Field Name","comment":""},{"message":"List of field elements from GlideForm data","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+  // 	var el = input.fieldElements;
+  // 	var obj = {};
+  // 	obj.res = el;
+
+  var target = input.fieldElements.filter(function (field) {
+    return field.name === input.fieldName;
+  });
+
+  return target;
+
+  //   var target = input.fieldElements.filter(function (field) {
+  //     return field.name === input.fieldName;
+  //   });
+
+  //   var choices = target[0].choices;
+  //   var returnList = [];
+
+  //   choices.forEach(function (choice) {
+  //     var obj = {};
+
+  //     obj.id = el.value;
+  //     obj.label = el.displayValue;
+  //     obj.value = el.value;
+  //     returnList.push(obj);
+  //   });
+
+  //   return returnList;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-12 22:47:58</sys_created_on>
+        <sys_id>93b1d5bd0762301029a8f0269c1ed0dc</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>mapChoiceListFromGlideFormData</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_93b1d5bd0762301029a8f0269c1ed0dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 21:24:59</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=93b1d5bd0762301029a8f0269c1ed0dc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_data_broker_transform_93b1d5bd0762301029a8f0269c1ed0dc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_683715_big_oil_2.mapChoiceListFromGlideFormData&lt;/api_name&gt;&lt;description&gt;Filters fieldElements list in nowRecordFormBlob for name === property. Returns a list of Choices from the field.&lt;/description&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;mapChoiceListFromGlideFormData&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+    {&amp;#13;
+      "name": "fieldName",&amp;#13;
+      "label": "Field Name",&amp;#13;
+      "description": "Name of field containing choices",&amp;#13;
+      "readOnly": false,&amp;#13;
+      "fieldType": "string",&amp;#13;
+      "mandatory": true&amp;#13;
+    },&amp;#13;
+    {&amp;#13;
+      "name": "fieldElements",&amp;#13;
+      "label": "Field Elements",&amp;#13;
+      "description": "List of field elements from GlideForm data",&amp;#13;
+      "readOnly": false,&amp;#13;
+      "fieldType": "object",&amp;#13;
+      "mandatory": true&amp;#13;
+    }&amp;#13;
+  ]&lt;/props&gt;&lt;required_translations&gt;[{"message":"Field Elements","comment":""},{"message":"Name of field containing choices","comment":""},{"message":"Field Name","comment":""},{"message":"List of field elements from GlideForm data","comment":""}]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+  // 	var el = input.fieldElements;
+  // 	var obj = {};
+  // 	obj.res = el;
+
+  var target = input.fieldElements.filter(function (field) {
+    return field.name === input.fieldName;
+  });
+
+  return target;
+
+  //   var target = input.fieldElements.filter(function (field) {
+  //     return field.name === input.fieldName;
+  //   });
+
+  //   var choices = target[0].choices;
+  //   var returnList = [];
+
+  //   choices.forEach(function (choice) {
+  //     var obj = {};
+
+  //     obj.id = el.value;
+  //     obj.label = el.displayValue;
+  //     obj.value = el.value;
+  //     returnList.push(obj);
+  //   });
+
+  //   return returnList;
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-12 22:47:58&lt;/sys_created_on&gt;&lt;sys_id&gt;93b1d5bd0762301029a8f0269c1ed0dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;mapChoiceListFromGlideFormData&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_93b1d5bd0762301029a8f0269c1ed0dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-13 21:24:59&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=93b1d5bd0762301029a8f0269c1ed0dc"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-989346497</payload_hash>
+        <record_name>mapChoiceListFromGlideFormData</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 21:24:59</sys_created_on>
+        <sys_id>b93b4a0207a2301029a8f0269c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17be10c84300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 21:24:59</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>f13b4a021ea23010f4196f376aca404a</update_guid>
+        <update_guid_history>f13b4a021ea23010f4196f376aca404a:-989346497,19ca8602eba23010535e7ad5c513d52a:-916336909,a96ac20254a2301001cf4d3347ebaea5:1941833808,1ff9c20278a23010db7cdadb57c3b47b:556793351,e2a90ece5b623010a49ac1e1a35b8742:1428097190,b84986ce9a6230107358b183bfa748ab:-41878027,2e0906ce906230108af0e3ce068183c6:556793351,ab5ef9863b623010d63863d8540d1c3e:438174183,f2dd3946e3623010379edf3a4100b4a3:248927385,be9bf9826d623010816ab7a88a51f73f:-423030618,79fafd8ef022301049b7a8c2d4b75d05:-1071699394,4bf9f142a86230102a5289a4dcda4d72:88567898,6fa5dd3106a23010fb6152b68a142c34:-891509640,f794193d616230104ee3d54b97500bdc:-435308673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 22:22:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>1735dad655204f0b87bb984f21f8f249</sys_id>
+        <sys_metadata>93b1d5bd0762301029a8f0269c1ed0dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mapChoiceListFromGlideFormData</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_93b1d5bd0762301029a8f0269c1ed0dc</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_93b1d5bd0762301029a8f0269c1ed0dc">b93b4a0207a2301029a8f0269c1ed04a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 22:22:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

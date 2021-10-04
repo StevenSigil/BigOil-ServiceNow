@@ -1,0 +1,3664 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_3",
+  "elementLabel" : "Container 3",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "stepper_1",
+      "elementLabel" : "Stepper 1",
+      "propertyValues" : {
+        "items" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "stepperDetails" ]
+          }
+        },
+        "selectedItem" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "step" ]
+          }
+        },
+        "hideNumbers" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "showCompletedCount" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "cktkpaddhhqaaaabbffddahhyeewsqjteaa",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_stepper.NOW_STEPPER#SELECTED_ITEM_SET",
+        "sourceEventDefinition" : {
+          "apiName" : "sn_stepper.NOW_STEPPER#SELECTED_ITEM_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "x_683715_big_oil_2.UPDATE_STEP",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "nextStep" : {
+                  "type" : "EVENT_PAYLOAD_BINDING",
+                  "binding" : {
+                    "address" : [ "value" ]
+                  }
+                }
+              }
+            },
+            "sysId" : "8bb1a31e07a2301029a8f0269c1ed0d8"
+          },
+          "operation" : null,
+          "targetId" : "cktkpaddhhqaaaabbggddahhyjjjbbbbehhph",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "e72c75f648cda0becbd28db9a44b569f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "body_step_0",
+      "elementLabel" : "Body Step 0",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "stylized_text_1",
+          "elementLabel" : "Stylized text 1",
+          "propertyValues" : {
+            "text" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Will this order be on contract?",
+                "comment" : ""
+              }
+            },
+            "tag" : {
+              "type" : "JSON_LITERAL",
+              "value" : "h2"
+            },
+            "css" : {
+              "type" : "JSON_LITERAL",
+              "value" : "* { \r\n    font-weight: 500;\r\n    margin: 1rem 0;\r\n}"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "btn_container_1",
+          "elementLabel" : "Btn Container 1",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "button_1",
+              "elementLabel" : "Button 1",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Yes",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Feature coming soon",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktglwtjjddaaaaeeccddahhyhhswdlsmhh",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "propName" : "contractInputHidden",
+                        "value" : null
+                      }
+                    },
+                    "sysId" : "32408b42ff7a10109046e490703bf176"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktglwtjjddaaaaeeddddahhygghdderyxv",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin" : "0 .5rem"
+              }
+            }, {
+              "elementId" : "button_2",
+              "elementLabel" : "Button 2",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "secondary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "No",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Start from scratch",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkneehvnaaaabkddahhyjjvggqeebbtm",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "x_683715_big_oil_2.UPDATE_STEP",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "nextStep" : "1"
+                      }
+                    },
+                    "sysId" : "8bb1a31e07a2301029a8f0269c1ed0d8"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkneehvnaaaablddahhyfueecjjgggs",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin" : "0 .5rem"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "1rem 0"
+          }
+        }, {
+          "elementId" : "contract_input",
+          "elementLabel" : "Contract Input",
+          "propertyValues" : {
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "text"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Contract Number:",
+                "comment" : ""
+              }
+            },
+            "placeholder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "name" : {
+              "type" : "JSON_LITERAL",
+              "value" : "contract_num"
+            },
+            "value" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "readonly" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "required" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hideRequiredIndicator" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "optional" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "min" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "max" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "minlength" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "maxlength" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "multiple" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "pattern" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "autofocus" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "invalid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "helperContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Please enter your contract number here and press submit when finished.",
+                "comment" : ""
+              }
+            },
+            "messages" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ ]
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cktglyimmaaaaeehhddahhyoivaahhhhqdd",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_input.NOW_INPUT#INPUT",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_input.NOW_INPUT#INPUT",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "propName" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "contractInputValue"
+                    },
+                    "value" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "fieldValue" ]
+                      }
+                    }
+                  }
+                },
+                "sysId" : "32408b42ff7a10109046e490703bf176"
+              },
+              "operation" : null,
+              "targetId" : "cktglyimmaaaaeeiiddahhydhgyfwtt",
+              "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktglyxeeiaaaaeeaddahhyjomjsota",
+              "type" : "EVENT"
+            } ]
+          }, {
+            "eventMappingId" : "cktglycnjjaaaaeeffddahhyiiyaahqqhjj",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_input.NOW_INPUT#INVALID_SET",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_input.NOW_INPUT#INVALID_SET",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktglycnjjaaaaeeggddahhyeesyeltibb",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "button_3",
+              "elementLabel" : "Button 3",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Submit",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Enter a label",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktgmgctmaaaaffrddahhygehhbniidh",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_3b23b46d07a2701029a8f0269c1ed05c",
+                    "payload" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "route" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "sales-order"
+                        },
+                        "fields" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "sysId" : {
+                              "type" : "CONTEXT_BINDING",
+                              "binding" : {
+                                "address" : [ "sysId" ],
+                                "category" : "props"
+                              }
+                            }
+                          }
+                        },
+                        "params" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "contract" : {
+                              "type" : "STATE_BINDING",
+                              "binding" : {
+                                "address" : [ "contractInputValue" ]
+                              }
+                            },
+                            "sOrder" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "-1"
+                            }
+                          }
+                        },
+                        "redirect" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "passiveNavigation" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "title" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "multiInstField" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "targetRoute" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "external" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        }
+                      }
+                    },
+                    "sysId" : "2033452907e2701029a8f0269c1ed0bf"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktgmgctmaaaaffsddahhywzuqckpo",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "end",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : null
+          },
+          "isHidden" : {
+            "type" : "STATE_BINDING",
+            "binding" : {
+              "address" : [ "contractInputHidden" ]
+            }
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "min-width" : "33%",
+            "margin" : "1rem 0"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","align-items":"center"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "1.0.0",
+          "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn api.state.step !== 0;\n}"
+        }
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "body_step_1",
+      "elementLabel" : "Body Step 1",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "heading_container_1",
+          "elementLabel" : "Heading Container 1",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_2",
+              "elementLabel" : "Stylized text 2",
+              "propertyValues" : {
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Order details",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h2"
+                },
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { \r\n    font-weight: 500;\r\n}"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "fields_1",
+          "elementLabel" : "Fields 1",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "input_1",
+              "elementLabel" : "Input 1",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Number",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "fields", "number", "value" ]
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "purchase_order",
+              "elementLabel" : "Purchase Order",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Purchase Order",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "purchase_order"
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "purchase_order", "displayValue" ]
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktjdvaatddaaaaaamddahhyeebbnpgcddz",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_input.NOW_INPUT#INPUT",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_input.NOW_INPUT#INPUT",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkfhhoicaaaabbaaddaiijjvqkqiiuree",
+                  "type" : "CLIENT_SCRIPT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkfnzqhaaaaccffddaiijjvewbbegog",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkhhhuntaaaaffmddaiijjhhccpyudvu",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "contract",
+              "elementLabel" : "contract",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Contract No.",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  var propsContract = api.context.props.contract;\n  var gfContract = api.data.sales_order_glide_form.nowRecordFormBlob.formFieldValues.contract.displayValue;\n\n  var res = propsContract ? propsContract : gfContract;\n\treturn res;\n}"
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgloaeeaaaaddzddaiijjzyjjddykyq",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_input.NOW_INPUT#INPUT",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_input.NOW_INPUT#INPUT",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgloaeeaaaaeeaaddaiijjyffoiijjbaadd",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "payment_terms",
+              "elementLabel" : "Payment Terms",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Payment Terms",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "inlineScript" : "function evaluateProperty({ api }) {\n  // Get choice list\n  const fieldName = \"payment_terms\";\n  const fields =\n    api.data.sales_order_glide_form.nowRecordFormBlob.fieldElements;\n\n  const targetField = fields.filter((field) =&gt; {\n    return field.name === fieldName;\n  });\n\n  const choices = targetField[0].choices;\n  const returnList = [];\n\n  choices.forEach((el) =&gt; {\n    const obj = {};\n    obj.id = el.value;\n    obj.label = el.displayValue;\n    obj.value = el.value;\n    returnList.push(obj);\n  });\n\n  return returnList;\n}"
+                  }
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "none"
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "payment_terms", "value" ]
+                  }
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgmfffyaaaaeebbddaiijjvzcccptuj",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgmfffyaaaaeeccddaiijjuxjbbddlii",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "8592cf18d86865b5e96975a1294ed7a4",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "input_5",
+              "elementLabel" : "Input 5",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Created",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn new Date().toLocaleDateString();\n}"
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "auth_purchaser",
+              "elementLabel" : "Auth Purchaser",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Purchaser",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({ api }) {\n  const isNewOrder = api.context.props.sOrder == -1;\n\n  if (isNewOrder) {\n    return api.state.userProfileData.user.displayValue;\n  } else {\n    return api.data.sales_order_glide_form.nowRecordFormBlob.formFieldValues\n      .auth_purchaser.displayValue;\n  }\n}"
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgmrjgaaaaeeddddaiijjaaddxryuqk",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_input.NOW_INPUT#INPUT",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_input.NOW_INPUT#INPUT",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkjbhddpaaaaccpddahhycpirneedcc",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "customer",
+              "elementLabel" : "Customer",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Company",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({ api }) {\n  const isNewOrder = api.context.props.sOrder == -1;\n\n  if (isNewOrder) {\n    return api.state.userProfileData.external_company.displayValue;\n  } else {\n    return api.data.sales_order_glide_form.nowRecordFormBlob.formFieldValues\n      .customer.displayValue;\n  }\n}"
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgnjqjaaaaeehhddaiijjvneebbddhhia",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_input.NOW_INPUT#VALUE_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_input.NOW_INPUT#VALUE_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgnjqjaaaaeeiiddaiijjgcciihhheevr",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "select_1",
+              "elementLabel" : "Select 1",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Status",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "function evaluateProperty({ api }) {\n  // Get choice list\n  const fields =\n    api.data.sales_order_glide_form.nowRecordFormBlob.fieldElements;\n  const fieldName = \"status\";\n\n  const targetField = fields.filter((field) =&gt; {\n    return field.name === fieldName;\n  });\n\n  const choices = targetField[0].choices;\n  const returnList = [];\n\n  choices.forEach((el) =&gt; {\n    const obj = {};\n    obj.id = el.value;\n    obj.label = el.displayValue;\n    obj.value = el.value;\n    returnList.push(obj);\n  });\n\n  return returnList;\n}"
+                  }
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "none"
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "draft"
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "8592cf18d86865b5e96975a1294ed7a4",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "heading_container_1_1",
+          "elementLabel" : "Heading Container 1.1",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_3",
+              "elementLabel" : "Stylized text 3",
+              "propertyValues" : {
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Shipping details",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h2"
+                },
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { \r\n    font-weight: 500;\r\n}"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "fields_2",
+          "elementLabel" : "Fields 2",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "requested_delivery_date",
+              "elementLabel" : "Requested Delivery Date",
+              "propertyValues" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "text"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Requesting Delivery Date",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "mm/dd/yyyy",
+                    "comment" : ""
+                  }
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "value" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({ api }) {\n  const gfDate =\n    api.data.sales_order_glide_form.nowRecordFormBlob.formFieldValues\n      .requested_delivery_date.value;\n  const val = gfDate ? new Date(gfDate).toLocaleDateString() : null;\n  return val;\n}"
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "min" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "max" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "minlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "maxlength" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiple" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "pattern" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "(0?[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d"
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgoaawyaaaaeejjddaiijjggaaayueeiz",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_input.NOW_INPUT#VALUE_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_input.NOW_INPUT#VALUE_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgoaawyaaaaeeaddaiijjfzrccmbof",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "fob",
+              "elementLabel" : "FOB",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "FOB",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "function evaluateProperty({ api }) {\n  // Get choice list\n  const fields =\n    api.data.sales_order_glide_form.nowRecordFormBlob.fieldElements;\n  const fieldName = \"fob\";\n\n  const targetField = fields.filter((field) =&gt; {\n    return field.name === fieldName;\n  });\n\n  const choices = targetField[0].choices;\n  const returnList = [];\n\n  choices.forEach((el) =&gt; {\n    const obj = {};\n    obj.id = el.value;\n    obj.label = el.displayValue;\n    obj.value = el.value;\n    returnList.push(obj);\n  });\n\n  return returnList;\n}"
+                  }
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "contains"
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "fob", "value" ]
+                  }
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgobufaaaaeebddaiijjzlkxnecv",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgobufaaaaeecddaiijjobeaaddjhhff",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "8592cf18d86865b5e96975a1294ed7a4",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "freight_terms",
+              "elementLabel" : "Freight Terms",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Freight Terms",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "2.0.0",
+                    "inlineScript" : "function evaluateProperty({ api }) {\n  // Get choice list\n  const fieldName = \"freight_terms\";\n  const fields =\n    api.data.sales_order_glide_form.nowRecordFormBlob.fieldElements;\n\n  const targetField = fields.filter((field) =&gt; {\n    return field.name === fieldName;\n  });\n\n  const choices = targetField[0].choices;\n  const returnList = [];\n\n  choices.forEach((el) =&gt; {\n    const obj = {};\n    obj.id = el.value;\n    obj.label = el.displayValue;\n    obj.value = el.value;\n    returnList.push(obj);\n  });\n\n  return returnList;\n}"
+                  }
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "none"
+                },
+                "invalid" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "freight_terms", "value" ]
+                  }
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkgokliiaaaaeedddaiijjddecmevffu",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgokliiaaaaeeeddaiijjynvewcccm",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "8592cf18d86865b5e96975a1294ed7a4",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "billing_address",
+              "elementLabel" : "Billing Address",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Billing Address",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  console.log('setting items in typeahead...');\n  \n\tconst data = api.data.look_up_address.results;\n  return data.map(e =&gt; ({\n    id: e.sys_id.value,\n    label: e.display_name.value,\n    sublabel: e.street_1.value +' ' + e.city.value + ' ' + e.state.value\n  }));\n}"
+                  }
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "billing_address", "displayValue" ]
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "managed"
+                },
+                "invalid" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "billingAddrIsInvalid" ]
+                  }
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktjdeebbuccaaaajjggddahhynhhbwffcobb",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_typeahead.NOW_TYPEAHEAD#SELECTED_ITEM_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_typeahead.NOW_TYPEAHEAD#SELECTED_ITEM_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                    "payload" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "propName" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "billingAddressValue"
+                        },
+                        "value" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "value" ]
+                          }
+                        }
+                      }
+                    },
+                    "sysId" : "32408b42ff7a10109046e490703bf176"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktjdeebbuccaaaajjhhddahhyhhnwnfnwj",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkgozflaaaaeefddaiijjfccrssbbbx",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              }, {
+                "eventMappingId" : "cktjbeexclaaaaaalddahhyelddywffsdd",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_typeahead.NOW_TYPEAHEAD#VALUE_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_typeahead.NOW_TYPEAHEAD#VALUE_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "aeccda0e07a2301029a8f0269c1ed0c6"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktjbeexclaaaaaamddahhychjjbttgs",
+                  "type" : "CLIENT_SCRIPT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktjbffffbccaaaaaanddahhyczwprvqh",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "095242e0cab6bcbaa95ff93cf7c4f952",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "shipping_address",
+              "elementLabel" : "Shipping Address",
+              "propertyValues" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Shipping Address",
+                    "comment" : ""
+                  }
+                },
+                "placeholder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "items" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  console.log('setting items in typeahead...');\n  \n\tconst data = api.data.look_up_address.results;\n  return data.map(e =&gt; ({\n    id: e.sys_id.value,\n    label: e.display_name.value,\n    sublabel: e.street_1.value +' ' + e.city.value + ' ' + e.state.value\n  }));\n}"
+                  }
+                },
+                "value" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "sales_order_glide_form", "nowRecordFormBlob", "formFieldValues", "shipping_address", "displayValue" ]
+                  }
+                },
+                "readonly" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "optional" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRequiredIndicator" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "helperContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "search" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "managed"
+                },
+                "invalid" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "shippingAddrIsInvalid" ]
+                  }
+                },
+                "autofocus" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "selectedItem" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "name" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "messages" : {
+                  "type" : "LIST_CONTAINER",
+                  "container" : [ ]
+                },
+                "itemsListConstrain" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktjdiijjyjaaaajjpddahhycqagulffe",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_typeahead.NOW_TYPEAHEAD#SELECTED_ITEM_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_typeahead.NOW_TYPEAHEAD#SELECTED_ITEM_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                    "payload" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "propName" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "shippingAddressValue"
+                        },
+                        "value" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "value" ]
+                          }
+                        }
+                      }
+                    },
+                    "sysId" : "32408b42ff7a10109046e490703bf176"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktjdiijjyjaaaajjqddahhynhuhnmccx",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "fcdf629a0722301029a8f0269c1ed08a"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktjdiibnaaaaajjsddahhynnwjjjtiin",
+                  "type" : "CLIENT_SCRIPT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktjdatuhaaaaaggddahhyaccerhsru",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkgpapiiaaaaeegddaiijjmojgxcaae",
+                  "type" : "EVENT"
+                } ]
+              }, {
+                "eventMappingId" : "cktjdhhbduaaaajjlddahhytccqvhhjjfr",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_typeahead.NOW_TYPEAHEAD#VALUE_SET",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_typeahead.NOW_TYPEAHEAD#VALUE_SET",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "aeccda0e07a2301029a8f0269c1ed0c6"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktjdhhbduaaaajjmddahhyjffffrnnaii",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "095242e0cab6bcbaa95ff93cf7c4f952",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "button_bare_1",
+              "elementLabel" : "Button bare 1",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Manage addresses",
+                    "comment" : ""
+                  }
+                },
+                "iconStart" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "iconEnd" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "open-link-right-outline"
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePadding" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "highContrast" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktjdlfxuaaaabiiddahhybvoccfhhgh",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "items" : [ {
+                          "type" : "info",
+                          "message" : "This will be coming soon..."
+                        } ]
+                      }
+                    },
+                    "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktjdlfxuaaaabjjddahhyeeccaxfmbd",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "67d8bc45906c355a3100c0782f45487b",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "align-self" : "center"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "btn_container_2",
+          "elementLabel" : "Btn Container 2",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "button_4",
+              "elementLabel" : "Button 4",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Continue",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Enter a label",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkjyffxhaaaaeenddahhyeewgppho",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "8f7dfad20762301029a8f0269c1ed006"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "cktkjyffxhaaaaeeoddahhyvykufobjj",
+                  "type" : "CLIENT_SCRIPT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : null,
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : null
+                  },
+                  "operation" : null,
+                  "targetId" : "cktnfidddccaaaaiijddahhyozffospjp",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin" : "0 .5rem"
+              }
+            }, {
+              "elementId" : "button_bare_2",
+              "elementLabel" : "Button bare 2",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Cancel",
+                    "comment" : ""
+                  }
+                },
+                "iconStart" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "iconEnd" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePadding" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "highContrast" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "cktkjyrhhjaaaaeepddahhyvmbbccepaaq",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : {
+                        "items" : [ {
+                          "type" : "info",
+                          "message" : "This will be coming soon..."
+                        } ]
+                      }
+                    },
+                    "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
+                  },
+                  "operation" : null,
+                  "targetId" : "cktkjyrhhjaaaaeeqddahhynwafpdad",
+                  "type" : "EVENT"
+                } ]
+              } ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "67d8bc45906c355a3100c0782f45487b",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin" : "0 .5rem"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"center"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "1.0.0",
+          "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn api.state.step !== 1;\n}"
+        }
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "log_btn",
+  "elementLabel" : "Log Btn",
+  "propertyValues" : {
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "secondary"
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "message" : "Logger",
+        "comment" : ""
+      }
+    },
+    "icon" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "disabled" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "tooltipContent" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "message" : "Enter a label",
+        "comment" : ""
+      }
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "cktjhhpntuaaaacgddaiijjbnoibmaajj",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "a7fc39860762301029a8f0269c1ed002"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cktjhhpntuaaaachddaiijjduphiiihhj",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "cktkhjccliaaaaaanddahhydaiipaccsz",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "cktkilqhhvaaaabbccddahhyqpftqddhhp",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d37ce8abca89d02905fed903c8e34d8e",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "position" : "fixed",
+    "bottom" : "5rem",
+    "align-self" : "center"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "dc6e87a5232200100e4bc50947bf654b",
+    "type" : "CLIENT_STATE"
+  },
+  "elementId" : "sales_order_glide_form",
+  "elementLabel" : "Sales Order Glide Form",
+  "eventMappings" : [ {
+    "eventMappingId" : "cktosdgggggaaaabrddaiijjbyewsibaa",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_683715_big_oil_2.SALESORDER_GF_LOADED",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : "50171ad30762301029a8f0269c1ed0bd"
+      },
+      "operation" : null,
+      "targetId" : "cktosdgggggaaaabsddaiijjffmncjjthh",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "bc16e14f0722301029a8f0269c1ed081"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cktoveeiijiaaaaeejddahhyszqeeqddqo",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "cktngyuhhjjaaaaefddahhyzccoddsall",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#REMOVE_NOTIFICATIONS",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#REMOVE_NOTIFICATIONS",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#REMOVE_NOTIFICATIONS",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "items" : {
+              "type" : "EVENT_PAYLOAD_BINDING",
+              "binding" : {
+                "address" : [ "items" ]
+              }
+            }
+          }
+        },
+        "sysId" : "1ec283e2d558a88b2ffcb09147b04e70"
+      },
+      "operation" : null,
+      "targetId" : "cktngyuhhjjaaaaegddahhykdddsggykn",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "cktnfdciuaaaahhffddahhylphlqiik",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#ADD_NOTIFICATIONS",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#ADD_NOTIFICATIONS",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "items" : {
+              "type" : "EVENT_PAYLOAD_BINDING",
+              "binding" : {
+                "address" : [ "items" ]
+              }
+            }
+          }
+        },
+        "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
+      },
+      "operation" : null,
+      "targetId" : "cktnfdciuaaaahhggddahhypvhkltvz",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "cktjffffjjujaaaaccuddaiijjffwtjggmjj",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "1411064a0762301029a8f0269c1ed0b0"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cktjffffjjujaaaaccvddaiijjbbjkddggtwf",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "cktozffnjsaaaafffddahhyfvhggxghc",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_683715_big_oil_2_sales_order"
+    },
+    "sysId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sOrder" ],
+        "category" : "props"
+      }
+    },
+    "actionConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "actionConfigId" ],
+        "category" : "app"
+      }
+    },
+    "headerConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "headerConfigId" ],
+        "category" : "app"
+      }
+    },
+    "ribbonConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "ribbonConfigId" ],
+        "category" : "app"
+      }
+    },
+    "viewRuleConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "viewRuleConfigId" ],
+        "category" : "app"
+      }
+    },
+    "highlightedValueConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "highlightConfigId" ],
+        "category" : "app"
+      }
+    },
+    "view" : {
+      "type" : "JSON_LITERAL",
+      "value" : "default view"
+    },
+    "forcedViewName" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "query" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "showActivityStreamInDetails" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "detailsContext" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "activityLogs" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "6b784afc07a2301029a8f0269c1ed070",
+    "type" : "GRAPHQL"
+  },
+  "elementId" : "get_user_profile_from_user_id_1",
+  "elementLabel" : "Get User Profile from User ID 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cktjcreikaaaaggzddahhyddshhggffpqhh",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_683715_big_oil_2.UPDATE_USERPROFILEDATA_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : "9aa876420726301029a8f0269c1ed04f"
+      },
+      "operation" : null,
+      "targetId" : "cktjcreikaaaahhaaddahhyatbbhoccghh",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "cktjcsnggmaaaahheeddahhyrhhrhffbuu",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "inputValues" : {
+    "userid" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "user", "sys_id" ],
+        "category" : "session"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "look_up_address",
+  "elementLabel" : "Look Up Address",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_683715_big_oil_2_addresses"
+    },
+    "encodedQuery" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "addressQuery" ]
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "display_name,street_1,street_2,city,state,zip_code,sys_id"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : "display_name"
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "10"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+} ]</data>
+        <dispatched_events>2033452907e2701029a8f0269c1ed0bf</dispatched_events>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events>50171ad30762301029a8f0269c1ed0bd,8bb1a31e07a2301029a8f0269c1ed0d8,9aa876420726301029a8f0269c1ed04f</handled_events>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+  "MACROPONENT_PROPERTY_CHANGED" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cktozccpbxaaaaeepddahhybffnhmwddr",
+    "type" : "EVENT"
+  } ],
+  "x_683715_big_oil_2.SALESORDER_GF_LOADED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "3c6d52930762301029a8f0269c1ed003"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktoscqggdaaaaboddaiijjffmfiiiiydx",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "494b7adb07a2301029a8f0269c1ed080"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktoufccbbgaaaajeddaiijjhhfcccxtcz",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cktpaawnhqaaaadiddahhyzvaggdjjwhh",
+    "type" : "EVENT"
+  } ],
+  "x_683715_big_oil_2.ERRALERT" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cktnfhhhryaaaaffmddahhyuhixsiiccq",
+    "type" : "EVENT"
+  } ],
+  "x_683715_big_oil_2.UPDATE_STEP" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "3ce3e79e07a2301029a8f0269c1ed05b"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktknieeeeaaaaaeetddahhyzuiiiodeeq",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "x_683715_big_oil_2.UPDATE_USERPROFILEDATA_STATE" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "94a772020726301029a8f0269c1ed07f"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktjcqfriaaaaggwddahhysjtggyybp",
+    "type" : "CLIENT_SCRIPT"
+  } ]
+}</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Sales Order</name>
+        <props>[ {
+  "name" : "stepidx",
+  "label" : "stepidx",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+}, {
+  "name" : "sOrder",
+  "label" : "sOrder",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+}, {
+  "name" : "contract",
+  "label" : "contract",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false
+} ]</props>
+        <required_translations>[{"message":"No","comment":""},{"message":"Freight Terms","comment":""},{"message":"Contract No.","comment":""},{"message":"Status","comment":""},{"message":"Please enter your contract number here and press submit when finished.","comment":""},{"message":"Payment Terms","comment":""},{"message":"Manage addresses","comment":""},{"message":"Submit","comment":""},{"message":"Shipping details","comment":""},{"message":"Created","comment":""},{"message":"Company","comment":""},{"message":"Cancel","comment":""},{"message":"Yes","comment":""},{"message":"Purchase Order","comment":""},{"message":"Contract Number:","comment":""},{"message":"Shipping Address","comment":""},{"message":"Continue","comment":""},{"message":"Start from scratch","comment":""},{"message":"Requesting Delivery Date","comment":""},{"message":"Feature coming soon","comment":""},{"message":"Logger","comment":""},{"message":"Will this order be on contract?","comment":""},{"message":"Number","comment":""},{"message":"Billing Address","comment":""},{"message":"Purchaser","comment":""},{"message":"FOB","comment":""},{"message":"Enter a label","comment":""},{"message":"Order details","comment":""},{"message":"mm/dd/yyyy","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "contractInputHidden",
+  "label" : "contractInputHidden",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "contractInputValue",
+  "label" : "contractInputValue",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "stepperDetails",
+  "label" : "stepperDetails",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ {
+      "id" : 0,
+      "label" : "Start",
+      "progress" : "partial",
+      "disabled" : false
+    }, {
+      "id" : 1,
+      "label" : "Configure Order",
+      "progress" : "partail",
+      "disabled" : true
+    }, {
+      "id" : 2,
+      "label" : "Add Items",
+      "progress" : "partial",
+      "disabled" : true
+    }, {
+      "id" : 3,
+      "label" : "Confirm",
+      "progress" : "partial",
+      "disabled" : true
+    }, {
+      "id" : 4,
+      "label" : "Submit",
+      "progress" : "partial",
+      "disabled" : true
+    } ]
+  }
+}, {
+  "name" : "step",
+  "label" : "step",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  }
+}, {
+  "name" : "UID",
+  "label" : "UID",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "CONTEXT_BINDING",
+    "binding" : {
+      "address" : [ "user", "sys_id" ],
+      "category" : "session"
+    }
+  }
+}, {
+  "name" : "fieldElements",
+  "label" : "fieldElements",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : { }
+  }
+}, {
+  "name" : "addressQuery",
+  "label" : "addressQuery",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "billingAddressValue",
+  "label" : "billingAddressValue",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "shippingAddressValue",
+  "label" : "shippingAddressValue",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "userProfileData",
+  "label" : "userProfileData",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : { }
+  }
+}, {
+  "name" : "submitData",
+  "label" : "submitData",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "purchase_order" : null,
+      "contract" : null,
+      "payment_terms" : null,
+      "auth_purchaser" : null,
+      "customer" : null,
+      "status" : null,
+      "requested_delivery_date" : null,
+      "fob" : null,
+      "freight_terms" : null,
+      "billing_address" : null,
+      "shipping_address" : null
+    }
+  }
+}, {
+  "name" : "shippingAddrIsInvalid",
+  "label" : "shippingAddrIsInvalid",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "billingAddrIsInvalid",
+  "label" : "billingAddrIsInvalid",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "newSalesOrderSysId",
+  "label" : "newSalesOrderSysId",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-12 01:43:24</sys_created_on>
+        <sys_id>3b23b46d07a2701029a8f0269c1ed05c</sys_id>
+        <sys_mod_count>178</sys_mod_count>
+        <sys_name>Sales Order</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_macroponent_3b23b46d07a2701029a8f0269c1ed05c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-18 00:00:20</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

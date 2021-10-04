@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="User Profile" max_length="40" name="x_683715_big_oil_2_user_profile" sizeclass="2" type="collection">
+        <element label="Authorized Purchaser" max_length="40" name="authorized_purchaser" type="boolean"/>
+        <element label="Your Department" mandatory="true" max_length="40" name="department" type="string"/>
+        <element label="Company" max_length="32" name="external_company" reference="x_683715_big_oil_2_companies" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Your Title" mandatory="true" max_length="40" name="title" type="string"/>
+        <element choice="3" default="internal" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Internal" sequence="0" value="internal"/>
+                <element inactive_on_update="false" label="External" sequence="1" value="external"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element display="true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

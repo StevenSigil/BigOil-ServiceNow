@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="New Profile">f00580a40722301029a8f0269c1ed054</macroponent>
+        <name>set_type_field_and_save</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  var fields = api.data.glide_form_2.nowRecordFormBlob.fields;
+
+  var tempDisplayField = fields.u_choice_1.value;
+  var resVal = "";
+
+  // Sets the Type field value for the table to the value of "Ary you an employee" field.
+  if (tempDisplayField === "yes") {
+    resVal = "internal";
+  }
+  if (tempDisplayField == "no") {
+    resVal = "external";
+  }
+
+  fields.type = {
+    name: "type",
+    value: resVal,
+  };
+
+  // Submit the data and create the record
+  // api.data.create_profile_record
+  //   .execute({
+  //     table: api.data.glide_form_2.nowRecordFormBlob.table,
+  //     templateFields: fields,
+  //     useSetDisplayValue: false,
+  //   });
+
+  console.log(api.data.glide_form_2.nowRecordFormBlob);
+
+  // api.data.glide_form_2.setValue({
+  //   displayValue: tempDisplayField.displayValue,
+  //   fieldName: "type",
+  //   value: resVal,
+  // });
+
+  // // Save Form
+  // api.data.glide_form_2.save();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 20:55:06</sys_created_on>
+        <sys_id>636490240762301029a8f0269c1ed092</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>set_type_field_and_save</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_636490240762301029a8f0269c1ed092</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 21:53:49</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_636490240762301029a8f0269c1ed092</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="New Profile"&gt;f00580a40722301029a8f0269c1ed054&lt;/macroponent&gt;&lt;name&gt;set_type_field_and_save&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  var fields = api.data.glide_form_2.nowRecordFormBlob.fields;
+
+  var tempDisplayField = fields.u_choice_1.value;
+  var resVal = "";
+
+  // Sets the Type field value for the table to the value of "Ary you an employee" field.
+  if (tempDisplayField === "yes") {
+    resVal = "internal";
+  }
+  if (tempDisplayField == "no") {
+    resVal = "external";
+  }
+
+  fields.type = {
+    name: "type",
+    value: resVal,
+  };
+
+  // Submit the data and create the record
+  // api.data.create_profile_record
+  //   .execute({
+  //     table: api.data.glide_form_2.nowRecordFormBlob.table,
+  //     templateFields: fields,
+  //     useSetDisplayValue: false,
+  //   });
+
+  console.log(api.data.glide_form_2.nowRecordFormBlob);
+
+  // api.data.glide_form_2.setValue({
+  //   displayValue: tempDisplayField.displayValue,
+  //   fieldName: "type",
+  //   value: resVal,
+  // });
+
+  // // Save Form
+  // api.data.glide_form_2.save();
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-08 20:55:06&lt;/sys_created_on&gt;&lt;sys_id&gt;636490240762301029a8f0269c1ed092&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;set_type_field_and_save&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_636490240762301029a8f0269c1ed092&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-08 21:53:49&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-773203869</payload_hash>
+        <record_name>set_type_field_and_save</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 21:53:49</sys_created_on>
+        <sys_id>bfd128ac0762301029a8f0269c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc76720b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 21:53:49</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>b7d128aca3623010115cb1ab20753674</update_guid>
+        <update_guid_history>b7d128aca3623010115cb1ab20753674:-773203869,b1c1e06c7562301016755001dc523b47:-1993684291,418124ac796230100e9fd048ffc0ea5b:1712345541,104160ace96230108bd0acfbf45c3cac:1508039465,5e90a86cee623010bbbbbc5f0d76522f:-1317804496,28efd4e83f623010a02ec2637398476e:-309040397,e9ded4e8c462301074e7a1e5bb5fbd84:-240030799,679c18a838623010485eee74e16b10a7:838832846,280cd0a8b3623010adef572815d28cd4:-964508241,524bd8681d623010148ac5916dddeb45:-486379575,7efa1c28e1623010ad36575d88481f39:625071091,747ad8e406623010ae9515ed1ab64d54:642718504,f0a914a40b62301040c02e8d8e5c3201:-1602890283,a7a49ce032623010dcbcb8af8f258fd8:-438718688,eb649024b5623010fbb753378a9a6995:-640713752</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 21:55:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>8ad13ab9e1b04d88b549e9e33502c590</sys_id>
+        <sys_metadata>636490240762301029a8f0269c1ed092</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>set_type_field_and_save</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_636490240762301029a8f0269c1ed092</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_636490240762301029a8f0269c1ed092">bfd128ac0762301029a8f0269c1ed074</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 21:55:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Auth request">e63e55b80762301029a8f0269c1ed010</macroponent>
+        <name>Execute Auth Record Creation</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  console.log("Attempting submission...");
+
+  const auth_name = api.state.auth_nameChoiceValue;
+  // role field set via business rule on insert
+  const status = "pending";
+  const req_user = api.state.userId;
+  const req_profile = api.state.profileSysId;
+  const addtlInfo = api.state.addtl_info_other_value;
+
+  const submitData = `auth_name=${auth_name}^status=${status}^requesting_user=${req_user}^requesting_user_profile=${req_profile}^additional_info=${addtlInfo}`;
+
+  try {
+    api.data.create_auth_record.execute({
+      table: "x_683715_big_oil_2_authorization_request",
+      templateFields: submitData,
+      useSetDisplayValue: false,
+    });
+    console.log("Submission was performed.");
+  } catch (err) {
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-11 19:08:43</sys_created_on>
+        <sys_id>e6d81b1d07ae301029a8f0269c1ed05d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Execute Auth Record Creation</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_e6d81b1d07ae301029a8f0269c1ed05d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-11 20:12:32</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

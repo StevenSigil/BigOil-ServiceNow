@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes>4552128607a2301029a8f0269c1ed057</includes>
+        <macroponent display_value="Sales Order">3b23b46d07a2701029a8f0269c1ed05c</macroponent>
+        <name>FieldElements Test 2</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const {getChoiceFields} = imports['x_683715_big_oil_2.Choice list default value from GlideForm']();
+    const vals = getChoiceFields(api.state.fieldElements, 'fob');
+
+    console.log(vals);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 22:02:54</sys_created_on>
+        <sys_id>19e3528607a2301029a8f0269c1ed018</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FieldElements Test 2</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_19e3528607a2301029a8f0269c1ed018</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 22:06:35</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_19e3528607a2301029a8f0269c1ed018</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes&gt;4552128607a2301029a8f0269c1ed057&lt;/includes&gt;&lt;macroponent display_value="Sales Order"&gt;3b23b46d07a2701029a8f0269c1ed05c&lt;/macroponent&gt;&lt;name&gt;FieldElements Test 2&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const {getChoiceFields} = imports['x_683715_big_oil_2.Choice list default value from GlideForm']();
+    const vals = getChoiceFields(api.state.fieldElements, 'fob');
+
+    console.log(vals);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-13 22:02:54&lt;/sys_created_on&gt;&lt;sys_id&gt;19e3528607a2301029a8f0269c1ed018&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;FieldElements Test 2&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_19e3528607a2301029a8f0269c1ed018&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-13 22:06:35&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-632326985</payload_hash>
+        <record_name>FieldElements Test 2</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 22:06:36</sys_created_on>
+        <sys_id>67b452c607a2301029a8f0269c1ed0e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17be1329e840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 22:06:36</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>6fb452c65ea230103d13e227d939dde4</update_guid>
+        <update_guid_history>6fb452c65ea230103d13e227d939dde4:-632326985,c044528678a23010561c62ea402c820a:226531735,ade352c6efa2301018b48eb22729acd2:2145738923</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 22:13:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>73c2dbaee5da4c01a277e33dfa28d909</sys_id>
+        <sys_metadata>19e3528607a2301029a8f0269c1ed018</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FieldElements Test 2</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_19e3528607a2301029a8f0269c1ed018</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_19e3528607a2301029a8f0269c1ed018">67b452c607a2301029a8f0269c1ed0e5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-13 22:13:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

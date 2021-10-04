@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Sales Order Items">b0a0fbd607e2301029a8f0269c1ed0bb</macroponent>
+        <name>setState for editLineItemDetail</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  // var line = api.state.editLineItemDetail;
+
+  const { sys_id, line_number, item, quantity_requested, uom } = api.data.look_up_line_item.result;
+  console.log('\nsetState for editLineItemDetail:\n', sys_id, line_number, item, quantity_requested, uom);
+
+  // line.sys_id = sys_id.value;
+  // line.line_number = line_number.value;
+  // line.item = item.value;
+  // line.quantity_requested = quantity_requested.value;
+  // line.uom = uom.value;
+
+  // api.setState("editLineItemDetail", line);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-19 01:41:33</sys_created_on>
+        <sys_id>34e5f83307e2701029a8f0269c1ed0e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>setState for editLineItemDetail</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_34e5f83307e2701029a8f0269c1ed0e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-19 02:01:50</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_34e5f83307e2701029a8f0269c1ed0e0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Sales Order Items"&gt;b0a0fbd607e2301029a8f0269c1ed0bb&lt;/macroponent&gt;&lt;name&gt;setState for editLineItemDetail&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  // var line = api.state.editLineItemDetail;
+
+  const { sys_id, line_number, item, quantity_requested, uom } = api.data.look_up_line_item.result;
+  console.log('\nsetState for editLineItemDetail:\n', sys_id, line_number, item, quantity_requested, uom);
+
+  // line.sys_id = sys_id.value;
+  // line.line_number = line_number.value;
+  // line.item = item.value;
+  // line.quantity_requested = quantity_requested.value;
+  // line.uom = uom.value;
+
+  // api.setState("editLineItemDetail", line);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-19 01:41:33&lt;/sys_created_on&gt;&lt;sys_id&gt;34e5f83307e2701029a8f0269c1ed0e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;setState for editLineItemDetail&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_34e5f83307e2701029a8f0269c1ed0e0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-19 02:01:50&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1636653019</payload_hash>
+        <record_name>setState for editLineItemDetail</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-19 02:01:50</sys_created_on>
+        <sys_id>8a8abc3707e2701029a8f0269c1ed02e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bfbc9c9b20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-19 02:01:50</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>828abc3706e270100a640a32127e772e</update_guid>
+        <update_guid_history>828abc3706e270100a640a32127e772e:-1636653019,5ed6b4734fe2701075f2fedaf7a82552:717430658,f77630b3e9e27010ac0ab4b856b01f5a:631159447,c646f4733ae27010cf00207d3587bf54:-1921759632,81e57873abe2701024308e550bacee1b:1822444184</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-19 02:08:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>00fbb71e25074b1da7f33584e8a7c269</sys_id>
+        <sys_metadata>34e5f83307e2701029a8f0269c1ed0e0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>setState for editLineItemDetail</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_34e5f83307e2701029a8f0269c1ed0e0</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_34e5f83307e2701029a8f0269c1ed0e0">8a8abc3707e2701029a8f0269c1ed02e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-19 02:08:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

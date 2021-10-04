@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_683715_big_oil_2.Get user_profile from sys_user.sys_id</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get user_profile from sys_user.sys_id</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "userSysId": "userSysId",&#13;
+    "label": "User sysId",&#13;
+    "description": "",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <required_translations>[{"message":"User sysId","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+  var userSysId = input.userSysId;
+  var gr = new GlideRecord("x_683715_big_oil_2_user_profile");
+  var results = [];
+
+  gr.addQuery("requesting_user", "=", userSysId);
+  gr.query(response);
+
+  function response(result) {
+    while (result.next()) {
+      results.push(result.getValue("sysId"));
+    }
+  }
+  return results;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 21:40:24</sys_created_on>
+        <sys_id>d5d6edbc0762301029a8f0269c1ed094</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get user_profile from sys_user.sys_id</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_d5d6edbc0762301029a8f0269c1ed094</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 22:12:17</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=d5d6edbc0762301029a8f0269c1ed094"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_data_broker_transform_d5d6edbc0762301029a8f0269c1ed094</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_683715_big_oil_2.Get user_profile from sys_user.sys_id&lt;/api_name&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Get user_profile from sys_user.sys_id&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+  {&amp;#13;
+    "userSysId": "userSysId",&amp;#13;
+    "label": "User sysId",&amp;#13;
+    "description": "",&amp;#13;
+    "readOnly": false,&amp;#13;
+    "fieldType": "string",&amp;#13;
+    "mandatory": true,&amp;#13;
+    "defaultValue": ""&amp;#13;
+  }&amp;#13;
+]&lt;/props&gt;&lt;required_translations&gt;[{"message":"User sysId","comment":""}]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+  var userSysId = input.userSysId;
+  var gr = new GlideRecord("x_683715_big_oil_2_user_profile");
+  var results = [];
+
+  gr.addQuery("requesting_user", "=", userSysId);
+  gr.query(response);
+
+  function response(result) {
+    while (result.next()) {
+      results.push(result.getValue("sysId"));
+    }
+  }
+  return results;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-09 21:40:24&lt;/sys_created_on&gt;&lt;sys_id&gt;d5d6edbc0762301029a8f0269c1ed094&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get user_profile from sys_user.sys_id&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_d5d6edbc0762301029a8f0269c1ed094&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-09 22:12:17&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d5d6edbc0762301029a8f0269c1ed094"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1998788366</payload_hash>
+        <record_name>Get user_profile from sys_user.sys_id</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 22:12:18</sys_created_on>
+        <sys_id>f7afe5f407a2301029a8f0269c1ed052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bcc9e65ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 22:12:18</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>33afe5f41ea23010141af608c1245352</update_guid>
+        <update_guid_history>33afe5f41ea23010141af608c1245352:-1998788366,69ce6db488a230103be658edd0de22ed:-781750720,574e29b44ea230102addabfad897c326:4022866,642da17428a2301008f26e53bef95a04:-257179962,4a5c25343ca2301045fd1ef1b4c3f1db:80642831,685be9f085a23010c1ffabfbf78b099d:-350823794,ada96db029a23010d94511cb635ec211:-883491435,b468ad7021a2301082a3072b702b28fb:1011809461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 22:14:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>380a97ed7beb47c2bb9aeaa02cc6c184</sys_id>
+        <sys_metadata>d5d6edbc0762301029a8f0269c1ed094</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get user_profile from sys_user.sys_id</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_d5d6edbc0762301029a8f0269c1ed094</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_d5d6edbc0762301029a8f0269c1ed094">f7afe5f407a2301029a8f0269c1ed052</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 22:14:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

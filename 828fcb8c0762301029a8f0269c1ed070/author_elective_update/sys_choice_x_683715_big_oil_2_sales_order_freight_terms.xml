@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="freight_terms" table="x_683715_big_oil_2_sales_order" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>freight_terms</element>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:06</sys_created_on>
+            <sys_id>8d04a38c07a2301029a8f0269c1ed016</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>freight_terms</sys_name>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_choice_x_683715_big_oil_2_sales_order_freight_terms</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:06</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>freight_terms</element>
+            <hint>The vendor pays the freight bill for the shipment it is moving for its customer, then charges its customer after delivery.</hint>
+            <inactive>false</inactive>
+            <label>Pre-paid &amp; added</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4904638c07a2301029a8f0269c1ed0cb</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-12 01:36:25</sys_updated_on>
+            <value>pre_paid_added</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>freight_terms</element>
+            <hint>The vendor shall include the cost of freight in the unit price.</hint>
+            <inactive>false</inactive>
+            <label>Pre-paid &amp; allowed</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4904638c07a2301029a8f0269c1ed0d3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-12 01:36:09</sys_updated_on>
+            <value>pre_paid_allowed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>freight_terms</element>
+            <hint>The customer is responsible for the freight charges and additional.</hint>
+            <inactive>false</inactive>
+            <label>Freight collected</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd04a38c07a2301029a8f0269c1ed019</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-12 01:39:36</sys_updated_on>
+            <value>freight_collected</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>freight_terms</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not applicable</label>
+            <language>en</language>
+            <name>x_683715_big_oil_2_sales_order</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-07 22:45:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c504638c07a2301029a8f0269c1ed0d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-07 22:45:06</sys_updated_on>
+            <value>not_applicable</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

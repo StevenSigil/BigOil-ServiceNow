@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Authorization Requests">d4bcb4b00722301029a8f0269c1ed0ca</category>
+        <columns>auth_name,status,sys_updated_on,requesting_user_profile,approval_task,additional_info</columns>
+        <condition table="x_683715_big_oil_2_authorization_request">requesting_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="requesting_user" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <configuration display_value="Big Oil 2 List Menu">6d9c34b00722301029a8f0269c1ed0f9</configuration>
+        <groups/>
+        <list_attributes/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 18:33:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16ccf4b00722301029a8f0269c1ed0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Authorization Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_list_16ccf4b00722301029a8f0269c1ed0d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 18:33:18</sys_updated_on>
+        <table>x_683715_big_oil_2_authorization_request</table>
+        <title>My Authorization Requests</title>
+    </sys_ux_list>
+</record_update>

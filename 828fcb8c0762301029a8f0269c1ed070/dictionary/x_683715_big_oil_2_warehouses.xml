@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_683715_big_oil_2_addresses" label="Warehouses" max_length="40" name="x_683715_big_oil_2_warehouses" sizeclass="0" type="collection">
+        <element label="Driver instructions - Delivery" max_length="150" name="driver_instructions_delivery" type="string"/>
+        <element label="Driver instructions - Shipping" max_length="150" name="driver_instructions_shipping" type="string"/>
+        <element label="External Name" max_length="40" name="external_name" type="string"/>
+        <element label="Internal Name" max_length="40" name="internal_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Warehouse ID" max_length="15" name="warehouse_id" type="string"/>
+    </element>
+</database>

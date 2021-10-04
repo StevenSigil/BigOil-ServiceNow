@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Tasks" max_length="40" name="x_683715_big_oil_2_tasks" sizeclass="2" type="collection">
+        <element label="Group Assigned" max_length="32" name="group_assigned" reference="sys_user_group" reference_qual="nameLIKEBig Oil 2^EQ" reference_qual_condition="nameLIKEBig Oil 2^EQ" type="reference"/>
+        <element label="Reference Record" max_length="32" name="reference_record" type="string"/>
+    </element>
+</database>
