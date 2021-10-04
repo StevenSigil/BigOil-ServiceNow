@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script_include">
+    <sys_ux_client_script_include action="DELETE">
+        <access>package_private</access>
+        <api_name>x_683715_big_oil_2.Reload Location</api_name>
+        <includes/>
+        <name>Reload Location</name>
+        <required_translations/>
+        <script><![CDATA[function include() {
+  return {
+    reloadWindow: function () {
+        top.window.location.reload()
+    },
+  };
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 23:13:31</sys_created_on>
+        <sys_id>a71a2a2207f2701029a8f0269c1ed0ae</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Reload Location</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_include_a71a2a2207f2701029a8f0269c1ed0ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 23:29:49</sys_updated_on>
+    </sys_ux_client_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_include_a71a2a2207f2701029a8f0269c1ed0ae</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script_include"&gt;&lt;sys_ux_client_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;api_name&gt;x_683715_big_oil_2.Reload Location&lt;/api_name&gt;&lt;includes/&gt;&lt;name&gt;Reload Location&lt;/name&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[function include() {
+  return {
+    reloadWindow: function () {
+        top.window.location.reload()
+    },
+  };
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-27 23:13:31&lt;/sys_created_on&gt;&lt;sys_id&gt;a71a2a2207f2701029a8f0269c1ed0ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Reload Location&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_include_a71a2a2207f2701029a8f0269c1ed0ae&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-27 23:29:49&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1504045767</payload_hash>
+        <record_name>Reload Location</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 23:29:49</sys_created_on>
+        <sys_id>cb0e26e207f2701029a8f0269c1ed00b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c2997d7b10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 23:29:49</sys_updated_on>
+        <type>UX Client Script Include</type>
+        <update_guid>c30e26e23af2701001f5617697d4ed0b</update_guid>
+        <update_guid_history>c30e26e23af2701001f5617697d4ed0b:-1504045767,03cda2a2b1f2701063171fb8d75631de:1010822749,d7adeaa22cf270106394968a3ab9397c:7344648,fcece6a20df2701067a342bec23113f2:1887935980,46dbeaea6db27010d3efac5bc03f3255:-2106402851,145aea22c0f27010717b852a8b21642b:1173884304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 23:34:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script_include">sys_ux_client_script_include</sys_db_object>
+        <sys_id>0f0f95c498fb48f68757b975424cac04</sys_id>
+        <sys_metadata>a71a2a2207f2701029a8f0269c1ed0ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reload Location</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_include_a71a2a2207f2701029a8f0269c1ed0ae</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_include_a71a2a2207f2701029a8f0269c1ed0ae">cb0e26e207f2701029a8f0269c1ed00b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 23:34:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -15,81 +15,8 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "list_menu_1",
-      "elementLabel" : "List menu 1",
-      "propertyValues" : {
-        "configurationId" : {
-          "type" : "JSON_LITERAL",
-          "value" : "6d9c34b00722301029a8f0269c1ed0f9"
-        },
-        "listId" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "listMenuCrud" : {
-          "type" : "JSON_LITERAL",
-          "value" : { }
-        },
-        "listMenuOpen" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "hideListCreation" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "tiny" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "selectedListId" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "targetTable" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "table" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "title" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "conditions" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "columns" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "error" : {
-          "type" : "JSON_LITERAL",
-          "value" : { }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : "Main",
-      "definition" : {
-        "id" : "d5119191a4d27b765b12d0b563e00ee6",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : ""
-      },
-      "isNonDestructive" : false,
-      "styles" : {
-        "max-width" : "30%",
-        "height" : "100%"
-      }
-    }, {
-      "elementId" : "container_2",
-      "elementLabel" : "Container 2",
+      "elementId" : "left_container",
+      "elementLabel" : "Left Container",
       "propertyValues" : { },
       "eventMappings" : [ ],
       "slot" : "Main",
@@ -99,8 +26,194 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "container_3",
-          "elementLabel" : "Container 3",
+          "elementId" : "list_menu_1",
+          "elementLabel" : "List menu 1",
+          "propertyValues" : {
+            "configurationId" : {
+              "type" : "JSON_LITERAL",
+              "value" : "6d9c34b00722301029a8f0269c1ed0f9"
+            },
+            "listId" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "currList" ]
+              }
+            },
+            "listMenuCrud" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            },
+            "listMenuOpen" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "hideListCreation" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tiny" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "selectedListId" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "targetTable" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "table" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "conditions" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "columns" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "error" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cktwbbdwpzaaaacggddahhyppjzpwbbe",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_rec_list_menu_c.NOW_RECORD_LIST_MENU_CONNECTED#ITEM_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_rec_list_menu_c.NOW_RECORD_LIST_MENU_CONNECTED#ITEM_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "propName" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "currList"
+                    },
+                    "value" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "selectedListId" ]
+                      }
+                    }
+                  }
+                },
+                "sysId" : "32408b42ff7a10109046e490703bf176"
+              },
+              "operation" : null,
+              "targetId" : "cktwbbdwpzaaaachhddahhyqbbohhrxlcc",
+              "type" : "EVENT"
+            } ]
+          }, {
+            "eventMappingId" : "cktwbbchuyaaaabsddahhyggrxpffikq",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_rec_list_menu_c.NOW_RECORD_LIST_MENU_CONNECTED#SELECTED_ITEM_UPDATED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_rec_list_menu_c.NOW_RECORD_LIST_MENU_CONNECTED#SELECTED_ITEM_UPDATED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "propName" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "currList"
+                    },
+                    "value" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "selectedListId" ]
+                      }
+                    }
+                  }
+                },
+                "sysId" : "32408b42ff7a10109046e490703bf176"
+              },
+              "operation" : null,
+              "targetId" : "cktwbbchuyaaaabtddahhyggkjlskbbb",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d5119191a4d27b765b12d0b563e00ee6",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "height" : "100%",
+            "width" : "fit-content"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","min-width":"fit-content"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "auto",
+        "min-width" : "fit-content",
+        "height" : "100%",
+        "z-index" : "9"
+      }
+    }, {
+      "elementId" : "right_container",
+      "elementLabel" : "Right Container",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "heading_container",
+          "elementLabel" : "Heading Container",
           "propertyValues" : { },
           "eventMappings" : [ ],
           "slot" : "Main",
@@ -125,7 +238,7 @@
                 },
                 "css" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "* {\r\n    font-weight: 500;\r\n }"
+                  "value" : "* {\r\n    font-weight: 500;\r\n    margin: 0;\r\n }"
                 }
               },
               "eventMappings" : [ ],
@@ -140,103 +253,128 @@
                 "value" : ""
               },
               "isNonDestructive" : false,
-              "styles" : { }
+              "styles" : {
+                "flex" : "2"
+              }
             }, {
-              "elementId" : "button_1",
-              "elementLabel" : "Button 1",
-              "propertyValues" : {
-                "variant" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "primary"
-                },
-                "size" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "md"
-                },
-                "label" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "message" : "New",
-                    "comment" : ""
-                  }
-                },
-                "icon" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : null
-                },
-                "disabled" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : false
-                },
-                "tooltipContent" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "message" : "Enter a label",
-                    "comment" : ""
-                  }
-                },
-                "configAria" : {
-                  "type" : "MAP_CONTAINER",
-                  "container" : { }
-                }
-              },
-              "eventMappings" : [ {
-                "eventMappingId" : "cktghoddvddaaaaaavddahhyaaggadrveen",
-                "isConfiguration" : false,
-                "offRowStorageId" : null,
-                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-                "sourceEventDefinition" : {
-                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-                  "id" : null,
-                  "type" : "UXEVENT"
-                },
-                "sourceEventSysId" : null,
-                "targets" : [ {
-                  "broker" : null,
-                  "clientScript" : null,
-                  "declarativeAction" : null,
-                  "event" : {
-                    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_50c6d1740762301029a8f0269c1ed08c",
-                    "payload" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : {
-                        "route" : "auth-request",
-                        "fields" : null,
-                        "params" : null,
-                        "redirect" : null,
-                        "passiveNavigation" : null,
-                        "title" : null,
-                        "multiInstField" : null,
-                        "targetRoute" : null,
-                        "external" : null
-                      }
-                    },
-                    "sysId" : "f4e7e06107a2701029a8f0269c1ed0bf"
-                  },
-                  "operation" : null,
-                  "targetId" : "cktghoddveeaaaaaawddahhyaaifbbeeoi",
-                  "type" : "EVENT"
-                } ]
-              } ],
+              "elementId" : "btn_container",
+              "elementLabel" : "Btn Container",
+              "propertyValues" : { },
+              "eventMappings" : [ ],
               "slot" : "Main",
               "definition" : {
-                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "id" : "d356d14b6e293a3020a244b63d278d8f",
                 "type" : "MACROPONENT"
               },
-              "overrides" : null,
+              "overrides" : {
+                "composition" : [ {
+                  "elementId" : "button_1",
+                  "elementLabel" : "Button 1",
+                  "propertyValues" : {
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "primary"
+                    },
+                    "size" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "md"
+                    },
+                    "label" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "message" : "New",
+                        "comment" : ""
+                      }
+                    },
+                    "icon" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "disabled" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : false
+                    },
+                    "tooltipContent" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "message" : "Enter a label",
+                        "comment" : ""
+                      }
+                    },
+                    "configAria" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : { }
+                    }
+                  },
+                  "eventMappings" : [ {
+                    "eventMappingId" : "ckuddniicffhhaaaailddahhysuhfepiic",
+                    "isConfiguration" : false,
+                    "offRowStorageId" : null,
+                    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                    "sourceEventDefinition" : {
+                      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                      "id" : null,
+                      "type" : "UXEVENT"
+                    },
+                    "sourceEventSysId" : null,
+                    "targets" : [ {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : "x_683715_big_oil_2.NAVIGATE_FROM_LINK",
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : {
+                            "targetSysID" : "-1"
+                          }
+                        },
+                        "sysId" : "991b688107f2301029a8f0269c1ed008"
+                      },
+                      "operation" : null,
+                      "targetId" : "ckuddniicffhhaaaaimddahhydbiiwbgbbs",
+                      "type" : "EVENT"
+                    } ]
+                  } ],
+                  "slot" : "Main",
+                  "definition" : {
+                    "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ""
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : { }
+                } ],
+                "layout" : {
+                  "default" : {
+                    "children" : null,
+                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+                    "root" : null,
+                    "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                    "styles" : null,
+                    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                    "type" : "grid"
+                  }
+                }
+              },
               "isHidden" : {
                 "type" : "JSON_LITERAL",
                 "value" : ""
               },
               "isNonDestructive" : false,
               "styles" : {
-                "padding" : "0 1rem"
+                "width" : "100%",
+                "flex" : "1"
               }
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
-                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":".5rem 1rem 0","align-items":"center"}}],
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":".5rem 1rem 1rem","align-items":"center","justify-content":"space-between"}}],
                 "root" : null,
                 "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
                 "styles" : null,
@@ -299,7 +437,7 @@
             },
             "hideHighlightedValues" : {
               "type" : "JSON_LITERAL",
-              "value" : false
+              "value" : true
             },
             "hideHeader" : {
               "type" : "JSON_LITERAL",
@@ -474,7 +612,41 @@
               "value" : ""
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "cktwddsddqpaaaalnddahhyxaaczlkka",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_683715_big_oil_2.NAVIGATE_FROM_LINK",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "targetSysID" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "sys_id" ]
+                      }
+                    }
+                  }
+                },
+                "sysId" : "991b688107f2301029a8f0269c1ed008"
+              },
+              "operation" : null,
+              "targetId" : "cktwddsddqpaaaaloddahhynjjbbjhbkff",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : "Main",
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
@@ -491,7 +663,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding-top":"2rem"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -506,13 +678,14 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "z-index" : "0"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row"}}],
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":"0"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -527,21 +700,60 @@
   },
   "isNonDestructive" : false,
   "styles" : {
-    "max-width" : "100%"
+    "width" : "100%",
+    "height" : "100%"
   }
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
         <dispatched_events>f4e7e06107a2701029a8f0269c1ed0bf</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
-        <handled_events/>
+        <handled_events>991b688107f2301029a8f0269c1ed008</handled_events>
         <interactions/>
         <interfaces/>
-        <internal_event_mappings>{ }</internal_event_mappings>
+        <internal_event_mappings>{
+  "x_683715_big_oil_2.NAVIGATE_FROM_LINK" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "4b3b284107f2301029a8f0269c1ed071"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktwccffbbcaaaaaaewddahhywuhhbeebbggk",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "MACROPONENT_READY" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "a99a9c4507b2301029a8f0269c1ed0c9"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cktvzreeeddaaaaeeeddahhyjftzwbbddcc",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cktwaacckawaaaaggggddahhyddmocpcces",
+    "type" : "EVENT"
+  } ]
+}</internal_event_mappings>
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","min-height":"100%"}}],
     "root" : null,
     "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
     "styles" : null,
@@ -551,24 +763,57 @@
 }</layout>
         <macroponent_dependencies/>
         <name>lists</name>
-        <props>[ ]</props>
+        <props>[ {
+  "name" : "targetlist",
+  "label" : "targetlist",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+}, {
+  "name" : "listMenuIDs",
+  "label" : "listMenuIDs",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false
+} ]</props>
         <required_translations>[{"message":"Enter a label","comment":""},{"message":"New","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[ {
+  "name" : "currList",
+  "label" : "currList",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 20:23:22</sys_created_on>
         <sys_id>50c6d1740762301029a8f0269c1ed08c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>lists</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_50c6d1740762301029a8f0269c1ed08c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-12 00:54:04</sys_updated_on>
+        <sys_updated_on>2021-09-28 06:15:07</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

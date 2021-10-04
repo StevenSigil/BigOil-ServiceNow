@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Auth request (existing)">a16d05c90736301029a8f0269c1ed0a8</macroponent>
+        <name>Form Loaded</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  const form = api.data.auth_lookup_gf;
+
+  try {
+    const fields = form.nowRecordFormBlob.recordValues;
+
+    fields.forEach((field) => {
+      form.setReadOnly({ fieldName: field.name, readonly: true });
+    });
+  } catch (err) {
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 02:36:21</sys_created_on>
+        <sys_id>dbb853620776701029a8f0269c1ed058</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Form Loaded</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_dbb853620776701029a8f0269c1ed058</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 03:43:47</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

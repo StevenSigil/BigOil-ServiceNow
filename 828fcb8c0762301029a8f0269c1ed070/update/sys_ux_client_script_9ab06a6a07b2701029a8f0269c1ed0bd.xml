@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Auth request">e63e55b80762301029a8f0269c1ed010</macroponent>
+        <name>Refresh Page</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  // helpers.navigate.to('auth-request', null, null, true);
+
+  try {
+    // Reset Stepper
+    api.setState("step", Number(0));
+    api.setState("stepperDetails", [
+      { id: 0, label: "Confirm your info", progress: "none", disabled: false },
+      { id: 1, label: "Select access", progress: "partial", disabled: true },
+      {
+        id: 2,
+        label: "Confirm submission",
+        progress: "partial",
+        disabled: true,
+      },
+      { id: 3, label: "Complete", progress: "done", disabled: true },
+    ]);
+
+    // Refresh UserProfile Form Data
+    api.data.get_user_profile_from_user_id_1.refresh();
+    api.data.user_profile_form_data.refresh();
+
+    // Reset select and input components
+    api.setState("auth_nameChoiceValue", '');
+    api.setState("addtl_info_other_value", '');
+  } catch (err) {
+    console.log('ERROR in REFRESH PAGE script (auth-request page):\n\t', err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 22:31:36</sys_created_on>
+        <sys_id>9ab06a6a07b2701029a8f0269c1ed0bd</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Refresh Page</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_9ab06a6a07b2701029a8f0269c1ed0bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 02:19:53</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

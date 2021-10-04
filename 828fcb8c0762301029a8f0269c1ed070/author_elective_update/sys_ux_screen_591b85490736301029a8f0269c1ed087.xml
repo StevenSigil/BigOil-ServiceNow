@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Auth request existing">4d1b05490736301029a8f0269c1ed079</macroponent>
+        <macroponent_config>{
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Auth request existing</name>
+        <order>100</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <screen_condition>sysid=-1</screen_condition>
+        <screen_type display_value="Auth request">e63e55b80762301029a8f0269c1ed00c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-23 00:26:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>591b85490736301029a8f0269c1ed087</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auth request existing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_screen_591b85490736301029a8f0269c1ed087</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-23 00:31:43</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=591b85490736301029a8f0269c1ed087"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_screen_591b85490736301029a8f0269c1ed087</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Auth request existing">4d1b05490736301029a8f0269c1ed079</macroponent><macroponent_config>{
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config><name>Auth request existing</name><order>100</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[]</required_translations><screen_condition>sysid=-1</screen_condition><screen_type display_value="Auth request">e63e55b80762301029a8f0269c1ed00c</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-23 00:26:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>591b85490736301029a8f0269c1ed087</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Auth request existing</sys_name><sys_overrides/><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_screen_591b85490736301029a8f0269c1ed087</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-23 00:31:43</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=591b85490736301029a8f0269c1ed087"/></record_update>]]></payload>
+        <payload_hash>-1162576045</payload_hash>
+        <record_name>Auth request existing</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-23 00:31:43</sys_created_on>
+        <sys_id>814c81890736301029a8f0269c1ed083</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c1010b8f60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-23 00:31:43</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>894c8189fb3630100526aab7915c9782</update_guid>
+        <update_guid_history>894c8189fb3630100526aab7915c9782:-1162576045,35ebcd49c636301062ed58fbeaaeaf87:-374996360,ca4b49496b363010fbaf7a6cef91e925:-419627760,511b8549793630109e9017dd2be9068a:2129496088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-23 00:32:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>44973c7125b940e3b280487984e34041</sys_id>
+        <sys_metadata>591b85490736301029a8f0269c1ed087</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auth request existing</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_591b85490736301029a8f0269c1ed087</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_591b85490736301029a8f0269c1ed087">814c81890736301029a8f0269c1ed083</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-23 00:32:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

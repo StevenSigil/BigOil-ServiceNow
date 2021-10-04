@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Sales Order">3b23b46d07a2701029a8f0269c1ed05c</macroponent>
+        <name>Logger</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api,event,helpers,imports }) {
+    console.log(api.state);
+    // console.log(api.data.sales_order_glide_form.nowRecordFormBlob.detailsProps); 
+    // console.log(event.payload.data.GlideViewQuery_Query.uiView.glideLayoutItem._query.GlideLayout_Query.formLayout.sysId);   
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-13 20:22:50</sys_created_on>
+        <sys_id>a7fc39860762301029a8f0269c1ed002</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>Logger</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_a7fc39860762301029a8f0269c1ed002</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 21:54:44</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_a7fc39860762301029a8f0269c1ed002</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Sales Order"&gt;3b23b46d07a2701029a8f0269c1ed05c&lt;/macroponent&gt;&lt;name&gt;Logger&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api,event,helpers,imports }) {
+    console.log(api.state);
+    // console.log(api.data.sales_order_glide_form.nowRecordFormBlob.detailsProps); 
+    // console.log(event.payload.data.GlideViewQuery_Query.uiView.glideLayoutItem._query.GlideLayout_Query.formLayout.sysId);   
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-13 20:22:50&lt;/sys_created_on&gt;&lt;sys_id&gt;a7fc39860762301029a8f0269c1ed002&lt;/sys_id&gt;&lt;sys_mod_count&gt;43&lt;/sys_mod_count&gt;&lt;sys_name&gt;Logger&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_a7fc39860762301029a8f0269c1ed002&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-17 21:54:44&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>229115078</payload_hash>
+        <record_name>Logger</record_name>
+        <reverted_from/>
+        <source>ca8fcb8c0762301029a8f0269c1ed072</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-17 21:54:45</sys_created_on>
+        <sys_id>fc6876db07a2301029a8f0269c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bf5c1358e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-17 21:54:45</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>f46876dbf0a23010ce81e758c1ddc19a</update_guid>
+        <update_guid_history>f46876dbf0a23010ce81e758c1ddc19a:229115078,7435fe1bc5a23010f6c8d61d575d118e:12296468,8af43e1bd5a23010033d09d2243bb41d:-533566900,7174b61b7ba230102b3dd03ecc163209:1467492543,3373fad791a23010395d1b68c8ea5c1b:144637339,e5ebee5395a23010ccfd884a68ecf837:2094389952,6d3e561bf2623010c4b4e866f157b06f:-2132742698,65bace9bef2230109da075c94b3d6cd5:2094389952,690f7d03eea2301053779ea39cdfeee5:-1025059540,f9ee6dc38a623010d542e6fab9945da2:-495710857,36b4a94f5e223010318320f02477b248:-1019116227,be04614fee22301040a3311d0aa574b3:1541259011,a4b3290f762230102b65b5d62299891c:285406718,5513650f89223010b9554e83e67b41db:-1824009898,0342e98b5922301018323cdfb701b07f:-1679876555,93f0ad8bdb22301069561d952075d724:368045219,86a0698ba2223010544dfe4e406629d0:-620039537,1740658b05223010ce0f585b02d0e58b:-263488125,7410a18b69223010e116742e288640ba:-1979458985,8dcecb5eac6230106e4f6ba3b4b19e6e:639058488,da85435a456230100d8b2a339cf1f56e:2060715225,84f1f6da11223010a6f7032512f176ed:2009302934,628e225afe223010dc2d7d291464757f:-2081063422,0a2eea1ae7223010f4ed329be1d11e67:347206483,49010fc6ea2630102e257b85755d89c5:-1008829003,719ffa86f726301021d2e112bfec4d6d:319906151,f35f7686e2263010668fe624aded70c3:56761540,8d4fb686d6263010fb1f360dd322d6d2:1887254671,5767b6ce4ae23010fa26bb1bf1005393:874623919,1b27f2029b26301048f634bb1ce909c3:1209680893,ceb67202ec2630100e03a429e2d36d86:1171545362,85963202be263010c4a599eba007abee:289481799,e766bece90e23010603cb062bc265f8c:-1010091488,160e2e4a3ae23010226b63f44e4a02b0:-1219159108,92cc6e0a04e230101ffb755f94f3d01f:1208491449,cefe1ace4fa230100eb032a5f68bd128:300358101,1fbe56ce57a230102fcd6cd968b45a1d:-657721891,45d806ce2e623010827cb2ac294d37c1:-177546236,739802ced962301086255a5212a21fc1:214543077,1dd10e4a14623010567b2f3e55092a8c:327170821,a81f3946de623010b8e21b322e0e21b3:1690598657,a46df50633623010b1affd2987cc301d:-160036876,d73db9867c6230103d9163cf63977cca:277029543,a3fc39860d6230102487add0aef7a005:2145738923</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 19:45:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>13fb2a48b9fc4fa882e30f035cb9e7a4</sys_id>
+        <sys_metadata>a7fc39860762301029a8f0269c1ed002</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Logger</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_a7fc39860762301029a8f0269c1ed002</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_a7fc39860762301029a8f0269c1ed002">fc6876db07a2301029a8f0269c1ed09a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 19:45:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

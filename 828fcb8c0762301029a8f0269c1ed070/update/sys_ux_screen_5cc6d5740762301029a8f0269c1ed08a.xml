@@ -88,6 +88,13 @@
 } ]</event_mappings>
         <macroponent display_value="lists">50c6d1740762301029a8f0269c1ed08c</macroponent>
         <macroponent_config>{
+  "targetlist" : "",
+  "listMenuIDs" : {
+    "my_sales_orders" : "1dd1665c07b2301029a8f0269c1ed0a2",
+    "my_drafts" : "bad064c907b2301029a8f0269c1ed01f",
+    "all_sales_orders" : "cba4a0e107a2701029a8f0269c1ed01e",
+    "my_authorization_requests" : "16ccf4b00722301029a8f0269c1ed0d2"
+  },
   "label" : "",
   "bare" : true,
   "scrollable" : "y",
@@ -107,7 +114,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5cc6d5740762301029a8f0269c1ed08a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>lists default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
@@ -115,7 +122,7 @@
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_screen_5cc6d5740762301029a8f0269c1ed08a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-12 00:54:04</sys_updated_on>
+        <sys_updated_on>2021-09-28 05:50:41</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=5cc6d5740762301029a8f0269c1ed08a"/>
 </record_update>
