@@ -85,7 +85,9 @@
         "value" : ""
       },
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "padding-bottom" : "3rem"
+      }
     } ],
     "layout" : {
       "default" : {
@@ -105,8 +107,7 @@
   },
   "isNonDestructive" : false,
   "styles" : {
-    "width" : "100%",
-    "margin-bottom" : "2rem"
+    "width" : "100%"
   }
 }, {
   "elementId" : "body_container",
@@ -154,11 +155,11 @@
                 },
                 "tag" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "h3"
+                  "value" : "h2"
                 },
                 "css" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n    /* margin-left: .5rem; */\r\n}"
+                  "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
                 }
               },
               "eventMappings" : [ ],
@@ -255,7 +256,7 @@
             "layout" : {
               "default" : {
                 "children" : null,
-                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem","height":"auto"}}],
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem 1.25rem","height":"auto","min-height":"50px"}}],
                 "root" : null,
                 "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
                 "styles" : null,
@@ -805,7 +806,7 @@
             "layout" : {
               "default" : {
                 "children" : null,
-                "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem 1.25rem"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem 1.25rem"}}],
                 "root" : null,
                 "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
                 "styles" : null,
@@ -821,7 +822,7 @@
           "isNonDestructive" : false,
           "styles" : {
             "width" : "auto",
-            "padding" : "1rem .5rem"
+            "padding" : "1.5rem 0"
           }
         }, {
           "elementId" : "fields_2",
@@ -835,39 +836,73 @@
           },
           "overrides" : {
             "composition" : [ {
-              "elementId" : "stylized_text_2",
-              "elementLabel" : "Stylized text 2",
-              "propertyValues" : {
-                "text" : {
-                  "type" : "TRANSLATION_LITERAL",
-                  "value" : {
-                    "message" : "Selected Item:",
-                    "comment" : ""
-                  }
-                },
-                "tag" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "h2"
-                },
-                "css" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
-                }
-              },
+              "elementId" : "heading_container_2",
+              "elementLabel" : "Heading Container 2",
+              "propertyValues" : { },
               "eventMappings" : [ ],
               "slot" : "Main",
               "definition" : {
-                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "id" : "d356d14b6e293a3020a244b63d278d8f",
                 "type" : "MACROPONENT"
               },
-              "overrides" : null,
+              "overrides" : {
+                "composition" : [ {
+                  "elementId" : "stylized_text_2",
+                  "elementLabel" : "Stylized text 2",
+                  "propertyValues" : {
+                    "text" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "message" : "Item Selected",
+                        "comment" : ""
+                      }
+                    },
+                    "tag" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "h2"
+                    },
+                    "css" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Main",
+                  "definition" : {
+                    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ""
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "margin" : ".5rem auto .5rem 0"
+                  }
+                } ],
+                "layout" : {
+                  "default" : {
+                    "children" : null,
+                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":".5rem 1.25rem","height":"auto","min-height":"50px"}}],
+                    "root" : null,
+                    "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                    "styles" : null,
+                    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                    "type" : "grid"
+                  }
+                }
+              },
               "isHidden" : {
                 "type" : "JSON_LITERAL",
                 "value" : ""
               },
               "isNonDestructive" : false,
               "styles" : {
-                "margin" : ".5rem auto .5rem 0"
+                "width" : "100%",
+                "height" : "auto",
+                "background-color" : "RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"
               }
             }, {
               "elementId" : "selected_item_container",
@@ -1447,7 +1482,7 @@
                 "layout" : {
                   "default" : {
                     "children" : null,
-                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row"}}],
+                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":"1rem 1.25rem 3rem"}}],
                     "root" : null,
                     "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
                     "styles" : null,
@@ -1501,7 +1536,7 @@
                     "listTitle" : {
                       "type" : "TRANSLATION_LITERAL",
                       "value" : {
-                        "message" : "Title",
+                        "message" : "Select an item from the below list",
                         "comment" : ""
                       }
                     },
@@ -1543,7 +1578,7 @@
                     },
                     "hideTitle" : {
                       "type" : "JSON_LITERAL",
-                      "value" : true
+                      "value" : false
                     },
                     "hideTitleRowCount" : {
                       "type" : "JSON_LITERAL",
@@ -1814,7 +1849,7 @@
                 "layout" : {
                   "default" : {
                     "children" : null,
-                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","margin-top":"-1rem","height":"auto"}}],
                     "root" : null,
                     "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
                     "styles" : null,
@@ -1830,7 +1865,7 @@
               "isNonDestructive" : false,
               "styles" : {
                 "width" : "100%",
-                "margin-top" : "2rem"
+                "height" : "auto"
               }
             }, {
               "elementId" : "stylized_text_3",
@@ -1884,13 +1919,13 @@
           "isNonDestructive" : false,
           "styles" : {
             "width" : "auto",
-            "padding" : "1rem .5rem"
+            "padding" : "1.5rem 0"
           }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","border":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"height":"auto","width":"auto","display":"flex","flex-direction":"column","border-left":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","padding-bottom":"5rem"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -1905,7 +1940,7 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "flex" : "3"
+        "height" : "auto"
       }
     }, {
       "elementId" : "container_1",
@@ -1919,45 +1954,110 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "stylized_text_4",
-          "elementLabel" : "Stylized text 4",
-          "propertyValues" : {
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "Lines on this order",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h3"
-            },
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
-            }
-          },
+          "elementId" : "list_text_heading",
+          "elementLabel" : "List Text Heading",
+          "propertyValues" : { },
           "eventMappings" : [ ],
           "slot" : "Main",
           "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
             "type" : "MACROPONENT"
           },
-          "overrides" : null,
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_4",
+              "elementLabel" : "Stylized text 4",
+              "propertyValues" : {
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Lines on this order",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h2"
+                },
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0 0 1rem;\r\n}"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "stylized_text_8",
+              "elementLabel" : "Stylized text 8",
+              "propertyValues" : {
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Click a line to edit or remove",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h3"
+                },
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","align-items":"flex-start"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
           "isHidden" : {
             "type" : "JSON_LITERAL",
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "width" : "auto"
+          }
         }, {
           "elementId" : "button_3",
           "elementLabel" : "Button 3",
           "propertyValues" : {
             "variant" : {
               "type" : "JSON_LITERAL",
-              "value" : "tertiary"
+              "value" : "primary-positive"
             },
             "size" : {
               "type" : "JSON_LITERAL",
@@ -2077,12 +2177,14 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : "0 0 0 auto"
+          }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","padding":"1rem .5rem","align-items":"center","height":"auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":"1rem 1.25rem","align-items":"flex-end","height":"auto","width":"auto"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -2097,7 +2199,7 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%"
+        "width" : "auto"
       }
     }, {
       "elementId" : "completed_lines_list",
@@ -2117,7 +2219,7 @@
         "query" : {
           "type" : "CLIENT_TRANSFORM_SCRIPT",
           "script" : {
-            "apiVersion" : "1.0.0",
+            "apiVersion" : "2.0.0",
             "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  const soId = api.context.props.salesorder;\n  const query = `sales_order=${soId}`;\n\treturn query;\n}"
           }
         },
@@ -2452,16 +2554,6 @@
         "sourceEventSysId" : null,
         "targets" : [ {
           "broker" : null,
-          "clientScript" : {
-            "sysId" : "bebfbb120726301029a8f0269c1ed0d5"
-          },
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : null,
-          "targetId" : "cktmbbjjbbiicaaaaieeddaiijjrwaajnwxl",
-          "type" : "CLIENT_SCRIPT"
-        }, {
-          "broker" : null,
           "clientScript" : null,
           "declarativeAction" : null,
           "event" : {
@@ -2506,7 +2598,7 @@
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-left":"0","width":"auto","border-left":"25px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-top":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","height":"auto","margin-right":"1rem"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-left":"1rem","width":"auto","border-left":"80px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-top":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -2522,87 +2614,8 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "margin-top" : "2rem",
-    "margin-bottom" : "2rem"
-  }
-}, {
-  "elementId" : "button_1",
-  "elementLabel" : "Button 1",
-  "propertyValues" : {
-    "variant" : {
-      "type" : "JSON_LITERAL",
-      "value" : "secondary"
-    },
-    "size" : {
-      "type" : "JSON_LITERAL",
-      "value" : "md"
-    },
-    "label" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "message" : "Button",
-        "comment" : ""
-      }
-    },
-    "icon" : {
-      "type" : "JSON_LITERAL",
-      "value" : null
-    },
-    "disabled" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "tooltipContent" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "message" : "Enter a label",
-        "comment" : ""
-      }
-    },
-    "configAria" : {
-      "type" : "MAP_CONTAINER",
-      "container" : { }
-    }
-  },
-  "eventMappings" : [ {
-    "eventMappingId" : "cktkrsfchaaaaaoddahhyowefnhhccv",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-    "sourceEventDefinition" : {
-      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bebfbb120726301029a8f0269c1ed0d5"
-      },
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "cktkrsfchaaaaapddahhyobaajjfzbbb",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "slot" : "Main",
-  "definition" : {
-    "id" : "d37ce8abca89d02905fed903c8e34d8e",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : null,
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "isNonDestructive" : false,
-  "styles" : {
-    "position" : "fixed",
-    "bottom" : "3rem",
-    "margin" : "0 auto",
-    "z-index" : "0"
+    "height" : "auto",
+    "margin" : "1rem 0 .5rem"
   }
 }, {
   "elementId" : "custom_1",
@@ -3912,97 +3925,6 @@
       "styles" : {
         "margin-left" : "1rem"
       }
-    }, {
-      "elementId" : "button_10",
-      "elementLabel" : "Button 10",
-      "propertyValues" : {
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "TEMP",
-            "comment" : ""
-          }
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "cktqiqfzvaaaaeeaddahhyxccqazawp",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-        "sourceEventDefinition" : {
-          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : {
-            "sysId" : "bebfbb120726301029a8f0269c1ed0d5"
-          },
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : null,
-          "targetId" : "cktqjqiicbbaaaajjxddahhyosaaggjfjq",
-          "type" : "CLIENT_SCRIPT"
-        }, {
-          "broker" : null,
-          "clientScript" : null,
-          "declarativeAction" : null,
-          "event" : {
-            "apiName" : null,
-            "payload" : {
-              "type" : "JSON_LITERAL",
-              "value" : { }
-            },
-            "sysId" : null
-          },
-          "operation" : null,
-          "targetId" : "cktqkiipmkaaaaefddahhyggubbvwqek",
-          "type" : "EVENT"
-        } ]
-      } ],
-      "slot" : "modal-footer",
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : ""
-      },
-      "isNonDestructive" : false,
-      "styles" : {
-        "margin-left" : "1rem"
-      }
     } ],
     "layout" : {
       "default" : {
@@ -4636,7 +4558,7 @@
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto"}}],
     "root" : null,
     "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
     "styles" : null,
@@ -4669,7 +4591,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Title","comment":""},{"message":"Lines on this order","comment":""},{"message":"Quantity requesting (uom)","comment":""},{"message":"Qt. Requested","comment":""},{"message":"UOM","comment":""},{"message":"TEMP","comment":""},{"message":"Add line to order","comment":""},{"message":"Line No.","comment":""},{"message":"Save","comment":""},{"message":"Sales Order","comment":""},{"message":"Are you sure you want to delete this line item?","comment":""},{"message":"This action cannot be undone...","comment":""},{"message":"Category","comment":""},{"message":"This item can not be changed. Please delete the line entirely to change the item.","comment":""},{"message":"Delete","comment":""},{"message":"Description","comment":""},{"message":"Select an action for this line","comment":""},{"message":"Purchase Order","comment":""},{"message":"Add a Line Item","comment":""},{"message":"Selected Item:","comment":""},{"message":"Continue","comment":""},{"message":"Item","comment":""},{"message":"Continue to the next section","comment":""},{"message":"Button","comment":""},{"message":"Part number","comment":""},{"message":"Back","comment":""},{"message":"Enter a label","comment":""},{"message":"Stage","comment":""},{"message":"Requested Delivery Date","comment":""}]</required_translations>
+        <required_translations>[{"message":"Lines on this order","comment":""},{"message":"Quantity requesting (uom)","comment":""},{"message":"Qt. Requested","comment":""},{"message":"UOM","comment":""},{"message":"Click a line to edit or remove","comment":""},{"message":"Add line to order","comment":""},{"message":"Line No.","comment":""},{"message":"Save","comment":""},{"message":"Sales Order","comment":""},{"message":"Are you sure you want to delete this line item?","comment":""},{"message":"This action cannot be undone...","comment":""},{"message":"Category","comment":""},{"message":"This item can not be changed. Please delete the line entirely to change the item.","comment":""},{"message":"Delete","comment":""},{"message":"Description","comment":""},{"message":"Select an action for this line","comment":""},{"message":"Purchase Order","comment":""},{"message":"Select an item from the below list","comment":""},{"message":"Add a Line Item","comment":""},{"message":"Continue","comment":""},{"message":"Item Selected","comment":""},{"message":"Item","comment":""},{"message":"Continue to the next section","comment":""},{"message":"Part number","comment":""},{"message":"Back","comment":""},{"message":"Enter a label","comment":""},{"message":"Stage","comment":""},{"message":"Requested Delivery Date","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -4842,13 +4764,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-14 23:26:35</sys_created_on>
         <sys_id>b0a0fbd607e2301029a8f0269c1ed0bb</sys_id>
-        <sys_mod_count>234</sys_mod_count>
+        <sys_mod_count>264</sys_mod_count>
         <sys_name>Sales Order Items</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_b0a0fbd607e2301029a8f0269c1ed0bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-22 22:04:13</sys_updated_on>
+        <sys_updated_on>2021-10-04 23:05:55</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

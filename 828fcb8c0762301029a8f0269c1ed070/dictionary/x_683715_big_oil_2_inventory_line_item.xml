@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Inventory Line Item" max_length="40" name="x_683715_big_oil_2_inventory_line_item" sizeclass="8" type="collection">
+    <element label="Inventory Line Item" max_length="40" name="x_683715_big_oil_2_inventory_line_item" sizeclass="9" type="collection">
         <element label="Item" max_length="32" name="item" reference="x_683715_big_oil_2_inventory_item" type="reference"/>
         <element label="Quantity received" max_length="25" name="quantity_received" type="string"/>
         <element label="Quantity requested" max_length="25" name="quantity_requested" type="string"/>

@@ -51,7 +51,9 @@
         "value" : ""
       },
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "padding-bottom" : "3rem"
+      }
     } ],
     "layout" : {
       "default" : {
@@ -115,7 +117,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    margin: .5rem 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    margin: .25rem 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -148,7 +150,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* {\r\n    font-weight: 500;\r\n    margin: .5rem 0;\r\n}"
+              "value" : "* {\r\n    font-weight: 500;\r\n    margin: .25rem 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -168,7 +170,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem .5rem"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem","align-items":"flex-start","border-left":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -277,7 +279,9 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".25rem 0"
+          }
         }, {
           "elementId" : "button_3",
           "elementLabel" : "Button 3",
@@ -358,12 +362,14 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".25rem 0"
+          }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem .5rem","justify-content":"space-around","align-items":"center"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem","justify-content":"space-around","align-items":"center","border-right":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-left":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -386,7 +392,7 @@
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row"}}],
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":".5rem 1.25rem","margin":"1rem 0","height":"auto","width":"auto","align-items":"stretch"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -441,11 +447,11 @@
             },
             "tag" : {
               "type" : "JSON_LITERAL",
-              "value" : "h3"
+              "value" : "h2"
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* {\r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+              "value" : "* {\r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -467,7 +473,7 @@
           "propertyValues" : {
             "variant" : {
               "type" : "JSON_LITERAL",
-              "value" : "tertiary"
+              "value" : "secondary"
             },
             "size" : {
               "type" : "JSON_LITERAL",
@@ -600,7 +606,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem","height":"auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem 2rem","height":"auto"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -704,7 +710,10 @@
         "value" : ""
       },
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "margin-top" : "1rem",
+        "margin-left" : "-1rem"
+      }
     }, {
       "elementId" : "container_3",
       "elementLabel" : "Container 3",
@@ -729,11 +738,11 @@
             },
             "tag" : {
               "type" : "JSON_LITERAL",
-              "value" : "h3"
+              "value" : "h2"
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem;\r\n    margin: 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -755,7 +764,7 @@
           "propertyValues" : {
             "variant" : {
               "type" : "JSON_LITERAL",
-              "value" : "tertiary"
+              "value" : "secondary"
             },
             "size" : {
               "type" : "JSON_LITERAL",
@@ -881,7 +890,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem","height":"auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem 2rem","height":"auto"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -945,7 +954,7 @@
         },
         "hideHeader" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "hideTitle" : {
           "type" : "JSON_LITERAL",
@@ -1128,12 +1137,14 @@
         "value" : ""
       },
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "margin-top" : "1rem"
+      }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-left":"2rem","width":"auto"}}],
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","padding":"2rem 1rem 0","width":"auto","height":"auto"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-left":"1rem","padding":"2rem 1rem 0","width":"auto","height":"auto"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -1152,128 +1163,7 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "margin-top" : "2rem"
-  }
-}, {
-  "elementId" : "body_container_1",
-  "elementLabel" : "Body Container 1",
-  "propertyValues" : { },
-  "eventMappings" : [ ],
-  "slot" : "Main",
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "button_5",
-      "elementLabel" : "Button 5",
-      "propertyValues" : {
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "secondary"
-        },
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "Button",
-            "comment" : ""
-          }
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "cktrtddjjjfaaaacceddahhyvpccojaaaee",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
-        "sourceEventDefinition" : {
-          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : {
-            "sysId" : "1cc6150407fe701029a8f0269c1ed0d9"
-          },
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : null,
-          "targetId" : "cktrtddjjjfaaaaccfddahhytxijrbbibb",
-          "type" : "CLIENT_SCRIPT"
-        }, {
-          "broker" : null,
-          "clientScript" : {
-            "sysId" : "827bd94407fe701029a8f0269c1ed053"
-          },
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : null,
-          "targetId" : "cktrtvlccbaaaaffjjddahhyjhegaaiixs",
-          "type" : "CLIENT_SCRIPT"
-        } ]
-      } ],
-      "slot" : "Main",
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : ""
-      },
-      "isNonDestructive" : false,
-      "styles" : {
-        "align-self" : "center"
-      }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
-        "root" : null,
-        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
-        "styles" : null,
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "grid"
-      }
-    }
-  },
-  "isHidden" : {
-    "type" : "CLIENT_TRANSFORM_SCRIPT",
-    "script" : {
-      "apiVersion" : "1.0.0",
-      "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn !api.state.finalStepHidden;\n}"
-    }
-  },
-  "isNonDestructive" : false,
-  "styles" : {
-    "width" : "100%"
+    "padding-top" : "2rem"
   }
 }, {
   "elementId" : "step_5_container",
@@ -1833,7 +1723,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Click \"Edit this section\" to edit. When finished, confirm the order to the right.","comment":""},{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Continue","comment":""},{"message":"Sales order","comment":""},{"message":"On behalf of Big Oil,","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.","comment":""},{"message":"Button","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Enter a label","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
+        <required_translations>[{"message":"Click \"Edit this section\" to edit. When finished, confirm the order to the right.","comment":""},{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Continue","comment":""},{"message":"Sales order","comment":""},{"message":"On behalf of Big Oil,","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Enter a label","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -1912,13 +1802,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-16 23:18:27</sys_created_on>
         <sys_id>e9f10e8307a2301029a8f0269c1ed092</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>Sales Order New Confirm</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_e9f10e8307a2301029a8f0269c1ed092</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-27 19:11:08</sys_updated_on>
+        <sys_updated_on>2021-10-04 23:47:48</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
