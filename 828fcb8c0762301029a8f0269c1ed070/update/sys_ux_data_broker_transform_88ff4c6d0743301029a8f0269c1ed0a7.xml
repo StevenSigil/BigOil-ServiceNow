@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_683715_big_oil_2.Companies Authorized Purchasers TRANSFORM Broker</api_name>
+        <description>NO LONGER USED - Used for page: ".../big-oil-2-portal/customer-details/{{sysid}}" - NO LONGER USED</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Companies Authorized Purchasers TRANSFORM Broker</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+    "name": "companiesAuthorizedPurchasersQueryData",&#13;
+    "label": "Companies Authorized Purchasers Query Data",&#13;
+    "description": "Companies authorized purchasers query data records from GraphQL query",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "object",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+}]</props>
+        <required_translations>[{"message":"Companies authorized purchasers query data records from GraphQL query","comment":""},{"message":"Companies Authorized Purchasers Query Data","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+  var retObj = {};
+  var retArray = [];
+
+  var records =
+    input.companiesAuthorizedPurchasersQueryData.data.GlideRecord_Query
+      .x_683715_big_oil_2_user_profile._results;
+
+  // Iterating over record objects, assigning them expected keys for component.
+  for (var i = 0; i < records.length; i++) {
+    var recObj = {};
+
+    recObj.template = "now-template-card-assist";
+
+    recObj.propValues = {
+      tagline: {
+        label: "Custom Tagline",
+        icon: "tree-view-long-outline",
+      },
+      actions: [
+        { id: "action1", label: "Dropdown Item 1" },
+        { id: "action2", label: "Dropdown Item 2" },
+      ],
+      heading: { label: "THIS IS THE Heading", level: 1 },
+      content: [
+        {
+          label: "Content Label1",
+          value: "Content Value1",
+        },
+        {
+          label: "Content Label2",
+          value: {
+            type: "string",
+            value: "Content Value2",
+          },
+        },
+        {
+          label: "Content Label3",
+          value: "Content Value3",
+        },
+        {
+          label: "Content Label4",
+          value: "Content Value4",
+        },
+        {
+          label: "Content Label5",
+          value: "Content Value5",
+        },
+      ],
+      footerContent: {
+        label: "Footer Label",
+        value: "FOOTER VALUE",
+        reversed: false,
+      },
+      selected: false,
+      contentItemMinWidth: "250"
+    };
+
+    retArray.push(recObj);
+  }
+
+  retObj.page_size = 2;
+
+  retObj.all_actions = [
+    {
+      assignmentId: "d46f400473211010c342d5fdbdf6a7cf",
+      name: "navigation",
+      label: "Navigation",
+      actionType: "uxf_client_action",
+      actionDispatch: "NAVIGATION",
+      actionPayload:
+        '{\r\n "table": "{{table}}",\r\n "sysId": "{{sys_id}}",\r\n "url": "{{navigation_url}}"\r\n}',
+    },
+  ];
+
+  retObj.items = retArray;
+  return retObj;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 19:51:27</sys_created_on>
+        <sys_id>88ff4c6d0743301029a8f0269c1ed0a7</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Companies Authorized Purchasers TRANSFORM Broker</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_88ff4c6d0743301029a8f0269c1ed0a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 20:17:21</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=88ff4c6d0743301029a8f0269c1ed0a7"/>
+</record_update>

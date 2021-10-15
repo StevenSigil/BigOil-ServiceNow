@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <event_name>T</event_name>
+        <interfaces/>
+        <label>t</label>
+        <props>[{"name":"screenKey","fieldType":"string","label":"Id of the screen the changed occured","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"status","fieldType":"string","label":"The status operation for this action","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"title","fieldType":"string","label":"Display Title","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"icon","fieldType":"string","label":"Icon","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"message","fieldType":"string","label":"Message","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"isDirty","fieldType":"boolean","label":"Screen is Dirty","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"hasError","fieldType":"boolean","label":"Screen has Errors","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"hasUpdate","fieldType":"boolean","label":"Screen has update","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"dirtyModalId","fieldType":"string","label":"Dirty Modal Id","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"tooltipPreview","fieldType":"json","label":"Tooltip Preview","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations>[{"message":"Id of the screen the changed occured","comment":""},{"message":"Screen has update","comment":""},{"message":"Message","comment":""},{"message":"Dirty Modal Id","comment":""},{"message":"Tooltip Preview","comment":""},{"message":"The status operation for this action","comment":""},{"message":"Icon","comment":""},{"message":"Display Title","comment":""},{"message":"Screen is Dirty","comment":""},{"message":"Screen has Errors","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 17:41:25</sys_created_on>
+        <sys_id>9151cd0c079f301029a8f0269c1ed0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>t</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_event_9151cd0c079f301029a8f0269c1ed0f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 17:41:25</sys_updated_on>
+    </sys_ux_event>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_event_9151cd0c079f301029a8f0269c1ed0f5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event"><sys_ux_event action="INSERT_OR_UPDATE"><event_name>T</event_name><interfaces/><label>t</label><props>[{"name":"screenKey","fieldType":"string","label":"Id of the screen the changed occured","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"status","fieldType":"string","label":"The status operation for this action","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"title","fieldType":"string","label":"Display Title","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"icon","fieldType":"string","label":"Icon","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"message","fieldType":"string","label":"Message","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"isDirty","fieldType":"boolean","label":"Screen is Dirty","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"hasError","fieldType":"boolean","label":"Screen has Errors","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"hasUpdate","fieldType":"boolean","label":"Screen has update","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"dirtyModalId","fieldType":"string","label":"Dirty Modal Id","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"tooltipPreview","fieldType":"json","label":"Tooltip Preview","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props><required_translations>[{"message":"Id of the screen the changed occured","comment":""},{"message":"Screen has update","comment":""},{"message":"Message","comment":""},{"message":"Dirty Modal Id","comment":""},{"message":"Tooltip Preview","comment":""},{"message":"The status operation for this action","comment":""},{"message":"Icon","comment":""},{"message":"Display Title","comment":""},{"message":"Screen is Dirty","comment":""},{"message":"Screen has Errors","comment":""}]</required_translations><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_event</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-14 17:41:25</sys_created_on><sys_id>9151cd0c079f301029a8f0269c1ed0f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>t</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_event_9151cd0c079f301029a8f0269c1ed0f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-14 17:41:25</sys_updated_on></sys_ux_event></record_update>]]></payload>
+        <payload_hash>-794932065</payload_hash>
+        <record_name>t</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 17:41:25</sys_created_on>
+        <sys_id>d151cd0c079f301029a8f0269c1ed0f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c7fe4fa690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 17:41:25</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>1d51cd0c7f9f3010c9b5b441f5dfb0f7</update_guid>
+        <update_guid_history>1d51cd0c7f9f3010c9b5b441f5dfb0f7:-794932065</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 17:46:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>2b087f424eb1401a90d4ce9e28898a84</sys_id>
+        <sys_metadata>9151cd0c079f301029a8f0269c1ed0f5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>t</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_event_9151cd0c079f301029a8f0269c1ed0f5</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_9151cd0c079f301029a8f0269c1ed0f5">d151cd0c079f301029a8f0269c1ed0f8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 17:46:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

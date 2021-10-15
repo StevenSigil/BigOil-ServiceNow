@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="lists">50c6d1740762301029a8f0269c1ed08c</macroponent>
+        <name>Check for data and open modal</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  // const modalData = api.state.modalData;
+
+  // if (modalData.user) {
+  //   // Open modal
+  //   api.emit("MODAL_SELECTED_RELAY_50c6d1740762301029a8f0269c1ed08c", {
+  //     modalId: "[component-id$='custom_1']",
+  //     showModal: true,
+  //     displayOptions: {},
+  //     bare: true,
+  //   });
+  //   return;
+  // }
+  return;
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 19:00:29</sys_created_on>
+        <sys_id>21d948bb0743301029a8f0269c1ed0cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Check for data and open modal</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_21d948bb0743301029a8f0269c1ed0cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-13 19:14:19</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_21d948bb0743301029a8f0269c1ed0cb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="lists"&gt;50c6d1740762301029a8f0269c1ed08c&lt;/macroponent&gt;&lt;name&gt;Check for data and open modal&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({ api, event, helpers, imports }) {
+  // const modalData = api.state.modalData;
+
+  // if (modalData.user) {
+  //   // Open modal
+  //   api.emit("MODAL_SELECTED_RELAY_50c6d1740762301029a8f0269c1ed08c", {
+  //     modalId: "[component-id$='custom_1']",
+  //     showModal: true,
+  //     displayOptions: {},
+  //     bare: true,
+  //   });
+  //   return;
+  // }
+  return;
+}
+]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-13 19:00:29&lt;/sys_created_on&gt;&lt;sys_id&gt;21d948bb0743301029a8f0269c1ed0cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check for data and open modal&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_21d948bb0743301029a8f0269c1ed0cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-13 19:14:19&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>179574607</payload_hash>
+        <record_name>Check for data and open modal</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 19:14:19</sys_created_on>
+        <sys_id>600d083f0743301029a8f0269c1ed008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c7b13aeac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-13 19:14:19</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>280d083f4243301078cdf931e2db6b07</update_guid>
+        <update_guid_history>280d083f4243301078cdf931e2db6b07:179574607,7e0bc4fb9243301022b37ec1b82b5668:1134672797,d4da04fbf9433010eb7ff9cb9ff26b4a:264805343,fdd948bb794330105bc84fcc68165ecd:-48201190</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 19:23:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>36f1dfe5425f428092727bd0f1d84000</sys_id>
+        <sys_metadata>21d948bb0743301029a8f0269c1ed0cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check for data and open modal</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_21d948bb0743301029a8f0269c1ed0cb</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_21d948bb0743301029a8f0269c1ed0cb">600d083f0743301029a8f0269c1ed008</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-13 19:23:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

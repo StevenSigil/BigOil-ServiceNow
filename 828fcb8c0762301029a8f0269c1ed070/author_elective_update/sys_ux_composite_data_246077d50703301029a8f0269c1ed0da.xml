@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data">
+    <sys_ux_composite_data action="DELETE">
+        <active>true</active>
+        <base_filter_label>Default</base_filter_label>
+        <name>Company Lookup BigOil2</name>
+        <query_parameters/>
+        <required_roles/>
+        <sort_order>ascend</sort_order>
+        <sys_class_name>sys_ux_composite_data</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 17:23:52</sys_created_on>
+        <sys_id>246077d50703301029a8f0269c1ed0da</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Company Lookup BigOil2</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_composite_data_246077d50703301029a8f0269c1ed0da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 17:36:31</sys_updated_on>
+    </sys_ux_composite_data>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_composite_data_246077d50703301029a8f0269c1ed0da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data"><sys_ux_composite_data action="INSERT_OR_UPDATE"><active>true</active><base_filter_label>Default</base_filter_label><name>Company Lookup BigOil2</name><query_parameters/><required_roles/><sort_order>ascend</sort_order><sys_class_name>sys_ux_composite_data</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-06 17:23:52</sys_created_on><sys_id>246077d50703301029a8f0269c1ed0da</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Company Lookup BigOil2</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_composite_data_246077d50703301029a8f0269c1ed0da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-06 17:36:31</sys_updated_on></sys_ux_composite_data></record_update>]]></payload>
+        <payload_hash>184321948</payload_hash>
+        <record_name>Company Lookup BigOil2</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 17:36:31</sys_created_on>
+        <sys_id>ef73b7590703301029a8f0269c1ed005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c56ad9eca0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 17:36:31</sys_updated_on>
+        <type>EVAM Definition</type>
+        <update_guid>e773b759b1033010073ffa790b260305</update_guid>
+        <update_guid_history>e773b759b1033010073ffa790b260305:184321948,de903bd5f3033010a16c3a8343aa0a28:-1940328094</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 17:59:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_composite_data">sys_ux_composite_data</sys_db_object>
+        <sys_id>96df2cd83f8646f3b000cf3d59fad011</sys_id>
+        <sys_metadata>246077d50703301029a8f0269c1ed0da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company Lookup BigOil2</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_composite_data_246077d50703301029a8f0269c1ed0da</sys_update_name>
+        <sys_update_version display_value="sys_ux_composite_data_246077d50703301029a8f0269c1ed0da">ef73b7590703301029a8f0269c1ed005</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 17:59:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

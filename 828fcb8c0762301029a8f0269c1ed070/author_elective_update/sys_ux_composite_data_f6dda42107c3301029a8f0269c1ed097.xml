@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data">
+    <sys_ux_composite_data action="DELETE">
+        <active>true</active>
+        <base_filter_label>Default</base_filter_label>
+        <name>Comapanies Auth Purchasers EVAM RELATED</name>
+        <query_parameters/>
+        <required_roles/>
+        <sort_order>descend</sort_order>
+        <sys_class_name>sys_ux_composite_data</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 21:59:26</sys_created_on>
+        <sys_id>f6dda42107c3301029a8f0269c1ed097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comapanies Auth Purchasers EVAM RELATED</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_composite_data_f6dda42107c3301029a8f0269c1ed097</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 21:59:26</sys_updated_on>
+    </sys_ux_composite_data>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_composite_data_f6dda42107c3301029a8f0269c1ed097</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data"><sys_ux_composite_data action="INSERT_OR_UPDATE"><active>true</active><base_filter_label>Default</base_filter_label><name>Comapanies Auth Purchasers EVAM RELATED</name><query_parameters/><required_roles/><sort_order>descend</sort_order><sys_class_name>sys_ux_composite_data</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-06 21:59:26</sys_created_on><sys_id>f6dda42107c3301029a8f0269c1ed097</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Comapanies Auth Purchasers EVAM RELATED</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_composite_data_f6dda42107c3301029a8f0269c1ed097</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-06 21:59:26</sys_updated_on></sys_ux_composite_data></record_update>]]></payload>
+        <payload_hash>1523666816</payload_hash>
+        <record_name>Comapanies Auth Purchasers EVAM RELATED</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 21:59:26</sys_created_on>
+        <sys_id>0fafe0e107c3301029a8f0269c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c579e553b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 21:59:26</sys_updated_on>
+        <type>EVAM Definition</type>
+        <update_guid>47afe0e126c33010138d6312d98f3e9a</update_guid>
+        <update_guid_history>47afe0e126c33010138d6312d98f3e9a:1523666816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 22:25:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_composite_data">sys_ux_composite_data</sys_db_object>
+        <sys_id>2bfd79768ebe465893392d710484adc4</sys_id>
+        <sys_metadata>f6dda42107c3301029a8f0269c1ed097</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comapanies Auth Purchasers EVAM RELATED</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_composite_data_f6dda42107c3301029a8f0269c1ed097</sys_update_name>
+        <sys_update_version display_value="sys_ux_composite_data_f6dda42107c3301029a8f0269c1ed097">0fafe0e107c3301029a8f0269c1ed09a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 22:25:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -70,8 +70,8 @@
   "isHidden" : {
     "type" : "CLIENT_TRANSFORM_SCRIPT",
     "script" : {
-      "apiVersion" : "1.0.0",
-      "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn !api.state.finalStepHidden;\n}"
+      "apiVersion" : "2.0.0",
+      "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\treturn ;\n}"
     }
   },
   "isNonDestructive" : false,
@@ -117,7 +117,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    margin: .25rem 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0 0 .5rem 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -150,7 +150,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* {\r\n    font-weight: 500;\r\n    margin: .25rem 0;\r\n}"
+              "value" : "* {\r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -170,7 +170,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem","align-items":"flex-start","border-left":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem .5rem"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -186,7 +186,8 @@
       "isNonDestructive" : false,
       "styles" : {
         "width" : "100%",
-        "flex" : "2"
+        "flex" : "3",
+        "align-self" : "flex-end"
       }
     }, {
       "elementId" : "container_5",
@@ -229,7 +230,7 @@
             "tooltipContent" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "message" : "Enter a label",
+                "message" : "Submit the order for Big Oil's Customer Support to receive and begin processing.",
                 "comment" : ""
               }
             },
@@ -312,7 +313,7 @@
             "tooltipContent" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "message" : "Enter a label",
+                "message" : "Save order for later without submitting it for review.",
                 "comment" : ""
               }
             },
@@ -369,7 +370,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","padding":".5rem","justify-content":"space-around","align-items":"center","border-right":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-left":"1px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","flex-direction":"row","padding":".5rem","justify-content":"space-evenly","align-items":"center","border-right":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))","border-left":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -386,13 +387,13 @@
       "styles" : {
         "width" : "100%",
         "height" : "100%",
-        "flex" : "1"
+        "flex" : "2"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":".5rem 1.25rem","margin":"1rem 0","height":"auto","width":"auto","align-items":"stretch"}}],
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","padding":".5rem 1.25rem","margin":"0 0 1rem","height":"auto","width":"auto","align-items":"stretch"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -466,7 +467,9 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".5rem 0"
+          }
         }, {
           "elementId" : "button_1",
           "elementLabel" : "Button 1",
@@ -495,11 +498,8 @@
               "value" : false
             },
             "tooltipContent" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "Enter a label",
-                "comment" : ""
-              }
+              "type" : "JSON_LITERAL",
+              "value" : ""
             },
             "configAria" : {
               "type" : "MAP_CONTAINER",
@@ -601,12 +601,14 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".5rem 0"
+          }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem 2rem","height":"auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":".5rem 1.5rem","height":"auto","min-height":"50px"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -621,7 +623,9 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "height" : "auto",
+        "background-color" : "RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))"
       }
     }, {
       "elementId" : "form_1",
@@ -711,8 +715,9 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "margin-top" : "1rem",
-        "margin-left" : "-1rem"
+        "margin-top" : "2rem",
+        "margin-left" : "-1rem",
+        "padding" : "0 2rem 0 1rem"
       }
     }, {
       "elementId" : "container_3",
@@ -742,7 +747,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -757,7 +762,9 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".5rem 0"
+          }
         }, {
           "elementId" : "button_2",
           "elementLabel" : "Button 2",
@@ -786,11 +793,8 @@
               "value" : false
             },
             "tooltipContent" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "Enter a label",
-                "comment" : ""
-              }
+              "type" : "JSON_LITERAL",
+              "value" : ""
             },
             "configAria" : {
               "type" : "MAP_CONTAINER",
@@ -885,12 +889,14 @@
             "value" : ""
           },
           "isNonDestructive" : false,
-          "styles" : { }
+          "styles" : {
+            "margin" : ".5rem 0"
+          }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem .5rem 2rem","height":"auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":".5rem 1.5rem","height":"auto","min-height":"50px"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -905,7 +911,9 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "height" : "auto",
+        "background-color" : "RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))"
       }
     }, {
       "elementId" : "list__simple_1",
@@ -1138,13 +1146,13 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "margin-top" : "1rem"
+        "margin-top" : "1.5rem"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","padding":"2rem 1rem 0","width":"auto","height":"auto"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-left":"1rem","padding":"2rem 1rem 0","width":"auto","height":"auto"}}],
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-right":"2.5vw","margin-bottom":"5rem","padding":"0 0 2rem","width":"auto","height":"auto","border-left":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))","border-right":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))","border-bottom":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-bottom":"5rem","padding":"0 0 2rem","height":"auto","width":"auto","border-left":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))","border-right":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))","border-bottom":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ,var(--now-color--primary-0,221,237,233)))"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -1162,8 +1170,10 @@
   },
   "isNonDestructive" : false,
   "styles" : {
-    "width" : "100%",
-    "padding-top" : "2rem"
+    "width" : "auto",
+    "height" : "auto",
+    "min-height" : "fit-content",
+    "padding" : "1rem 1.25rem 0"
   }
 }, {
   "elementId" : "step_5_container",
@@ -1204,7 +1214,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* {\r\n    font-weight: 500;\r\n    \r\n}"
+              "value" : "* {\r\n    font-weight: 500;\r\n    margin: 0;\r\n    margin-bottom: 2rem;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -1227,7 +1237,7 @@
             "text" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "message" : "Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.",
+                "message" : "Our customer service team has received your order.  While awaiting approval, you can track your order on your Lists page.  Currently this order will be in the list \"My Pending Sales Orders\". Once approved, it will move to \"My Open Sales Orders\".",
                 "comment" : ""
               }
             },
@@ -1237,7 +1247,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-size: 1.15em;\r\n}"
+              "value" : "* { \r\n    font-size: 1.15em;\r\n    margin: 0;\r\n    margin-bottom: 2rem;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -1253,41 +1263,6 @@
           },
           "isNonDestructive" : false,
           "styles" : { }
-        }, {
-          "elementId" : "stylized_text_7",
-          "elementLabel" : "Stylized text 7",
-          "propertyValues" : {
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "On behalf of Big Oil,",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "p"
-            },
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-size: 1.15em;\r\n}"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Main",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isNonDestructive" : false,
-          "styles" : {
-            "margin-top" : "1.5rem"
-          }
         }, {
           "elementId" : "stylized_text_8",
           "elementLabel" : "Stylized text 8",
@@ -1305,7 +1280,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-size: 1.15em;\r\n}"
+              "value" : "* { \r\n    font-size: 1.15em;\r\n    margin: 0;\r\n    margin-bottom: 1rem;\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -1351,7 +1326,7 @@
             "tooltipContent" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
-                "message" : "Enter a label",
+                "message" : "Go to My Lists",
                 "comment" : ""
               }
             },
@@ -1412,13 +1387,13 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "margin" : "2rem auto"
+            "margin" : "3rem auto 0"
           }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","max-width":"850px","margin":"0 auto"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","max-width":"850px","margin":"3rem auto","padding":"2rem 3rem 1.75rem","border-radius":"12px","box-shadow":"0px 3px 7px #333333"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -1433,7 +1408,8 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%"
+        "width" : "100%",
+        "height" : "auto"
       }
     } ],
     "layout" : {
@@ -1456,7 +1432,8 @@
   },
   "isNonDestructive" : false,
   "styles" : {
-    "width" : "100%"
+    "width" : "100%",
+    "height" : "auto"
   }
 } ]</composition>
         <da_relay_models/>
@@ -1701,7 +1678,7 @@
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","margin-bottom":"5rem"}}],
     "root" : null,
     "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
     "styles" : null,
@@ -1712,6 +1689,17 @@
         <macroponent_dependencies/>
         <name>Sales Order New Confirm</name>
         <props>[ {
+  "name" : "view",
+  "label" : "View",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+}, {
   "name" : "salesorder",
   "label" : "salesorder",
   "fieldType" : "string",
@@ -1723,7 +1711,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Click \"Edit this section\" to edit. When finished, confirm the order to the right.","comment":""},{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Continue","comment":""},{"message":"Sales order","comment":""},{"message":"On behalf of Big Oil,","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order with your lists page.  Currently this order is in the My Pending Sales Orders section. Once approved, it will move to My Open Sales Orders.","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Enter a label","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
+        <required_translations>[{"message":"Click \"Edit this section\" to edit. When finished, confirm the order to the right.","comment":""},{"message":"Line items on this order","comment":""},{"message":"Please confirm the sales order and line items are correct","comment":""},{"message":"Edit this section","comment":""},{"message":"Submit the order for Big Oil's Customer Support to receive and begin processing.","comment":""},{"message":"Our customer service team has received your order.  While awaiting approval, you can track your order on your Lists page.  Currently this order will be in the list \"My Pending Sales Orders\". Once approved, it will move to \"My Open Sales Orders\".","comment":""},{"message":"Continue","comment":""},{"message":"Save order for later without submitting it for review.","comment":""},{"message":"Sales order","comment":""},{"message":"Line Items on this Order","comment":""},{"message":"Your order has been successfully submitted!","comment":""},{"message":"Confirm &amp; submit","comment":""},{"message":"Save as draft","comment":""},{"message":"Go to My Lists","comment":""},{"message":"Thank You!","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -1741,17 +1729,17 @@
       "id" : 0,
       "label" : "Start",
       "progress" : "done",
-      "disabled" : false
+      "disabled" : true
     }, {
       "id" : 1,
       "label" : "Configure Order",
       "progress" : "done",
-      "disabled" : false
+      "disabled" : true
     }, {
       "id" : 2,
       "label" : "Add Items",
       "progress" : "done",
-      "disabled" : false
+      "disabled" : true
     }, {
       "id" : 3,
       "label" : "Confirm",
@@ -1802,13 +1790,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-16 23:18:27</sys_created_on>
         <sys_id>e9f10e8307a2301029a8f0269c1ed092</sys_id>
-        <sys_mod_count>78</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>Sales Order New Confirm</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_e9f10e8307a2301029a8f0269c1ed092</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-04 23:47:48</sys_updated_on>
+        <sys_updated_on>2021-10-13 00:58:58</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

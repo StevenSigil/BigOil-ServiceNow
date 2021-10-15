@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent>
+        <name>Set query strings for GQL data</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  const sysId = api.context.props.sysid;
+
+  api.setState(
+    "companiesAuthorizedPurchasersQuery",
+    `external_company=${sysId}`
+  );
+  api.setState(
+    "companiesBillingAddressesQueryString",
+    `company=${sysId}^type=customer_billing`
+  );
+  api.setState(
+    "companiesShippingAddressesQueryString",
+    `company=${sysId}^type=customer_shipping`
+  );
+
+  
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 19:04:41</sys_created_on>
+        <sys_id>cfa70ce50743301029a8f0269c1ed0a2</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Set query strings for GQL data</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_cfa70ce50743301029a8f0269c1ed0a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 23:16:32</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

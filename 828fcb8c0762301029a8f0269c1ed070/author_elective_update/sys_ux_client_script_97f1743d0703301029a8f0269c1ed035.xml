@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent>
+        <name>Transform data for card components</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[// function handler({ api, event, helpers, imports }) {
+//   const gqlData =
+//     api.data.get_company_related_information_1.output.data.GlideRecord_Query;
+
+//   const allActions = [
+//     {
+//       assignmentId: "d46f400473211010c342d5fdbdf6a7cf",
+//       name: "navigation",
+//       label: "Navigation",
+//       actionType: "uxf_client_action",
+//       actionDispatch: "NAVIGATION",
+//       actionPayload:
+//         '{\r\n "table": "{{table}}",\r\n "sysId": "{{sys_id}}",\r\n "url": "{{navigation_url}}"\r\n}',
+//     },
+//   ];
+
+//   // Separating authPurchasers section of data
+//   const authPurchasers = gqlData.authPurchasers._results;
+
+//   var authPurchReturn = {};
+//   var authPurchItems = [];
+
+//   authPurchasers.forEach((record) => {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.external_company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         {
+//           id: "action1",
+//           label: "Dropdown Item 1",
+//           sublabel: "test sub label",
+//           count: 105,
+//           presence: "busy",
+//         },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.user.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Title",
+//           value: record.title.displayValue,
+//         },
+//         {
+//           label: "Department",
+//           value: record.department.displayValue,
+//         },
+//         {
+//           label: "Is Auth. Purchaser",
+//           value: record.authorized_purchaser.value ? "Yes" : "No",
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     authPurchItems.push(newRec);
+//   });
+
+//   authPurchReturn.items = authPurchItems;
+//   authPurchReturn.page_size = 2;
+//   authPurchReturn.all_actions = allActions;
+
+//   api.setState("authPurchMappedData", authPurchReturn);
+
+//   // Separating billingAddresses section of data
+//   const billingAddresses = gqlData.billingAddresses._results;
+//   var billAddrReturn = {};
+//   var billAddrItems = [];
+
+//   billingAddresses.forEach((record) => {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         { id: "action1", label: "Dropdown Item 1" },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.display_name.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Street 1",
+//           value: record.street_1.displayValue,
+//         },
+//         {
+//           label: "Street 2",
+//           value: record.street_2.displayValue,
+//         },
+//         {
+//           label: "City",
+//           value: record.city.displayValue,
+//         },
+//         {
+//           label: "State",
+//           value: record.state.displayValue,
+//         },
+//         {
+//           label: "Zip Code",
+//           value: record.zip_code.displayValue,
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     billAddrItems.push(newRec);
+//   });
+
+//   billAddrReturn.items = billAddrItems;
+//   billAddrReturn.page_size = 2;
+//   billAddrReturn.all_actions = allActions;
+
+//   api.setState("billAddrReturnData", billAddrReturn);
+
+//   // Separating shippingAddresses section of data
+//   const shippingAddresses = gqlData.shippingAddresses._results;
+//   var shipAddrReturn = {};
+//   var shipAddrItems = [];
+
+//   shippingAddresses.forEach((record) => {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         { id: "action1", label: "Dropdown Item 1" },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.display_name.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Street 1",
+//           value: record.street_1.displayValue,
+//         },
+//         {
+//           label: "Street 2",
+//           value: record.street_2.displayValue,
+//         },
+//         {
+//           label: "City",
+//           value: record.city.displayValue,
+//         },
+//         {
+//           label: "State",
+//           value: record.state.displayValue,
+//         },
+//         {
+//           label: "Zip Code",
+//           value: record.zip_code.displayValue,
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     shipAddrItems.push(newRec);
+//   });
+
+//   shipAddrReturn.items = shipAddrItems;
+//   shipAddrReturn.page_size = 2;
+//   shipAddrReturn.all_actions = allActions;
+
+//   api.setState("shipAddrReturnData", shipAddrReturn);
+// }]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-07 16:48:04</sys_created_on>
+        <sys_id>97f1743d0703301029a8f0269c1ed035</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Transform data for card components</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_97f1743d0703301029a8f0269c1ed035</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 19:54:33</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_97f1743d0703301029a8f0269c1ed035</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Customer Details"&gt;5fb70c1d0747301029a8f0269c1ed032&lt;/macroponent&gt;&lt;name&gt;Transform data for card components&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[// function handler({ api, event, helpers, imports }) {
+//   const gqlData =
+//     api.data.get_company_related_information_1.output.data.GlideRecord_Query;
+
+//   const allActions = [
+//     {
+//       assignmentId: "d46f400473211010c342d5fdbdf6a7cf",
+//       name: "navigation",
+//       label: "Navigation",
+//       actionType: "uxf_client_action",
+//       actionDispatch: "NAVIGATION",
+//       actionPayload:
+//         '{\r\n "table": "{{table}}",\r\n "sysId": "{{sys_id}}",\r\n "url": "{{navigation_url}}"\r\n}',
+//     },
+//   ];
+
+//   // Separating authPurchasers section of data
+//   const authPurchasers = gqlData.authPurchasers._results;
+
+//   var authPurchReturn = {};
+//   var authPurchItems = [];
+
+//   authPurchasers.forEach((record) =&gt; {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.external_company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         {
+//           id: "action1",
+//           label: "Dropdown Item 1",
+//           sublabel: "test sub label",
+//           count: 105,
+//           presence: "busy",
+//         },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.user.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Title",
+//           value: record.title.displayValue,
+//         },
+//         {
+//           label: "Department",
+//           value: record.department.displayValue,
+//         },
+//         {
+//           label: "Is Auth. Purchaser",
+//           value: record.authorized_purchaser.value ? "Yes" : "No",
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     authPurchItems.push(newRec);
+//   });
+
+//   authPurchReturn.items = authPurchItems;
+//   authPurchReturn.page_size = 2;
+//   authPurchReturn.all_actions = allActions;
+
+//   api.setState("authPurchMappedData", authPurchReturn);
+
+//   // Separating billingAddresses section of data
+//   const billingAddresses = gqlData.billingAddresses._results;
+//   var billAddrReturn = {};
+//   var billAddrItems = [];
+
+//   billingAddresses.forEach((record) =&gt; {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         { id: "action1", label: "Dropdown Item 1" },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.display_name.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Street 1",
+//           value: record.street_1.displayValue,
+//         },
+//         {
+//           label: "Street 2",
+//           value: record.street_2.displayValue,
+//         },
+//         {
+//           label: "City",
+//           value: record.city.displayValue,
+//         },
+//         {
+//           label: "State",
+//           value: record.state.displayValue,
+//         },
+//         {
+//           label: "Zip Code",
+//           value: record.zip_code.displayValue,
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     billAddrItems.push(newRec);
+//   });
+
+//   billAddrReturn.items = billAddrItems;
+//   billAddrReturn.page_size = 2;
+//   billAddrReturn.all_actions = allActions;
+
+//   api.setState("billAddrReturnData", billAddrReturn);
+
+//   // Separating shippingAddresses section of data
+//   const shippingAddresses = gqlData.shippingAddresses._results;
+//   var shipAddrReturn = {};
+//   var shipAddrItems = [];
+
+//   shippingAddresses.forEach((record) =&gt; {
+//     var newRec = {};
+
+//     newRec.template = "now-template-card-assist";
+//     newRec.propValues = {
+//       tagline: {
+//         label: record.company.displayValue,
+//         icon: "tree-view-long-outline",
+//       },
+//       actions: [
+//         { id: "action1", label: "Dropdown Item 1" },
+//         { id: "action2", label: "Dropdown Item 2" },
+//       ],
+//       heading: {
+//         label: record.display_name.displayValue,
+//         level: 2,
+//       },
+//       content: [
+//         {
+//           label: "Street 1",
+//           value: record.street_1.displayValue,
+//         },
+//         {
+//           label: "Street 2",
+//           value: record.street_2.displayValue,
+//         },
+//         {
+//           label: "City",
+//           value: record.city.displayValue,
+//         },
+//         {
+//           label: "State",
+//           value: record.state.displayValue,
+//         },
+//         {
+//           label: "Zip Code",
+//           value: record.zip_code.displayValue,
+//         },
+//       ],
+//       footerContent: {
+//         label: "ID:",
+//         value: record.sys_id.value,
+//         reversed: false,
+//       },
+//     };
+
+//     shipAddrItems.push(newRec);
+//   });
+
+//   shipAddrReturn.items = shipAddrItems;
+//   shipAddrReturn.page_size = 2;
+//   shipAddrReturn.all_actions = allActions;
+
+//   api.setState("shipAddrReturnData", shipAddrReturn);
+// }]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-07 16:48:04&lt;/sys_created_on&gt;&lt;sys_id&gt;97f1743d0703301029a8f0269c1ed035&lt;/sys_id&gt;&lt;sys_mod_count&gt;37&lt;/sys_mod_count&gt;&lt;sys_name&gt;Transform data for card components&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_97f1743d0703301029a8f0269c1ed035&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-08 19:54:33&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1594682585</payload_hash>
+        <record_name>Transform data for card components</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 19:54:33</sys_created_on>
+        <sys_id>f0466a0e0703701029a8f0269c1ed08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c6178b6400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 19:54:33</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>b8466a0e20037010456ffcb368beb289</update_guid>
+        <update_guid_history>b8466a0e20037010456ffcb368beb289:1594682585,b0b3c606d6cf30103acbdb2d479db290:-722469073,5d4346c262cf30109c9cd5f48b7cf481:-3893968,cc9e710234cf3010bca375274e5ea194:834703646,8dedb50286cf3010df0c455d1e8518b5:359743287,3dc0567dd4073010d8aa4baee983d6b8:-1139903635,99aac27976073010349349094a69b24f:-722469073,51190eb93c0730104f7a69dcf8ae6d28:-1360529476,73d40af577073010d7842a0466249537:-119733158,056f29f51fc33010c9228bb8cbf5505a:699807117,3498adb171c330104045e89450006583:341616759,b6d7a5b12bc3301023604cfb79363e1b:1143137548,72376571e3c33010a1fd5ee6a955d2aa:1257157062,40c56d316ac330107db528fe1f337b72:275790194,27b3e13d70833010694b75d9fc7c35ab:1979607640,a442a97d548330109bbd918774ca860f:-169985422,cae1e1bddc833010cc765753a6123436:1081357258,10d161bde4833010d637368c84053de9:-1812987123,f891e97d3a833010e3ba1050e9efdf10:822831458,b321a97d26833010067df407bf3e7920:-565187484,bdf0e57db183301059db16ad9823112c:-1232191191,771f913df68330108dfe28043280b33d:-1278717862,4afe95f9af833010e23524ce39efe8df:-1456504112,4aee9df9ba833010660118bd711c75df:-1278717862,7d9ed9f91a8330108a85e9f2dea72f3b:139109072,ec4d99b9fd833010f5f68dc24be87191:-1456504112,31fc5979948330104f40cf6cd416baee:-1476211117,f8dc15b9b9833010e023dc033d3c14e2:1112446054,9b3c997923833010d85a037fba370d7f:475887229,26db9179ac833010597c6853cded8989:1667542786,a68b9579cb8330109c14ac196e68632a:1957984299,a43b9179d9833010b5cdbe59cc157b53:-749877773,26da15392e833010697bf37ab6e1be43:1929710362,ae8a99393b8330101b420c3167af61a7:-620126439,637951f5a18330109de1141babdd91b6:1112446054,b9a0197d6d4330106183613bfcdb9979:1818153769,754330f93d033010f23fb99a7bfe2796:-1952169740,53f1743d91033010a14d8facf9e7983a:-656410732</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 20:01:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0b3b813624394b5b8676ffb84158ec21</sys_id>
+        <sys_metadata>97f1743d0703301029a8f0269c1ed035</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transform data for card components</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_97f1743d0703301029a8f0269c1ed035</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_97f1743d0703301029a8f0269c1ed035">f0466a0e0703701029a8f0269c1ed08a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 20:01:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

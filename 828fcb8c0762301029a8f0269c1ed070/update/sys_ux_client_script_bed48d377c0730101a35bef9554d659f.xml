@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Order success">b2d48d37ca0730107ca9e3cb7a636e9f</macroponent>
+        <name>View request redirection</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    let {
+        table,
+        sysId
+    } = api.context.props;
+
+    const route = "record_request";
+
+    if (table != "sc_request") {
+        table = table == "incident" ? "incident" : "task";
+        api.emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table,
+                sysId
+            }
+        });
+    } else {
+        api.emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table : "sc_req_item",
+                sysId : api.data.request_item_data_broker_1.output.sysId
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-13 23:18:24</sys_created_on>
+        <sys_id>bed48d377c0730101a35bef9554d659f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>View request redirection</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_bed48d377c0730101a35bef9554d659f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-13 23:18:24</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

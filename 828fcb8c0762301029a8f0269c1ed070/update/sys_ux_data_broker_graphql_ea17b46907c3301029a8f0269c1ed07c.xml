@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_683715_big_oil_2.Get Company Related Information</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Company Related Information</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "companySysId",&#13;
+    "label": "Company SysID",&#13;
+    "description": "Sys_ID of the target Company record",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  { &#13;
+    "name": "companiesAuthorizedPurchasersQuery",&#13;
+    "label": "Companies Authorized Purchasers Query",&#13;
+    "description": "Query string applying to Companies table, queried from User Profile table",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "companiesBillingAddressesQueryString",&#13;
+    "label": "Companies Billing Addresses Query String",&#13;
+    "description": "Query string applying to Companies table, queried from Addresses table",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "companiesShippingAddressesQueryString",&#13;
+    "label": "Companies Shipping Addresses Query String",&#13;
+    "description": "Query string applying to Companies table, queried from Addresses table",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <query>query CompaniesAddresses($companySysId: String, $companiesAuthorizedPurchasersQuery: String, $companiesBillingAddressesQueryString: String, $companiesShippingAddressesQueryString: String) {&#13;
+  GlideRecord_Query {&#13;
+    company: x_683715_big_oil_2_companies(sys_id: $companySysId) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        name {&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+    authPurchasers: x_683715_big_oil_2_user_profile(queryConditions: $companiesAuthorizedPurchasersQuery) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        number {&#13;
+          value&#13;
+        }&#13;
+        user {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        title {&#13;
+          displayValue&#13;
+        }&#13;
+        department {&#13;
+          displayValue&#13;
+        }&#13;
+        external_company {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        type {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        authorized_purchaser {&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+    billingAddresses: x_683715_big_oil_2_addresses(queryConditions: $companiesBillingAddressesQueryString) {&#13;
+      _results {&#13;
+        ...addressValues&#13;
+      }&#13;
+    }&#13;
+    shippingAddresses: x_683715_big_oil_2_addresses(queryConditions: $companiesShippingAddressesQueryString) {&#13;
+      _results {&#13;
+        ...addressValues&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}&#13;
+fragment addressValues on GlideRecord_TableResultsType_x_683715_big_oil_2_addresses {&#13;
+  sys_id {&#13;
+    value&#13;
+  }&#13;
+  display_name {&#13;
+    displayValue&#13;
+  }&#13;
+  company {&#13;
+    displayValue&#13;
+    value&#13;
+  }&#13;
+  type {&#13;
+    displayValue&#13;
+    value&#13;
+  }&#13;
+  suite {&#13;
+    displayValue&#13;
+  }&#13;
+  building {&#13;
+    displayValue&#13;
+  }&#13;
+  street_1 {&#13;
+    displayValue&#13;
+  }&#13;
+  street_2 {&#13;
+    displayValue&#13;
+  }&#13;
+  city {&#13;
+    displayValue&#13;
+  }&#13;
+  state {&#13;
+    displayValue&#13;
+  }&#13;
+  county {&#13;
+    displayValue&#13;
+  }&#13;
+  zip_code {&#13;
+    displayValue&#13;
+  }&#13;
+  country {&#13;
+    displayValue&#13;
+  }&#13;
+}</query>
+        <required_translations>[{"message":"Sys_ID of the target Company record","comment":""},{"message":"Companies Authorized Purchasers Query","comment":""},{"message":"Query string applying to Companies table, queried from User Profile table","comment":""},{"message":"Query string applying to Companies table, queried from Addresses table","comment":""},{"message":"Company SysID","comment":""},{"message":"Companies Billing Addresses Query String","comment":""},{"message":"Companies Shipping Addresses Query String","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 22:43:02</sys_created_on>
+        <sys_id>ea17b46907c3301029a8f0269c1ed07c</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Get Company Related Information</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_ea17b46907c3301029a8f0269c1ed07c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 00:29:07</sys_updated_on>
+        <type>query</type>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=ea17b46907c3301029a8f0269c1ed07c"/>
+</record_update>

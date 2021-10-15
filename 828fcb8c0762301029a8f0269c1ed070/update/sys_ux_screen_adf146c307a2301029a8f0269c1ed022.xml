@@ -88,6 +88,7 @@
 } ]</event_mappings>
         <macroponent display_value="Sales Order New Confirm">e9f10e8307a2301029a8f0269c1ed092</macroponent>
         <macroponent_config>{
+  "view" : "",
   "salesorder" : "",
   "label" : "",
   "bare" : false,
@@ -108,7 +109,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>adf146c307a2301029a8f0269c1ed022</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Sales Order New Confirm default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
@@ -116,7 +117,7 @@
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_screen_adf146c307a2301029a8f0269c1ed022</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-22 22:59:44</sys_updated_on>
+        <sys_updated_on>2021-10-12 22:11:01</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=adf146c307a2301029a8f0269c1ed022"/>
 </record_update>

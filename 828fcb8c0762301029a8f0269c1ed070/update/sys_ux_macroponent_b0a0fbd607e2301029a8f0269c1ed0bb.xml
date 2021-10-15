@@ -25,9 +25,10 @@
           }
         },
         "selectedItem" : {
-          "type" : "STATE_BINDING",
-          "binding" : {
-            "address" : [ "step" ]
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "2.0.0",
+            "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  const n = api.context.props.tabidx || api.state.step;\n\treturn Number(n);\n}"
           }
         },
         "hideNumbers" : {
@@ -208,7 +209,7 @@
                 "tooltipContent" : {
                   "type" : "TRANSLATION_LITERAL",
                   "value" : {
-                    "message" : "Enter a label",
+                    "message" : "After selecting an item and entering a quantity, click here to add the item to your order.",
                     "comment" : ""
                   }
                 },
@@ -878,14 +879,12 @@
                     "value" : ""
                   },
                   "isNonDestructive" : false,
-                  "styles" : {
-                    "margin" : ".5rem auto .5rem 0"
-                  }
+                  "styles" : { }
                 } ],
                 "layout" : {
                   "default" : {
                     "children" : null,
-                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":".5rem 1.25rem","height":"auto","min-height":"50px"}}],
+                    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between","align-items":"center","padding":"1rem 1.25rem","height":"auto","min-height":"50px"}}],
                     "root" : null,
                     "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
                     "styles" : null,
@@ -2057,7 +2056,7 @@
           "propertyValues" : {
             "variant" : {
               "type" : "JSON_LITERAL",
-              "value" : "primary-positive"
+              "value" : "primary"
             },
             "size" : {
               "type" : "JSON_LITERAL",
@@ -3813,7 +3812,9 @@
         "value" : ""
       },
       "isNonDestructive" : false,
-      "styles" : { }
+      "styles" : {
+        "margin" : "0 1rem"
+      }
     }, {
       "elementId" : "button_9",
       "elementLabel" : "Button 9",
@@ -3923,13 +3924,13 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "margin-left" : "1rem"
+        "margin" : "0 1rem"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"modal-title","rules":{"grid-area":"1 / 1 / 2 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"modal-content","rules":{"grid-area":"2 / 1 / 3 / 2","min-height":"100px"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"modal-footer","rules":{"grid-area":"3 / 1 / 4 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"row"}}],
+        "items" : [{"slotName":"modal-title","rules":{"grid-area":"1 / 1 / 2 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"modal-content","rules":{"grid-area":"2 / 1 / 3 / 2","min-height":"100px"},"styles":{"display":"flex","flex-direction":"column","height":"auto"}},{"slotName":"modal-footer","rules":{"grid-area":"3 / 1 / 4 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"row","justify-content":"center","align-items":"center"}}],
         "root" : null,
         "rules" : {"grid-template-columns":"1fr","grid-template-rows":"repeat(3, auto)","grid-column-gap":"0px","grid-row-gap":"1rem"},
         "styles" : {},
@@ -3944,8 +3945,7 @@
   },
   "isNonDestructive" : false,
   "styles" : {
-    "width" : "100%",
-    "max-height" : "max-content"
+    "width" : "100%"
   }
 } ]</composition>
         <da_relay_models/>
@@ -3956,7 +3956,182 @@
   },
   "elementId" : "inventory_transfer_form",
   "elementLabel" : "Inventory Transfer Form",
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "ckueiqsokaabbeewddiihhzvaaiigddoaaf",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#SET_LOADING_STATE",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#SET_LOADING_STATE",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "loading" : {
+              "type" : "EVENT_PAYLOAD_BINDING",
+              "binding" : {
+                "address" : [ "loading" ]
+              }
+            }
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckueiqsokaabbeexddiihhzffjjiddhngjj",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "ckueioqfbaabbeehhddiihhzeeucffhwccc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : null
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckueioqfcaabbeeiiddiihhzhhhnijjegd",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "ckueioqbbggaabbeeffddiihhzxeecchhcczap",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STATUS_UPDATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "ckueioqbbggaabbeeggddiihhzaannwrjjab",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "ckueiobhhkaabbeeddddiihhzmlhnlauv",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : null
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckueiobhhkaabbeeeeddiihhzcuggvmffffd",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "ckueiniiyiiaabbeeaaddiihhzrudffmbbpgg",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STARTED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STARTED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : true
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckueiniiyiiaabbeebbddiihhzjjlnfdpajj",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "propName" : {
+              "type" : "JSON_LITERAL",
+              "value" : "step"
+            },
+            "value" : {
+              "type" : "CONTEXT_BINDING",
+              "binding" : {
+                "address" : [ "tabidx" ],
+                "category" : "props"
+              }
+            }
+          }
+        },
+        "sysId" : "32408b42ff7a10109046e490703bf176"
+      },
+      "operation" : null,
+      "targetId" : "ckueinnbwaabbeeccddiihhzsemddgpkt",
+      "type" : "EVENT"
+    } ]
+  } ],
   "inputValues" : {
     "table" : {
       "type" : "JSON_LITERAL",
@@ -4446,6 +4621,25 @@
         <interactions/>
         <interfaces/>
         <internal_event_mappings>{
+  "MACROPONENT_PROPERTY_CHANGED" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "propName" : "step",
+          "value" : "2"
+        }
+      },
+      "sysId" : "32408b42ff7a10109046e490703bf176"
+    },
+    "operation" : null,
+    "targetId" : "ckueitshgaabbffiddiihhzuhhfeeiijh",
+    "type" : "EVENT"
+  } ],
   "x_683715_big_oil_2.ADD_INFO_MESSAGE_TO_SCREEN" : [ {
     "broker" : null,
     "clientScript" : {
@@ -4529,7 +4723,7 @@
       "sysId" : null
     },
     "operation" : null,
-    "targetId" : "cktpbbdcfeaaaakzddahhygghhtuwgiff",
+    "targetId" : "ckueilanhhaabbddeddiihhztbqbbjjhiiq",
     "type" : "EVENT"
   } ],
   "x_683715_big_oil_2.SALESORDERDETAILS_CHANGE" : [ {
@@ -4591,7 +4785,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Lines on this order","comment":""},{"message":"Quantity requesting (uom)","comment":""},{"message":"Qt. Requested","comment":""},{"message":"UOM","comment":""},{"message":"Click a line to edit or remove","comment":""},{"message":"Add line to order","comment":""},{"message":"Line No.","comment":""},{"message":"Save","comment":""},{"message":"Sales Order","comment":""},{"message":"Are you sure you want to delete this line item?","comment":""},{"message":"This action cannot be undone...","comment":""},{"message":"Category","comment":""},{"message":"This item can not be changed. Please delete the line entirely to change the item.","comment":""},{"message":"Delete","comment":""},{"message":"Description","comment":""},{"message":"Select an action for this line","comment":""},{"message":"Purchase Order","comment":""},{"message":"Select an item from the below list","comment":""},{"message":"Add a Line Item","comment":""},{"message":"Continue","comment":""},{"message":"Item Selected","comment":""},{"message":"Item","comment":""},{"message":"Continue to the next section","comment":""},{"message":"Part number","comment":""},{"message":"Back","comment":""},{"message":"Enter a label","comment":""},{"message":"Stage","comment":""},{"message":"Requested Delivery Date","comment":""}]</required_translations>
+        <required_translations>[{"message":"Lines on this order","comment":""},{"message":"Quantity requesting (uom)","comment":""},{"message":"Qt. Requested","comment":""},{"message":"UOM","comment":""},{"message":"Click a line to edit or remove","comment":""},{"message":"Add line to order","comment":""},{"message":"Line No.","comment":""},{"message":"Save","comment":""},{"message":"Sales Order","comment":""},{"message":"Are you sure you want to delete this line item?","comment":""},{"message":"This action cannot be undone...","comment":""},{"message":"Category","comment":""},{"message":"This item can not be changed. Please delete the line entirely to change the item.","comment":""},{"message":"Delete","comment":""},{"message":"Description","comment":""},{"message":"Select an action for this line","comment":""},{"message":"Purchase Order","comment":""},{"message":"Select an item from the below list","comment":""},{"message":"Add a Line Item","comment":""},{"message":"Continue","comment":""},{"message":"Item Selected","comment":""},{"message":"Item","comment":""},{"message":"Continue to the next section","comment":""},{"message":"Part number","comment":""},{"message":"After selecting an item and entering a quantity, click here to add the item to your order.","comment":""},{"message":"Back","comment":""},{"message":"Stage","comment":""},{"message":"Enter a label","comment":""},{"message":"Requested Delivery Date","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -4764,13 +4958,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-14 23:26:35</sys_created_on>
         <sys_id>b0a0fbd607e2301029a8f0269c1ed0bb</sys_id>
-        <sys_mod_count>264</sys_mod_count>
+        <sys_mod_count>284</sys_mod_count>
         <sys_name>Sales Order Items</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_b0a0fbd607e2301029a8f0269c1ed0bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-04 23:05:55</sys_updated_on>
+        <sys_updated_on>2021-10-06 00:00:37</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

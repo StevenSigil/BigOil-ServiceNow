@@ -5,63 +5,75 @@
         <name>Handle Click with SysID</name>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[function handler({ api, event, helpers, imports }) {
-  var listMenuIDs = api.context.props.listMenuIDs;
+  var { recordTable, sys_id, name } = event.payload.clickTarget;
   const currList = api.state.currList;
 
-  // Replacing hyphen for underscore for already completed pages.
-  var targetID = event.payload.targetSysID;
+  try {
+    if (!sys_id && name.toString().includes("BUTTON#CLICKED")) {
+      // "New" button clicked... sys_id && recordTable should be "undefined"
+      const listMenuIDs = api.context.props.listMenuIDs;
 
-  if (targetID != -1) {
-    targetID = targetID.replaceAll("-", "_");
-  }
+      sys_id = -1;
 
-  // var listMenuIDs = {
-  //   my_sales_orders: "1dd1665c07b2301029a8f0269c1ed0a2",
-  //   my_drafts: "bad064c907b2301029a8f0269c1ed01f",
-  //   all_sales_orders: "cba4a0e107a2701029a8f0269c1ed01e",
-  //   my_authorization_requests: "16ccf4b00722301029a8f0269c1ed0d2",
-  // };
+      // set recordTable to the name of the navigation list (all lists should pass if checks)
+      recordTable =
+        Object.keys(listMenuIDs)[
+          Object.values(listMenuIDs).findIndex((i) => i === currList.toString())
+        ];
+    }
 
-  const newURLs = {
-    salesOrder_existing: { page: "sales-order-confirm", salesorder: targetID },
-    salesOrder_new: { page: "sales-order-new", sOrder: targetID },
-    auth_req: { page: "auth-request" },
-    auth_req_exist: { page: "auth-request-existing", sysid: targetID },
-  };
+    const newURLs = {
+      salesOrder_existing: ["sales-order-viewer", { sysid: sys_id }],
+      salesOrder_new: ["sales-order-new", { sOrder: sys_id }],
+      auth_req: ["auth-request", {}],
+      auth_req_exist: ["auth-request-existing", { sysid: sys_id }],
+      companies: ["customer-details", { sysid: sys_id }],
+    };
 
-  const listIds = {
-    salesOrder: [
-      listMenuIDs.my_sales_orders,
-      listMenuIDs.my_drafts,
-      listMenuIDs.all_sales_orders,
-    ],
-    authReq: [listMenuIDs.my_authorization_requests],
-  };
+    // console.log(recordTable, sys_id, name, currList);
 
-  // check if selected list is sales order
-  const isSO = listIds.salesOrder.some((so) => so == currList);
+    var nav;
 
-  if (isSO) {
-    if (targetID == -1) {
-      helpers.navigate.to(newURLs.salesOrder_new.page, { sOrder: targetID });
+    if (
+      recordTable.includes("sales_order") ||
+      recordTable.includes("my_drafts")
+    ) {
+      nav = sys_id == -1 ? newURLs.salesOrder_new : newURLs.salesOrder_existing;
+    }
+    if (recordTable.includes("authorization_request")) {
+      nav = sys_id == -1 ? newURLs.auth_req : newURLs.auth_req_exist;
+    }
+    if (recordTable == "x_683715_big_oil_2_companies") {
+      nav = newURLs.companies;
+    }
+    if (recordTable == "x_683715_big_oil_2_user_profile") {
+      // Lookup profile and Open modal
+      api.setState("userProfileClicked", { table: recordTable, sysId: sys_id });
       return;
     }
-    helpers.navigate.to(newURLs.salesOrder_existing.page, {
-      salesorder: targetID,
-    });
-    return;
-  }
 
-  // check if selected list is auth request
-  const isAuth = listIds.authReq.some((a) => a == currList);
+    nav ? helpers.navigate.to(nav[0], nav[1]) : null;
+  } catch (err) {
+    console.log(err);
 
-  if (isAuth) {
-    if (targetID == -1) {
-      helpers.navigate.to(newURLs.auth_req.page);
-      return;
-    }
-    // NAVIGATE TO EXISTING AUTH PAGE
-    helpers.navigate.to(newURLs.auth_req_exist.page, { sysid: targetID });
+    // Error alert
+    const items = [
+      {
+        id: 0,
+        status: "critical",
+        icon: null,
+        content:
+          "An error has occurred. Please contact Customer Support for more information.",
+        action: { type: "dismiss" },
+      },
+    ];
+
+    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", { items });
+
+    helpers.timing.setTimeout(() => {
+      api.emit("NOW_UXF_PAGE#CLEAR_NOTIFICATIONS");
+      console.log("timeout executed!");
+    }, 4000);
   }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -69,13 +81,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-22 22:07:24</sys_created_on>
         <sys_id>4b3b284107f2301029a8f0269c1ed071</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>Handle Click with SysID</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_client_script_4b3b284107f2301029a8f0269c1ed071</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-28 05:30:00</sys_updated_on>
+        <sys_updated_on>2021-10-13 19:40:34</sys_updated_on>
     </sys_ux_client_script>
 </record_update>

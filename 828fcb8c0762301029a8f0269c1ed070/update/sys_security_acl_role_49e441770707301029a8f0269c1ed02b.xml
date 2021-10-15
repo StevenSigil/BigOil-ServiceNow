@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-13 23:18:29</sys_created_on>
+        <sys_id>49e441770707301029a8f0269c1ed02b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ead48d370707301029a8f0269c1ed072.x_683715_big_oil_2.customer_support</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_security_acl display_value="ead48d370707301029a8f0269c1ed072">7ed48d379e073010555255a9df8341a9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_49e441770707301029a8f0269c1ed02b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-13 23:18:29</sys_updated_on>
+        <sys_user_role display_value="x_683715_big_oil_2.customer_support" name="x_683715_big_oil_2.customer_support">c698afd507ee301029a8f0269c1ed0b1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

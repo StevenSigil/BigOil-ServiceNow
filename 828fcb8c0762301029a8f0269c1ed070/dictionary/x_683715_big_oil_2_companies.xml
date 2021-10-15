@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Companies" max_length="40" name="x_683715_big_oil_2_companies" sizeclass="1" type="collection">
+    <element label="Companies" max_length="40" name="x_683715_big_oil_2_companies" sizeclass="2" type="collection">
         <element label="Authorized Purchasers" max_length="4000" name="authorized_purchasers" reference="x_683715_big_oil_2_user_profile" type="glide_list"/>
         <element label="Billing Addresses" max_length="32" name="billing_addresses" reference="x_683715_big_oil_2_addresses" type="glide_list"/>
         <element label="Name" max_length="40" name="name" type="string"/>

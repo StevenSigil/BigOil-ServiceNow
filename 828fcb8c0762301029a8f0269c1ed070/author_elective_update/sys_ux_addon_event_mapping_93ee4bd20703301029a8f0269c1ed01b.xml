@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="DELETE">
+        <active>true</active>
+        <description>EVENTMAPPING DESCRIPTION</description>
+        <name>EVENTMAPPING NAME</name>
+        <parent_macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</parent_macroponent>
+        <source_da display_value="navigation">d46f400473211010c342d5fdbdf6a7cf</source_da>
+        <source_element_id>auth_purchasers_data_set</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 17:30:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93ee4bd20703301029a8f0269c1ed01b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>EVENTMAPPING NAME</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_93ee4bd20703301029a8f0269c1ed01b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:08:18</sys_updated_on>
+        <target_event display_value="Handle Card Click">41fbeb9a0743301029a8f0269c1ed06f</target_event>
+        <target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "data": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "table"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_addon_event_mapping_93ee4bd20703301029a8f0269c1ed01b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping"><sys_ux_addon_event_mapping action="INSERT_OR_UPDATE"><active>true</active><description>EVENTMAPPING DESCRIPTION</description><name>EVENTMAPPING NAME</name><parent_macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</parent_macroponent><source_da display_value="navigation">d46f400473211010c342d5fdbdf6a7cf</source_da><source_element_id>auth_purchasers_data_set</source_element_id><sys_class_name>sys_ux_addon_event_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-09 17:30:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>93ee4bd20703301029a8f0269c1ed01b</sys_id><sys_mod_count>5</sys_mod_count><sys_name>EVENTMAPPING NAME</sys_name><sys_overrides/><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_addon_event_mapping_93ee4bd20703301029a8f0269c1ed01b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-09 20:08:18</sys_updated_on><target_event display_value="Handle Card Click">41fbeb9a0743301029a8f0269c1ed06f</target_event><target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "data": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "table"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping></sys_ux_addon_event_mapping></record_update>]]></payload>
+        <payload_hash>-1934038366</payload_hash>
+        <record_name>EVENTMAPPING NAME</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 20:08:18</sys_created_on>
+        <sys_id>c0033b120783301029a8f0269c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c66aba9800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:08:18</sys_updated_on>
+        <type>UX Add-on Event Mapping</type>
+        <update_guid>c8033b1256833010b4a7cf55c006e70f</update_guid>
+        <update_guid_history>c8033b1256833010b4a7cf55c006e70f:-1934038366,60516f1230433010ef4510457fe42621:-680669799,60516f1230433010ef4510457fe42621:-680669799,7903d71a330330102b0e6c53b115d2b8:799250003,fcc0df565e033010e76cdcae8ebed4d8:-247426474,fcc0df565e033010e76cdcae8ebed4d8:-247426474,2460d39695033010505d182ea63b0924:356530994,93ee4bd2850330102c5a3a91c66ddb1e:-844958254</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 20:08:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_addon_event_mapping">sys_ux_addon_event_mapping</sys_db_object>
+        <sys_id>00e202b7eb96425f8024c68685c5f259</sys_id>
+        <sys_metadata>93ee4bd20703301029a8f0269c1ed01b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EVENTMAPPING NAME</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_addon_event_mapping_93ee4bd20703301029a8f0269c1ed01b</sys_update_name>
+        <sys_update_version display_value="sys_ux_addon_event_mapping_93ee4bd20703301029a8f0269c1ed01b">c0033b120783301029a8f0269c1ed010</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:08:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

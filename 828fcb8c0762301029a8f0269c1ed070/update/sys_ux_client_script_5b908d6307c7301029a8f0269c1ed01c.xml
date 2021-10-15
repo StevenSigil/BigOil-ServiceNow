@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="lists">50c6d1740762301029a8f0269c1ed08c</macroponent>
+        <name>Format Data for Modal and Open</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  const data = api.data.look_up_record.result;
+  var newKeys = Object.keys(data);
+
+  newKeys.forEach((key) => {
+    data[key].label = key
+      .split("_")
+      .join(" ")
+      .replace(/(^\w)|(\s+\w)/g, (i) => i.toUpperCase())
+      .trim();
+  });
+
+  api.setState("modalData", data);
+
+  if (data.user) {
+    // Check if profile belongs to current user
+    const profileUser = data.user.value;
+    const signedInUser = api.context.session.user.sys_id;
+
+    const result = profileUser !== signedInUser;
+    api.setState("editProfileDisabled", result);
+
+    // All needed data should be set ->> Open Modal
+    api.emit("MODAL_SELECTED_RELAY_50c6d1740762301029a8f0269c1ed08c", {
+      modalId: "[component-id$='custom_1']",
+      showModal: true,
+      displayOptions: {},
+      bare: true,
+    });
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-13 04:21:19</sys_created_on>
+        <sys_id>5b908d6307c7301029a8f0269c1ed01c</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Format Data for Modal and Open</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_5b908d6307c7301029a8f0269c1ed01c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-13 19:39:21</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

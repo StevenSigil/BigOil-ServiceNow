@@ -829,7 +829,7 @@
                     }
                   },
                   "eventMappings" : [ {
-                    "eventMappingId" : "cktkjyrhhjaaaaeepddahhyvmbbccepaaq",
+                    "eventMappingId" : "ckuerjjgiidaaaaddqddiihhzccfqaccyeeff",
                     "isConfiguration" : false,
                     "offRowStorageId" : null,
                     "sourceEventApiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
@@ -844,20 +844,20 @@
                       "clientScript" : null,
                       "declarativeAction" : null,
                       "event" : {
-                        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                        "apiName" : "x_683715_big_oil_2.MODAL_SELECTED_RELAY_3b23b46d07a2701029a8f0269c1ed05c",
                         "payload" : {
                           "type" : "JSON_LITERAL",
                           "value" : {
-                            "items" : [ {
-                              "type" : "info",
-                              "message" : "This will be coming soon..."
-                            } ]
+                            "modalId" : "[component-id$='custom_1']",
+                            "showModal" : true,
+                            "displayOptions" : null,
+                            "bare" : true
                           }
                         },
-                        "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
+                        "sysId" : "4d2400190747301029a8f0269c1ed095"
                       },
                       "operation" : null,
-                      "targetId" : "cktkjyrhhjaaaaeeqddahhynwafpdad",
+                      "targetId" : "ckuerjjgiidaaaaddrddiihhzoehhswbbbdd",
                       "type" : "EVENT"
                     } ]
                   } ],
@@ -907,7 +907,7 @@
                     "tooltipContent" : {
                       "type" : "TRANSLATION_LITERAL",
                       "value" : {
-                        "message" : "Enter a label",
+                        "message" : "Continue to the next section.",
                         "comment" : ""
                       }
                     },
@@ -951,6 +951,21 @@
                       },
                       "operation" : null,
                       "targetId" : "cktnfidddccaaaaiijddahhyozffospjp",
+                      "type" : "EVENT"
+                    }, {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : null,
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : { }
+                        },
+                        "sysId" : null
+                      },
+                      "operation" : null,
+                      "targetId" : "ckuehjtgnaaaavzddiihhzlbydxjjggj",
                       "type" : "EVENT"
                     } ]
                   } ],
@@ -2991,6 +3006,316 @@
     "width" : "100%",
     "height" : "auto"
   }
+}, {
+  "elementId" : "custom_1",
+  "elementLabel" : "Cancel Modal",
+  "propertyValues" : {
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "bare" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "disableDismiss" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "9c2e3b0978b3250ef3081204f151026a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "stylized_text_8",
+      "elementLabel" : "Stylized text 8",
+      "propertyValues" : {
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Discard sales order and return to your lists?",
+            "comment" : ""
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "h2"
+        },
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "modal-title",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "button_5",
+      "elementLabel" : "Button 5",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "secondary"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Keep working",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "configAria" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckuerggasvaaaaddaaddiihhzggaglkbboii",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "x_683715_big_oil_2.MODAL_SELECTED_RELAY_3b23b46d07a2701029a8f0269c1ed05c",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "modalId" : "[component-id$='custom_1']",
+                "showModal" : null,
+                "displayOptions" : null,
+                "bare" : true
+              }
+            },
+            "sysId" : "4d2400190747301029a8f0269c1ed095"
+          },
+          "operation" : null,
+          "targetId" : "ckuerggasvaaaaddbbddiihhzggpkccvcjjjj",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : "modal-footer",
+      "definition" : {
+        "id" : "d37ce8abca89d02905fed903c8e34d8e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin" : "0 1rem"
+      }
+    }, {
+      "elementId" : "button_6",
+      "elementLabel" : "Button 6",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "primary-negative"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Cancel order",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "configAria" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckuerhfdccaaaaffhddiihhzlcybbbliff",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "x_683715_big_oil_2.MODAL_SELECTED_RELAY_3b23b46d07a2701029a8f0269c1ed05c",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "modalId" : "[component-id$='custom_1']",
+                "showModal" : null,
+                "displayOptions" : null,
+                "bare" : true
+              }
+            },
+            "sysId" : "4d2400190747301029a8f0269c1ed095"
+          },
+          "operation" : null,
+          "targetId" : "ckuerhfdccaaaaffiddiihhzlqybbflffw",
+          "type" : "EVENT"
+        }, {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_3b23b46d07a2701029a8f0269c1ed05c",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "route" : "lists",
+                "fields" : null,
+                "params" : {
+                  "targetlist" : "my-sales-orders"
+                },
+                "redirect" : null,
+                "passiveNavigation" : null,
+                "title" : null,
+                "multiInstField" : null,
+                "targetRoute" : null,
+                "external" : null
+              }
+            },
+            "sysId" : "2033452907e2701029a8f0269c1ed0bf"
+          },
+          "operation" : null,
+          "targetId" : "ckuerhyffccaaaaffkddiihhzwfynoeri",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : "modal-footer",
+      "definition" : {
+        "id" : "d37ce8abca89d02905fed903c8e34d8e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin" : "0 1rem"
+      }
+    }, {
+      "elementId" : "stylized_text_9",
+      "elementLabel" : "Stylized text 9",
+      "propertyValues" : {
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Any changes made will not be saved.  This action cannot be undone...",
+            "comment" : ""
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "h3"
+        },
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { \r\n    font-weight: 500;\r\n    margin: 0;\r\n}"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "modal-content",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin-bottom" : ".5rem"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"modal-title","rules":{"grid-area":"1 / 1 / 2 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"modal-content","rules":{"grid-area":"2 / 1 / 3 / 2","min-height":"100px"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"modal-footer","rules":{"grid-area":"3 / 1 / 4 / 2","min-height":"50px"},"styles":{"display":"flex","flex-direction":"row","justify-content":"center","align-items":"center"}}],
+        "root" : null,
+        "rules" : {"grid-template-columns":"1fr","grid-template-rows":"repeat(3, auto)","grid-column-gap":"0px","grid-row-gap":"1rem"},
+        "styles" : {},
+        "templateId" : null,
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -3001,6 +3326,58 @@
   "elementId" : "sales_order_glide_form",
   "elementLabel" : "Sales Order Glide Form",
   "eventMappings" : [ {
+    "eventMappingId" : "ckuefgiabaaaakiddiihhzwabdwcdda",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STARTED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_now_record_form.SN_FORM_DATA_CONNECTED#FETCH_STARTED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : true
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckuefgsccccaaaakkddiihhzsffncchhscs",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_683715_big_oil_2.UPDATE_STEP",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "nextStep" : {
+              "type" : "CONTEXT_BINDING",
+              "binding" : {
+                "address" : [ "stepidx" ],
+                "category" : "props"
+              }
+            }
+          }
+        },
+        "sysId" : "8bb1a31e07a2301029a8f0269c1ed0d8"
+      },
+      "operation" : null,
+      "targetId" : "ckuegtmcwaaaartddiihhzgbbadrzlz",
+      "type" : "EVENT"
+    } ]
+  }, {
     "eventMappingId" : "cktosdgggggaaaabrddaiijjbyewsibaa",
     "isConfiguration" : false,
     "offRowStorageId" : null,
@@ -3036,6 +3413,38 @@
       "operation" : null,
       "targetId" : "cktoveeiijiaaaaeejddahhyszqeeqddqo",
       "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : null
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "ckuefhbbuaaaaaklddiihhzccfffuccgve",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "ckuegrtdzaaaarhhddiihhztezossggy",
+      "type" : "EVENT"
     } ]
   }, {
     "eventMappingId" : "cktngyuhhjjaaaaefddahhyzccoddsall",
@@ -3131,6 +3540,23 @@
       "clientScript" : null,
       "declarativeAction" : null,
       "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : null
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "cktozffnjsaaaafffddahhyfvhggxghc",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
         "apiName" : null,
         "payload" : {
           "type" : "JSON_LITERAL",
@@ -3139,7 +3565,7 @@
         "sysId" : null
       },
       "operation" : null,
-      "targetId" : "cktozffnjsaaaafffddahhyfvhggxghc",
+      "targetId" : "ckuefhjjfccaaaakmddiihhzbbwkmjjzvp",
       "type" : "EVENT"
     } ]
   } ],
@@ -3322,7 +3748,7 @@
   },
   "readEvaluationMode" : "EXPLICIT"
 } ]</data>
-        <dispatched_events>2033452907e2701029a8f0269c1ed0bf</dispatched_events>
+        <dispatched_events>4d2400190747301029a8f0269c1ed095,2033452907e2701029a8f0269c1ed0bf</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events>50171ad30762301029a8f0269c1ed0bd,8bb1a31e07a2301029a8f0269c1ed0d8,9aa876420726301029a8f0269c1ed04f</handled_events>
         <interactions/>
@@ -3333,15 +3759,23 @@
     "clientScript" : null,
     "declarativeAction" : null,
     "event" : {
-      "apiName" : null,
+      "apiName" : "x_683715_big_oil_2.UPDATE_STEP",
       "payload" : {
-        "type" : "JSON_LITERAL",
-        "value" : { }
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "nextStep" : {
+            "type" : "CONTEXT_BINDING",
+            "binding" : {
+              "address" : [ "stepidx" ],
+              "category" : "props"
+            }
+          }
+        }
       },
-      "sysId" : null
+      "sysId" : "8bb1a31e07a2301029a8f0269c1ed0d8"
     },
     "operation" : null,
-    "targetId" : "cktozccpbxaaaaeepddahhybffnhmwddr",
+    "targetId" : "ckuegnhheejaaaaprddiihhziiccnffbbaauj",
     "type" : "EVENT"
   } ],
   "x_683715_big_oil_2.SALESORDER_GF_LOADED" : [ {
@@ -3356,14 +3790,19 @@
     "type" : "CLIENT_SCRIPT"
   }, {
     "broker" : null,
-    "clientScript" : {
-      "sysId" : "494b7adb07a2301029a8f0269c1ed080"
-    },
+    "clientScript" : null,
     "declarativeAction" : null,
-    "event" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
     "operation" : null,
-    "targetId" : "cktoufccbbgaaaajeddaiijjhhfcccxtcz",
-    "type" : "CLIENT_SCRIPT"
+    "targetId" : "ckueffftjaaaajwddiihhzfnnhhkffiim",
+    "type" : "EVENT"
   }, {
     "broker" : null,
     "clientScript" : null,
@@ -3377,7 +3816,7 @@
       "sysId" : null
     },
     "operation" : null,
-    "targetId" : "cktpaawnhqaaaadiddahhyzvaggdjjwhh",
+    "targetId" : "ckueftdtuaaaanuddiihhziwqffeedw",
     "type" : "EVENT"
   } ],
   "x_683715_big_oil_2.ERRALERT" : [ {
@@ -3466,7 +3905,7 @@
   "readOnly" : true,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"No","comment":""},{"message":"Freight Terms","comment":""},{"message":"Contract No.","comment":""},{"message":"Status","comment":""},{"message":"Please enter your contract number here and press submit when finished.","comment":""},{"message":"Payment Terms","comment":""},{"message":"Manage addresses","comment":""},{"message":"Submit","comment":""},{"message":"Shipping details","comment":""},{"message":"Created","comment":""},{"message":"Company","comment":""},{"message":"Cancel","comment":""},{"message":"Yes","comment":""},{"message":"Purchase Order","comment":""},{"message":"Contract Number:","comment":""},{"message":"Shipping Address","comment":""},{"message":"Please enter the details for your order","comment":""},{"message":"Continue","comment":""},{"message":"Start from scratch","comment":""},{"message":"Requesting Delivery Date","comment":""},{"message":"Will this order be on contract?","comment":""},{"message":"Number","comment":""},{"message":"Billing Address","comment":""},{"message":"Purchaser","comment":""},{"message":"FOB","comment":""},{"message":"Enter a label","comment":""},{"message":"Use the buttons to the right to continue or cancel","comment":""},{"message":"Order details","comment":""},{"message":"mm/dd/yyyy","comment":""}]</required_translations>
+        <required_translations>[{"message":"No","comment":""},{"message":"Freight Terms","comment":""},{"message":"Contract No.","comment":""},{"message":"Status","comment":""},{"message":"Please enter your contract number here and press submit when finished.","comment":""},{"message":"Payment Terms","comment":""},{"message":"Manage addresses","comment":""},{"message":"Submit","comment":""},{"message":"Shipping details","comment":""},{"message":"Discard sales order and return to your lists?","comment":""},{"message":"Created","comment":""},{"message":"Company","comment":""},{"message":"Cancel","comment":""},{"message":"Yes","comment":""},{"message":"Keep working","comment":""},{"message":"Cancel order","comment":""},{"message":"Purchase Order","comment":""},{"message":"Contract Number:","comment":""},{"message":"Shipping Address","comment":""},{"message":"Please enter the details for your order","comment":""},{"message":"Continue","comment":""},{"message":"Any changes made will not be saved.  This action cannot be undone...","comment":""},{"message":"Start from scratch","comment":""},{"message":"Requesting Delivery Date","comment":""},{"message":"Will this order be on contract?","comment":""},{"message":"Number","comment":""},{"message":"Billing Address","comment":""},{"message":"Purchaser","comment":""},{"message":"FOB","comment":""},{"message":"Enter a label","comment":""},{"message":"Use the buttons to the right to continue or cancel","comment":""},{"message":"Order details","comment":""},{"message":"mm/dd/yyyy","comment":""},{"message":"Continue to the next section.","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -3670,13 +4109,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-12 01:43:24</sys_created_on>
         <sys_id>3b23b46d07a2701029a8f0269c1ed05c</sys_id>
-        <sys_mod_count>253</sys_mod_count>
+        <sys_mod_count>273</sys_mod_count>
         <sys_name>Sales Order</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_3b23b46d07a2701029a8f0269c1ed05c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-04 21:33:22</sys_updated_on>
+        <sys_updated_on>2021-10-06 00:18:15</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

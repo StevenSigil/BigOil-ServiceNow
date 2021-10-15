@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="a0c273590703301029a8f0269c1ed06f" sys_domain="global" table="sys_ux_composite_datasource" version="3" view="big_oil_view">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>0c2230a507c3301029a8f0269c1ed0e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <text>Sort By: Only allows datetime field to sort different records together</text>
+            <type display_value="Section Details">19756e5ec3313000bac1addbdfba8f18</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_scope</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>442230a507c3301029a8f0269c1ed0ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>cc2230a507c3301029a8f0269c1ed0ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>442230a507c3301029a8f0269c1ed0ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>c82230a507c3301029a8f0269c1ed0ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>condition</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>402230a507c3301029a8f0269c1ed0f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sort_by</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>c42230a507c3301029a8f0269c1ed0f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>encoded_query_script</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>842234a507c3301029a8f0269c1ed000</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>0c2230a507c3301029a8f0269c1ed0e6</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>0c2234a507c3301029a8f0269c1ed000</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.sys_ux_composite_datasource.sys_ux_composite_datasource_filter.datasource</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>802234a507c3301029a8f0269c1ed001</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.sys_ux_composite_datasource.sys_ux_composite_data_m2m_datasource.datasource</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 22:10:09</sys_created_on>
+            <sys_id>082234a507c3301029a8f0269c1ed001</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_ux_composite_datasource" sys_domain="global" view="a0c2b3190703301029a8f0269c1ed0d5">a0c273590703301029a8f0269c1ed06f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 22:10:09</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sys_ux_composite_datasource</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-06 17:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0c273590703301029a8f0269c1ed06f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_ux_composite_datasource</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+            <sys_update_name>sys_ui_section_a0c273590703301029a8f0269c1ed06f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-06 17:33:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Big Oil View" name="big_oil_view">a0c2b3190703301029a8f0269c1ed0d5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

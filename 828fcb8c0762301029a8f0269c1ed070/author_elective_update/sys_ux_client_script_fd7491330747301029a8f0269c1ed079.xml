@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent>
+        <name>Redirect if sysid is -99</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  const dataOuter =
+    api.data.get_user_profile_from_user_id_1.output.data.GlideRecord_Query
+      .x_683715_big_oil_2_user_profile._results;
+
+  console.log("REDIRECT IF SYSID IS -99 ACTIVATED", dataOuter.length);
+
+  if (api.context.props.sysid == "-99" && dataOuter.length == 1) {
+    const company = dataOuter[0].external_company.value;
+
+    console.log("Navigating...", company);
+    try {
+    helpers.navigate.to("customer-details", { sysid: company }, {}, true);
+    } catch (err) {
+      console.log(err);
+    }
+  } else {
+    console.log("NOT Navigating.");
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 00:26:32</sys_created_on>
+        <sys_id>fd7491330747301029a8f0269c1ed079</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Redirect if sysid is -99</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_fd7491330747301029a8f0269c1ed079</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 20:30:49</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_fd7491330747301029a8f0269c1ed079</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Customer Details"&gt;5fb70c1d0747301029a8f0269c1ed032&lt;/macroponent&gt;&lt;name&gt;Redirect if sysid is -99&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({ api, event, helpers, imports }) {
+  const dataOuter =
+    api.data.get_user_profile_from_user_id_1.output.data.GlideRecord_Query
+      .x_683715_big_oil_2_user_profile._results;
+
+  console.log("REDIRECT IF SYSID IS -99 ACTIVATED", dataOuter.length);
+
+  if (api.context.props.sysid == "-99" &amp;&amp; dataOuter.length == 1) {
+    const company = dataOuter[0].external_company.value;
+
+    console.log("Navigating...", company);
+    try {
+    helpers.navigate.to("customer-details", { sysid: company }, {}, true);
+    } catch (err) {
+      console.log(err);
+    }
+  } else {
+    console.log("NOT Navigating.");
+  }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-14 00:26:32&lt;/sys_created_on&gt;&lt;sys_id&gt;fd7491330747301029a8f0269c1ed079&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Redirect if sysid is -99&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_fd7491330747301029a8f0269c1ed079&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-14 20:30:49&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1098218572</payload_hash>
+        <record_name>Redirect if sysid is -99</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 20:30:50</sys_created_on>
+        <sys_id>4f18e10c0713701029a8f0269c1ed035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c808015fc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 20:30:50</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>0718e10c701370102bd80280adbc7435</update_guid>
+        <update_guid_history>0718e10c701370102bd80280adbc7435:1098218572,48f7210c2f137010001cdf1e695027e2:-320765746,8687e9c89e1370107fcf1780e6b8e6e9:1603451398,9427a5c8771370103371c5bb9fa277ee:-1037689111,dee6e1c876137010516135cf875b2ca6:-976145528,50c661c82c1370102f473031bfade94a:-498065006,32c3ad08c8137010187a2b8e914bbc83:121906843,a2e0ed84b2137010beecfddf97cd0011:500277261,b10b99803c137010f5413e76f508071a:1710332806,67b9d9406b1370101746d2fe50db9101:-1522017162,9cf85140ab137010807e219cb71879af:-744978525,39985d0009137010709272088b2d9c51:-300539246,3028d500f213701035f2093ea73a477c:1900314725,e38655cc9edf30106a73fc7307c205bb:-1719168833,99b091c894df30106338e2e9a01dd061:-2026957034,d8ff0988d5df301075eed563301875f8:-1743467237,ddf70144badf30106501224ca673de28:999351495,ee3599338b4730102a1949b5800518ca:-693603853,0e749133984730100946caf5406a2a87:-656410732</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 23:04:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>a82e6689d50442f9bf7f5a6c6892c681</sys_id>
+        <sys_metadata>fd7491330747301029a8f0269c1ed079</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Redirect if sysid is -99</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_fd7491330747301029a8f0269c1ed079</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_fd7491330747301029a8f0269c1ed079">4f18e10c0713701029a8f0269c1ed035</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 23:04:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

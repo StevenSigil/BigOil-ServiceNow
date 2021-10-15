@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Sales Order New Confirm">23f9a35707c3301029a8f0269c1ed034</macroponent>
+        <name>Check and Update Line Item/SO Conflicts</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({ api, event, helpers, imports }) {
+  try {
+    // For "State" fields and navigation
+    const ePayload = event.payload.submitOrDraft.toLowerCase();
+
+    // Compare shared values between Sales Order (GF) & Line Items
+    const formVals = api.data.sales_order_gf.nowRecordFormBlob.formFieldValues;
+
+    const f_purchase_order = formVals.purchase_order.value;
+    const f_requested_delivery_date = formVals.requested_delivery_date.value;
+    const f_shipping = formVals.shipping_address.value;
+    const f_status = formVals.status.value;
+
+    const listData = api.data.look_up_transfer_line_records.results;
+
+    listData.forEach((d) => {
+      const l_purchase_order = d.purchase_order.value;
+      const l_expected_delivery_date = d.expected_delivery_date.value;
+      const l_address_to = d.address_to.value;
+      const l_stage = d.stage.value;
+
+      var purchase_order = null;
+      var expected_delivery_date = null;
+      var address_to = null;
+      var stage = null;
+
+      // Check if the line item values match the sales order values
+      if (f_purchase_order !== l_purchase_order) {
+        purchase_order = `purchase_order=${f_purchase_order}`;
+      }
+      if (f_requested_delivery_date !== l_expected_delivery_date) {
+        expected_delivery_date = purchase_order
+          ? `^expected_delivery_date=${f_requested_delivery_date}`
+          : `expected_delivery_date=${f_requested_delivery_date}`;
+      }
+      if (f_shipping !== l_address_to) {
+        address_to =
+          expected_delivery_date || purchase_order
+            ? `^address_to=${f_shipping}`
+            : `address_to=${f_shipping}`;
+      }
+
+      // Check and set Stage field
+      if (ePayload !== l_stage) {
+        const stge = ePayload == "submit" ? "requested_pending" : "draft";
+        stage =
+          expected_delivery_date || purchase_order || address_to
+            ? `^stage=${stge}`
+            : `stage=${stge}`;
+      }
+
+      // Prep the data to submit
+      var submitData = "";
+
+      if (purchase_order) submitData += purchase_order;
+      if (expected_delivery_date) submitData += expected_delivery_date;
+      if (address_to) submitData += address_to;
+      if (stage) submitData += stage;
+
+      // Execute the record update
+      if (submitData) {
+        const recordId = d.sys_id.value;
+        const table = "x_683715_big_oil_2_inventory_transfer_line";
+        const templateFields = submitData;
+        const useSetDisplayValue = false;
+
+        console.log(`Updating record ${recordId}. Query: ${templateFields}`);
+
+        api.data.update_single_record.execute({
+          table,
+          recordId,
+          templateFields,
+          useSetDisplayValue,
+        });
+      }
+    });
+
+    // Check and set Status field on Sales order
+    if (ePayload !== f_status) {
+      const stge = ePayload == "submit" ? "pending" : "draft";
+
+      console.log(`Attempting to update Sales Order Status field to: ${stge}`);
+
+      api.data.update_single_record.execute({
+        table: "x_683715_big_oil_2_sales_order",
+        recordId: api.context.props.salesorder,
+        templateFields: `status=${stge}`,
+        useSetDisplayValue: false,
+      });
+    }
+
+    // Move to next screen
+    if (ePayload === "draft") {
+      helpers.navigate.to("lists", null, { targetlist: "my-drafts" });
+    }
+
+    if (ePayload === "submit") {
+      //
+      // Show final (step 5) part of order process & Update stepperDetails/step States
+      api.setState("finalStepHidden", false);
+
+      const newDetails = [
+        { id: 0, label: "Start", progress: "done", disabled: true },
+        { id: 1, label: "Configure Order", progress: "done", disabled: true },
+        { id: 2, label: "Add Items", progress: "done", disabled: true },
+        { id: 3, label: "Confirm", progress: "done", disabled: true },
+        { id: 4, label: "Submit", progress: "done", disabled: false },
+      ];
+
+      api.setState("stepperDetails", newDetails);
+      api.setState("step", Number(5));
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-12 22:02:53</sys_created_on>
+        <sys_id>37f9eb9707c3301029a8f0269c1ed02f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Check and Update Line Item/SO Conflicts</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_37f9eb9707c3301029a8f0269c1ed02f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-12 22:05:09</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

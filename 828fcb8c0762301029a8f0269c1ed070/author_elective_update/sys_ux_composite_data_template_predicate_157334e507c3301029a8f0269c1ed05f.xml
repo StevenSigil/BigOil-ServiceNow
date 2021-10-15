@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="DELETE">
+        <active>true</active>
+        <condition table="x_683715_big_oil_2_companies">authorized_purchasers-- oper ---- value --^EQ<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>name,authorized_purchasers</field_list>
+        <name>Comapanies Auth Purchasers VC</name>
+        <order>100</order>
+        <predicate_bundle display_value="Comapanies Auth Purchasers VCB">8563f0e507c3301029a8f0269c1ed08f</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 22:17:35</sys_created_on>
+        <sys_id>157334e507c3301029a8f0269c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comapanies Auth Purchasers VC</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_157334e507c3301029a8f0269c1ed05f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 22:17:35</sys_updated_on>
+        <table>x_683715_big_oil_2_companies</table>
+        <ux_template/>
+    </sys_ux_composite_data_template_predicate>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_composite_data_template_predicate_157334e507c3301029a8f0269c1ed05f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate"><sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE"><active>true</active><condition table="x_683715_big_oil_2_companies">authorized_purchasers-- oper ---- value --^EQ<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><custom_condition/><custom_field_list/><field_list>name,authorized_purchasers</field_list><name>Comapanies Auth Purchasers VC</name><order>100</order><predicate_bundle display_value="Comapanies Auth Purchasers VCB">8563f0e507c3301029a8f0269c1ed08f</predicate_bundle><required_roles/><sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-06 22:17:35</sys_created_on><sys_id>157334e507c3301029a8f0269c1ed05f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Comapanies Auth Purchasers VC</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_composite_data_template_predicate_157334e507c3301029a8f0269c1ed05f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-06 22:17:35</sys_updated_on><table>x_683715_big_oil_2_companies</table><ux_template/></sys_ux_composite_data_template_predicate></record_update>]]></payload>
+        <payload_hash>-631247025</payload_hash>
+        <record_name>Comapanies Auth Purchasers VC</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 22:17:35</sys_created_on>
+        <sys_id>34d3f0e507c3301029a8f0269c1ed096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c57aef09d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 22:17:35</sys_updated_on>
+        <type>EVAM View Config</type>
+        <update_guid>7cd3f0e59fc33010ec259b490240fd95</update_guid>
+        <update_guid_history>7cd3f0e59fc33010ec259b490240fd95:-631247025</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 22:25:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_composite_data_template_predicate">sys_ux_composite_data_template_predicate</sys_db_object>
+        <sys_id>c3d66635de234dfeaa72d29291fbff04</sys_id>
+        <sys_metadata>157334e507c3301029a8f0269c1ed05f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comapanies Auth Purchasers VC</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_composite_data_template_predicate_157334e507c3301029a8f0269c1ed05f</sys_update_name>
+        <sys_update_version display_value="sys_ux_composite_data_template_predicate_157334e507c3301029a8f0269c1ed05f">34d3f0e507c3301029a8f0269c1ed096</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 22:25:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
