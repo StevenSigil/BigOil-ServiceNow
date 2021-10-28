@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
     <sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE">
-        <asset display_value="now-logo-dark">fbbe63846de23010dd90323f3c87d406</asset>
-        <properties>{
-"position": "footer_logo"
+        <asset display_value="bigOilLogo">bd3c62580793301029a8f0269c1ed0ed</asset>
+        <properties>{&#13;
+	"position": "header_logo"&#13;
 }</properties>
         <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2021-09-07 23:32:04</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 20:07:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>33be6384f6e230108db26efa6ca05f07</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_id>feeb66180793301029a8f0269c1ed0eb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
-        <sys_update_name>sys_ux_theme_m2m_asset_33be6384f6e230108db26efa6ca05f07</sys_update_name>
+        <sys_update_name>sys_ux_theme_m2m_asset_feeb66180793301029a8f0269c1ed0eb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-15 20:11:50</sys_updated_on>
+        <sys_updated_on>2021-10-15 21:33:49</sys_updated_on>
         <theme display_value="Light Theme">f7be238463e2301061372cf73bb1bdf8</theme>
     </sys_ux_theme_m2m_asset>
 </record_update>

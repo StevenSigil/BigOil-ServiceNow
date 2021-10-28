@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_asset">
+    <sys_ux_theme_asset action="INSERT_OR_UPDATE">
+        <category>image</category>
+        <name>bigOilLogo</name>
+        <sys_class_name>sys_ux_theme_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 20:07:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd3c62580793301029a8f0269c1ed0ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>bigOilLogo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_theme_asset_bd3c62580793301029a8f0269c1ed0ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 21:30:57</sys_updated_on>
+    </sys_ux_theme_asset>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#793b04</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>Logo 2@100w.png</file_name>
+        <hash>86926b98954fbd4a7afa6d431432c94a664f826304f1659d330e572cfa558ef6</hash>
+        <image_height>40</image_height>
+        <image_width>100</image_width>
+        <size_bytes>2561</size_bytes>
+        <size_compressed>2584</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 21:44:36</sys_created_on>
+        <sys_id>9592471807d3301029a8f0269c1ed09b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 21:44:36</sys_updated_on>
+        <table_name>sys_ux_theme_asset</table_name>
+        <table_sys_id>bd3c62580793301029a8f0269c1ed0ed</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="Logo 2@100w.png" sys_id="9592471807d3301029a8f0269c1ed09b">9592471807d3301029a8f0269c1ed09b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 21:44:36</sys_created_on>
+        <sys_id>d592471807d3301029a8f0269c1ed09b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3432</length>
+        <position>1</position>
+        <sys_attachment display_value="Logo 2@100w.png" sys_id="9592471807d3301029a8f0269c1ed09b">9592471807d3301029a8f0269c1ed09b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-15 21:44:36</sys_created_on>
+        <sys_id>5992471807d3301029a8f0269c1ed09b</sys_id>
+    </sys_attachment_doc>
+</record_update>

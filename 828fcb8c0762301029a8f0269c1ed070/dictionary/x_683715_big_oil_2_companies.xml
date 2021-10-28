@@ -4,7 +4,7 @@
         <element label="Billing Addresses" max_length="32" name="billing_addresses" reference="x_683715_big_oil_2_addresses" type="glide_list"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="Shipping Addresses" max_length="40" name="shipping_addresses" type="glide_list"/>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <index name="index">
             <element name="sys_class_name"/>
         </index>

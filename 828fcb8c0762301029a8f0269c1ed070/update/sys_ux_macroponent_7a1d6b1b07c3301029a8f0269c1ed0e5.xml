@@ -427,7 +427,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n    color: RGB(var(--pallet3--4));\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -443,13 +443,13 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "margin" : "0.5rem 0"
+            "margin" : "0"
           }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","justify-content":"space-between","align-items":"center","padding":"0.5rem 1.5rem","height":"auto","min-height":"50px"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","justify-content":"space-between","align-items":"center","padding":".5rem 0.5rem 0.65rem","background-color":"RGB(var(--pallet3--2))","box-shadow":"var(--box-shadow-lg)","border-radius":"var(--now-card--border-radius)","z-index":"50","width":"auto"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -464,9 +464,8 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%",
-        "height" : "auto",
-        "background-color" : "RGB(var(--now-color--primary-0))"
+        "margin" : "-1.5rem 1rem 1.5rem",
+        "height" : "auto"
       }
     }, {
       "elementId" : "form_1",
@@ -556,7 +555,7 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "margin-top" : "2rem",
+        "margin-top" : "1rem",
         "margin-left" : "-1rem",
         "padding" : "0px 2rem 0px 1rem"
       }
@@ -588,7 +587,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-weight: 500;\r\n    font-size: 1.75rem !important;\r\n    margin: 0;\r\n    color: RGB(var(--pallet3--4));\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -604,13 +603,13 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "margin" : "0.5rem 0"
+            "margin" : "0"
           }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","justify-content":"space-between","align-items":"center","padding":"0.5rem 1.5rem","height":"auto","min-height":"50px"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-wrap":"wrap","justify-content":"space-between","align-items":"center","padding":".5rem 0.5rem 0.65rem","background-color":"RGB(var(--pallet3--2))","box-shadow":"var(--box-shadow-lg)","border-radius":"var(--now-card--border-radius)","z-index":"50","width":"auto"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -625,9 +624,8 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%",
-        "height" : "auto",
-        "background-color" : "RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))"
+        "margin" : "-1.5rem 1rem 1.5rem",
+        "height" : "auto"
       }
     }, {
       "elementId" : "list__simple_1",
@@ -951,13 +949,14 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "margin-top" : "1.5rem"
+        "margin" : "1rem 1rem 0",
+        "width" : "auto"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-right":"2.5vw","margin-bottom":"2rem","padding":"0px 0px 2rem","width":"auto","height":"auto","border-left":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))","border-right":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))","border-bottom":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-bottom":"2rem","padding":"0px 0px 2rem","height":"auto","width":"auto","border-left":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))","border-right":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))","border-bottom":"1px solid RGB(var(--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--now-color--primary-0, 221, 237, 233)))"}}],
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-right":"2.5vw","margin-bottom":"2rem","padding":"0 0 2rem","width":"auto","height":"auto","border":"2px solid RGB(var(--now-color--primary-1))","border-radius":"var(--now-card--border-radius)"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","margin-top":"1rem","margin-bottom":"2rem","padding":"0px 0px 2rem","height":"auto","width":"auto","border":"2px solid RGB(var(--now-color--primary-1))","border-radius":"var(--now-card--border-radius)"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -1171,13 +1170,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-10-12 22:16:27</sys_created_on>
         <sys_id>7a1d6b1b07c3301029a8f0269c1ed0e5</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Sales Order Viewer</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_7a1d6b1b07c3301029a8f0269c1ed0e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-15 01:50:33</sys_updated_on>
+        <sys_updated_on>2021-10-18 22:34:04</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

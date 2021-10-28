@@ -14,7 +14,7 @@
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element display="true" label="Part number" max_length="15" name="part_number" type="string"/>
         <element label="Quantity on site" max_length="40" name="quantity_on_site" type="float"/>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element label="UOM" max_length="40" name="uom" type="string"/>
         <element label="Warehouse" max_length="32" name="warehouse" reference="x_683715_big_oil_2_warehouses" type="reference"/>
         <index name="index">

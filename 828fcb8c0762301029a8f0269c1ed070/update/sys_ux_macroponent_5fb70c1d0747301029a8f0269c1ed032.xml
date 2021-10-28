@@ -175,75 +175,6 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "container_3",
-      "elementLabel" : "Container 3",
-      "propertyValues" : { },
-      "eventMappings" : [ ],
-      "slot" : "Column 1",
-      "definition" : {
-        "id" : "d356d14b6e293a3020a244b63d278d8f",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : {
-        "composition" : [ {
-          "elementId" : "stylized_text_1",
-          "elementLabel" : "Stylized text 1",
-          "propertyValues" : {
-            "text" : {
-              "type" : "CLIENT_TRANSFORM_SCRIPT",
-              "script" : {
-                "apiVersion" : "1.0.0",
-                "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\t// return api.data.look_up_company.result.name.displayValue;\n\n  const data = api.data.companies_related_info_transform_broker_2.output;\n  return data.companyDetails.name;\n}"
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h1"
-            },
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    margin: 0;\r\n    text-align: center;\r\n}"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Main",
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isNonDestructive" : false,
-          "styles" : {
-            "margin" : "auto .5rem",
-            "padding" : ".5rem .5rem .75rem",
-            "background-color" : "#ffffff"
-          }
-        } ],
-        "layout" : {
-          "default" : {
-            "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","min-height":"150px","background-color":"RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-left":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
-            "root" : null,
-            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
-            "styles" : null,
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "grid"
-          }
-        }
-      },
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : ""
-      },
-      "isNonDestructive" : false,
-      "styles" : {
-        "width" : "100%"
-      }
-    }, {
       "elementId" : "container_7",
       "elementLabel" : "Container 7",
       "propertyValues" : { },
@@ -255,6 +186,76 @@
       },
       "overrides" : {
         "composition" : [ {
+          "elementId" : "container_3",
+          "elementLabel" : "Container 3",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_1",
+              "elementLabel" : "Stylized text 1",
+              "propertyValues" : {
+                "text" : {
+                  "type" : "CLIENT_TRANSFORM_SCRIPT",
+                  "script" : {
+                    "apiVersion" : "1.0.0",
+                    "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n\t// return api.data.look_up_company.result.name.displayValue;\n\n  const data = api.data.companies_related_info_transform_broker_2.output;\n  return data.companyDetails.name;\n}"
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h1"
+                },
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { \r\n    margin: 0;\r\n    text-align: center;\r\n    color: RGB(var(--pallet3--4));\r\n}"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "margin" : "auto 0",
+                "padding" : ".75rem .5rem .5rem",
+                "background-color" : "#ffffff"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","background-color":"RGB(var(--pallet3--2))","padding":".75rem .5rem .75rem","box-shadow":"var(--box-shadow-lg)","border-radius":"var(--now-card--border-radius)","z-index":"50"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "auto",
+            "margin" : "-1.5rem 1rem 1.5rem"
+          }
+        }, {
           "elementId" : "container_8",
           "elementLabel" : "Container 8",
           "propertyValues" : { },
@@ -378,7 +379,8 @@
               },
               "isNonDestructive" : false,
               "styles" : {
-                "min-width" : "50%"
+                "min-width" : "50%",
+                "margin-top" : "2rem"
               }
             } ],
             "layout" : {
@@ -399,7 +401,8 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "width" : "100%"
+            "width" : "auto",
+            "margin" : "1rem 2rem"
           }
         }, {
           "elementId" : "list__related_1",
@@ -532,15 +535,16 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "margin" : "2rem 0",
+            "margin" : "2rem 2rem",
             "width" : "auto",
-            "border" : "1px solid rgba(0, 0, 0, 20%)"
+            "border" : "1px solid rgba(0, 0, 0, 20%)",
+            "border-radius" : "var(--now-card--border-radius) var(--now-card--border-radius) 0 0"
           }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","border-left":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","padding":"2.25rem 2rem"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","min-height":"250px","margin-top":"2rem","border-top":"2px solid RGB(var(--now-color--primary-1))","border-left":"2px solid RGB(var(--now-color--primary-1))","border-right":"2px solid RGB(var(--now-color--primary-1))","border-bottom":"2px solid RGB(var(--now-color--primary-1))","border-radius":"var(--now-card--border-radius)","padding-bottom":"2rem"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -586,7 +590,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-size: 1.25em;\r\n    font-weight: 600;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-size: 1.25em;\r\n    font-weight: 600;\r\n    margin: 0;\r\n    color: RGB(var(--pallet3--4));\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -602,9 +606,12 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "background-color" : "RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))",
-            "padding" : "1rem .5rem",
-            "margin-bottom" : "1rem"
+            "padding" : "1rem 0.5rem .75rem",
+            "background-color" : "rgb(var(--pallet3--2))",
+            "box-shadow" : "var(--box-shadow-lg)",
+            "border-radius" : "var(--now-card--border-radius)",
+            "margin" : "-1.5rem 1rem 1.5rem",
+            "z-index" : "50"
           }
         }, {
           "elementId" : "collapsible_auth_purchasers",
@@ -863,7 +870,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","min-height":"150px","border-left":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","min-height":"150px","margin-top":"2rem","border-top":"2px solid RGB(var(--now-color--primary-1))","border-left":"2px solid RGB(var(--now-color--primary-1))","border-right":"2px solid RGB(var(--now-color--primary-1))","border-bottom":"2px solid RGB(var(--now-color--primary-1))","border-radius":"var(--now-card--border-radius)"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -879,7 +886,7 @@
       "isNonDestructive" : false,
       "styles" : {
         "width" : "100%",
-        "margin-bottom" : "2rem"
+        "margin-bottom" : "5vw"
       }
     }, {
       "elementId" : "addresses_container",
@@ -909,7 +916,7 @@
             },
             "css" : {
               "type" : "JSON_LITERAL",
-              "value" : "* { \r\n    font-size: 1.25em;\r\n    font-weight: 600;\r\n    margin: 0;\r\n}"
+              "value" : "* { \r\n    font-size: 1.25em;\r\n    font-weight: 600;\r\n    margin: 0;\r\n    color: RGB(var(--pallet3--4));\r\n}"
             }
           },
           "eventMappings" : [ ],
@@ -925,9 +932,12 @@
           },
           "isNonDestructive" : false,
           "styles" : {
-            "margin-bottom" : "1rem",
-            "background-color" : "RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))",
-            "padding" : "1rem .5rem"
+            "padding" : "1rem 0.5rem .75rem",
+            "background-color" : "rgb(var(--pallet3--2))",
+            "box-shadow" : "var(--box-shadow-lg)",
+            "border-radius" : "var(--now-card--border-radius)",
+            "margin" : "-1.5rem 1rem 1.5rem",
+            "z-index" : "50"
           }
         }, {
           "elementId" : "collapsible_billing_addr",
@@ -1247,7 +1257,7 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","min-height":"150px","border-left":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-right":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))","border-bottom":"2px solid RGB(var(--darkreader-bg--mv9-Jrmsr1-TtmW--krJUfZvWmp-JvjvZ, var(--darkreader-bg--now-color--primary-0, 221,237,233)))"}}],
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","min-height":"150px","margin-top":"1rem","border-top":"2px solid RGB(var(--now-color--primary-1))","border-left":"2px solid RGB(var(--now-color--primary-1))","border-right":"2px solid RGB(var(--now-color--primary-1))","border-bottom":"2px solid RGB(var(--now-color--primary-1))","border-radius":"var(--now-card--border-radius)"}}],
             "root" : null,
             "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
             "styles" : null,
@@ -1262,14 +1272,13 @@
       },
       "isNonDestructive" : false,
       "styles" : {
-        "width" : "100%",
-        "margin-bottom" : "0rem"
+        "width" : "100%"
       }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
-        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","padding":"0 1rem"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","padding":"0 1rem","height":"auto"}}],
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column","padding":"0 1rem 0"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column","padding":"0 5vw 0 5vw","height":"auto"}}],
         "root" : null,
         "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
         "styles" : null,
@@ -1288,9 +1297,7 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "min-height" : "max-content",
-    "height" : "auto",
-    "padding-top" : "3rem"
+    "height" : "auto"
   }
 }, {
   "elementId" : "custom_1",
@@ -4915,7 +4922,7 @@
         <layout>{
   "default" : {
     "children" : null,
-    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"100%","min-height":"max-content","position":"relative"}}],
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"auto","overflow":"auto"}}],
     "root" : null,
     "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
     "styles" : null,
@@ -5071,14 +5078,14 @@
   "initialValue" : {
     "type" : "JSON_LITERAL",
     "value" : {
-      "listTitle" : "Open Orders",
-      "table" : "x_683715_big_oil_2_sales_order",
-      "parentTable" : "x_683715_big_oil_2_companies",
-      "relatedListName" : "Companies Open Sales Orders",
-      "parentRecordSysId" : "`${api.context.props.sysid}`",
-      "query" : "`customer=${api.context.props.sysid}^status!=closed`",
-      "view" : "Default view",
-      "columns" : "number,purchase_order,status,contract,auth_purchaser"
+      "listTitle" : "",
+      "table" : "",
+      "parentTable" : "",
+      "relatedListName" : "",
+      "parentRecordSysId" : "",
+      "query" : "",
+      "view" : "",
+      "columns" : ""
     }
   }
 }, {
@@ -5129,13 +5136,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-10-06 00:26:29</sys_created_on>
         <sys_id>5fb70c1d0747301029a8f0269c1ed032</sys_id>
-        <sys_mod_count>676</sys_mod_count>
+        <sys_mod_count>739</sys_mod_count>
         <sys_name>Customer Details</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_macroponent_5fb70c1d0747301029a8f0269c1ed032</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-15 01:15:21</sys_updated_on>
+        <sys_updated_on>2021-10-18 22:00:16</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
