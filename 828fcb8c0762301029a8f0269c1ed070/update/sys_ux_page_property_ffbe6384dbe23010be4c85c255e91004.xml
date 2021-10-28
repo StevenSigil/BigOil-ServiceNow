@@ -4,7 +4,7 @@
         <description/>
         <name>chrome_menu</name>
         <page display_value="Big Oil 2 Portal">63be238407e2301029a8f0269c1ed0db</page>
-        <required_translations>[{"message":"My Lists","comment":""}]</required_translations>
+        <required_translations>[{"message":"My Lists","comment":""},{"message":"My Company","comment":""}]</required_translations>
         <route/>
         <suffix/>
         <sys_class_name>sys_ux_page_property</sys_class_name>
@@ -13,14 +13,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ffbe6384dbe23010be4c85c255e91004</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>chrome_menu</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_page_property_ffbe6384dbe23010be4c85c255e91004</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-30 17:58:44</sys_updated_on>
+        <sys_updated_on>2021-10-14 22:20:39</sys_updated_on>
         <type>json</type>
         <unique_name>x_683715_big_oil_2.63be238407e2301029a8f0269c1ed0db.root.chrome_menu</unique_name>
         <value>[&#13;
@@ -33,7 +33,20 @@
         "target": "",&#13;
         "type": "route",&#13;
         "value": {&#13;
-          "route": "lists"&#13;
+          "route": "lists",&#13;
+          "fields": {}&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "value": {&#13;
+        "label": {&#13;
+          "translatable": true,&#13;
+          "message": "My Company"&#13;
+        },&#13;
+        "type": "route",&#13;
+        "value": {&#13;
+          "route": "customer-details-redirect"&#13;
         }&#13;
       }&#13;
     }&#13;

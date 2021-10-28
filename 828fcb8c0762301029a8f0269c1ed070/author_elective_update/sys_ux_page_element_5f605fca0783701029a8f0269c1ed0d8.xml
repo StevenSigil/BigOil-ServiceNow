@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_element">
+    <sys_ux_page_element action="DELETE">
+        <attrs/>
+        <children/>
+        <component display_value="now-display-value-block">14492b9fc388001aa2ef804409f39bf6</component>
+        <is_root>true</is_root>
+        <layout/>
+        <macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent>
+        <macroponent_config/>
+        <name>test page element</name>
+        <order>0</order>
+        <page display_value="Component Builder">7fc444c75303101017caddeeff7b12d2</page>
+        <parent/>
+        <parent_slot/>
+        <picker/>
+        <picker_condition/>
+        <sys_class_name>sys_ux_page_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 23:01:05</sys_created_on>
+        <sys_id>5f605fca0783701029a8f0269c1ed0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test page element</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_page_element_5f605fca0783701029a8f0269c1ed0d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 23:01:05</sys_updated_on>
+        <tree_root/>
+    </sys_ux_page_element>
+    <sys_variable_value action="DELETE" query="document_key=5f605fca0783701029a8f0269c1ed0d8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_page_element_5f605fca0783701029a8f0269c1ed0d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_element"><sys_ux_page_element action="INSERT_OR_UPDATE"><attrs/><children/><component display_value="now-display-value-block">14492b9fc388001aa2ef804409f39bf6</component><is_root>true</is_root><layout/><macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent><macroponent_config/><name>test page element</name><order>0</order><page display_value="Component Builder">7fc444c75303101017caddeeff7b12d2</page><parent/><parent_slot/><picker/><picker_condition/><sys_class_name>sys_ux_page_element</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-08 23:01:05</sys_created_on><sys_id>5f605fca0783701029a8f0269c1ed0d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test page element</sys_name><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_page_element_5f605fca0783701029a8f0269c1ed0d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-08 23:01:05</sys_updated_on><tree_root/></sys_ux_page_element><sys_variable_value action="delete_multiple" query="document_key=5f605fca0783701029a8f0269c1ed0d8"/></record_update>]]></payload>
+        <payload_hash>-1775559246</payload_hash>
+        <record_name>test page element</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 23:01:05</sys_created_on>
+        <sys_id>51f0dfca0783701029a8f0269c1ed0a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c62237d3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 23:01:05</sys_updated_on>
+        <type>UX Page Element</type>
+        <update_guid>99f0dfcace83701063a7c790d44849a5</update_guid>
+        <update_guid_history>99f0dfcace83701063a7c790d44849a5:-1775559246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 23:02:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_element">sys_ux_page_element</sys_db_object>
+        <sys_id>28aa5508934a46eaaf82eef139a48a51</sys_id>
+        <sys_metadata>5f605fca0783701029a8f0269c1ed0d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test page element</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_page_element_5f605fca0783701029a8f0269c1ed0d8</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_element_5f605fca0783701029a8f0269c1ed0d8">51f0dfca0783701029a8f0269c1ed0a6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 23:02:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

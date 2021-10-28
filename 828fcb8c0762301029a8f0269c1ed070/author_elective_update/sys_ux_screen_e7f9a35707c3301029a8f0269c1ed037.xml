@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckuomwddlaaaahhhddiihhzfikwqqaaz",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_23f9a35707c3301029a8f0269c1ed034",
+  "sourceEventDefinition" : {
+    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_23f9a35707c3301029a8f0269c1ed034",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "ckuomwddlaaaahggddiihhzfceeksyva",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktnqmrleaaaabddddahhyffkjjyjjjjqii",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_e9f10e8307a2301029a8f0269c1ed092",
+  "sourceEventDefinition" : {
+    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_e9f10e8307a2301029a8f0269c1ed092",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "cktnqmrleaaaabccddahhyccioccsogk",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Sales Order New Confirm">23f9a35707c3301029a8f0269c1ed034</macroponent>
+        <macroponent_config>{
+  "view" : "",
+  "salesorder" : "",
+  "label" : "",
+  "bare" : false,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Sales Order New Confirm Viewing</name>
+        <order>200</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Sales Order Confirm">65f10e8307a2301029a8f0269c1ed08e</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-12 22:02:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7f9a35707c3301029a8f0269c1ed037</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Sales Order New Confirm Viewing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_screen_e7f9a35707c3301029a8f0269c1ed037</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-12 22:09:40</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=e7f9a35707c3301029a8f0269c1ed037"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_screen_e7f9a35707c3301029a8f0269c1ed037</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Big Oil 2 Portal Config">67be238407e2301029a8f0269c1ed0db</app_config><description/><event_mappings>[ {
+  "eventMappingId" : "ckuomwddlaaaahhhddiihhzfikwqqaaz",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_23f9a35707c3301029a8f0269c1ed034",
+  "sourceEventDefinition" : {
+    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_23f9a35707c3301029a8f0269c1ed034",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "ckuomwddlaaaahggddiihhzfceeksyva",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "cktnqmrleaaaabddddahhyffkjjyjjjjqii",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_e9f10e8307a2301029a8f0269c1ed092",
+  "sourceEventDefinition" : {
+    "apiName" : "x_683715_big_oil_2.NAV_ITEM_SELECTED_RELAY_e9f10e8307a2301029a8f0269c1ed092",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "cktnqmrleaaaabccddahhyccioccsogk",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings><macroponent display_value="Sales Order New Confirm">23f9a35707c3301029a8f0269c1ed034</macroponent><macroponent_config>{
+  "view" : "",
+  "salesorder" : "",
+  "label" : "",
+  "bare" : false,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config><name>Sales Order New Confirm Viewing</name><order>200</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[]</required_translations><screen_condition/><screen_type display_value="Sales Order Confirm">65f10e8307a2301029a8f0269c1ed08e</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-12 22:02:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e7f9a35707c3301029a8f0269c1ed037</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Sales Order New Confirm Viewing</sys_name><sys_overrides/><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_screen_e7f9a35707c3301029a8f0269c1ed037</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-12 22:09:40</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=e7f9a35707c3301029a8f0269c1ed037"/></record_update>]]></payload>
+        <payload_hash>1142789862</payload_hash>
+        <record_name>Sales Order New Confirm Viewing</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-12 22:09:40</sys_created_on>
+        <sys_id>978bafd707c3301029a8f0269c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c768ddbc80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-12 22:09:40</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>9f8bafd797c3301035820d3cdb2001d4</update_guid>
+        <update_guid_history>9f8bafd797c3301035820d3cdb2001d4:1142789862,074ba7d7dfc33010cc3c8245926cab4d:1736116489,d31b63d796c33010ea1f4f7ccc695c50:-1677617958,3bda67d7d3c33010403a0186b2685599:1758157335,788a63d7f7c330107973ddfec621ed47:1850340169,2bf9eb97b9c330108d70428e442c3b26:1976183318</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-12 22:09:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>e4343d7b8d674bab9aa0290c8c202db1</sys_id>
+        <sys_metadata>e7f9a35707c3301029a8f0269c1ed037</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sales Order New Confirm Viewing</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_e7f9a35707c3301029a8f0269c1ed037</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_e7f9a35707c3301029a8f0269c1ed037">978bafd707c3301029a8f0269c1ed0d5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-12 22:09:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

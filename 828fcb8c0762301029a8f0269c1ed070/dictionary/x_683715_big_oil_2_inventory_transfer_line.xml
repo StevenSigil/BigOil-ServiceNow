@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_683715_big_oil_2_inventory_line_item" label="Inventory Transfer Line" max_length="40" name="x_683715_big_oil_2_inventory_transfer_line" sizeclass="8" type="collection">
+    <element extends="x_683715_big_oil_2_inventory_line_item" label="Inventory Transfer Line" max_length="40" name="x_683715_big_oil_2_inventory_transfer_line" sizeclass="9" type="collection">
         <element label="Address from" max_length="32" name="address_from" reference="x_683715_big_oil_2_addresses" type="reference"/>
         <element label="Address to" max_length="32" name="address_to" reference="x_683715_big_oil_2_addresses" type="reference"/>
         <element label="Delivery date" max_length="40" name="delivery_date" type="glide_date"/>

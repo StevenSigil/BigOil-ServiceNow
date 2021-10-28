@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_683715_big_oil_2.Companies Related Info TRANSFORM BROKER</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Companies Related Info TRANSFORM BROKER</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+    "name": "companyRelatedInformation",&#13;
+    "label": "Companies Related Info. Records",&#13;
+    "description": "Companies related information records from GraphQL query",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "object",&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+}]</props>
+        <required_translations>[{"message":"Companies Related Info. Records","comment":""},{"message":"Companies related information records from GraphQL query","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+  // records for company, authPurchasers, billingAddresses, & shippingAddresses
+  var records = input.companyRelatedInformation.data.GlideRecord_Query;
+
+  // ========================= COMPANY DETAILS =========================
+  var company = records.company._results;
+
+  if (company.length > 1) {
+    return {
+      error: "Multiple companies found in record!!!",
+    };
+  }
+  if (company.length == 0) {
+    return {
+      error: "Company not found!",
+    };
+  }
+
+  var companyReturn = {};
+  company = company[0];
+
+  companyReturn.sys_id = company.sys_id.value;
+  companyReturn.name = company.name.value;
+
+  // ========================= AUTH PURCHASERS =========================
+  var authPurchasers = records.authPurchasers._results;
+  var authPurchReturn = {};
+  var authPurchItems = [];
+
+  for (var i = 0; i < authPurchasers.length; i++) {
+    var newRec = {};
+    var record = authPurchasers[i];
+
+    newRec.template = "now-card-evam-record";
+    newRec.propValues = {
+      textHeaderLabel: record.external_company.displayValue,
+      titleLabel: record.user.displayValue,
+      subtitle: record.title.displayValue,
+
+      detailLabelOne: "Department",
+      detailValueOne: record.department.displayValue,
+
+      detailLabelTwo: "Is Auth. Purchaser",
+      detailValueTwo: record.authorized_purchaser.value ? "Yes" : "No",
+
+      detailLabelThree: "Title",
+      detailValueThree: record.title.displayValue,
+
+      overflowActions: [
+        {
+          label: record.sys_id.value,
+          sublabel: "Profile ID",
+          presence: "away",
+        },
+        {
+          label: record.number.value,
+          sublabel: "Profile No.",
+          presence: "away",
+        },
+        {
+          label: record.type.displayValue,
+          sublabel: "Profile Type",
+          presence: "away",
+        },
+        {
+          label: record.user.value,
+          sublabel: "User ID",
+          presence: "away",
+        },
+      ],
+      clickAction: {
+        assignmentId: "1a",
+        name: "navigation",
+        label: "Navigation",
+        actionType: "uxf_client_action",
+        icon: "",
+        buttonType: "primary",
+        actionDispatch: "NAVIGATION",
+        serverScript: "",
+        confirmationRequired: false,
+        confirmationMessage: "",
+        actionPayload: {
+          table: { recordType: "authPurchasers", record: record },
+          sysId: record.sys_id.value,
+          url: "",
+        },
+      },
+      model: {
+        short_description: "",
+        "author.avatar": "",
+        "author.name": "",
+        description: "",
+        sys_view_count: "",
+        rating: "",
+        sysId: "",
+        sys_id: "",
+        table: "",
+      },
+      cardLabel: record.user.displayValue,
+      buttonLabel: "Click to interact with record.",
+    };
+
+    authPurchItems.push(newRec);
+  }
+
+  authPurchReturn.page_cursor =
+    "ezI4ZjEyYzUwMTAxMjMwMTBiNjlkNTBhYTE2Nzc3ODgyPTIwfQ";
+  authPurchReturn.page_size = 20;
+  authPurchReturn.page_number = 0;
+  authPurchReturn.is_last_page = false;
+  authPurchReturn.all_actions = [
+    {
+      assignmentId: "1a",
+      name: "navigation",
+      label: "Navigation",
+      actionType: "uxf_client_action",
+      actionDispatch: "NAVIGATION",
+      actionPayload:
+        '{\r\n        "table": "{{table}}",\r\n        "sysId": "{{sys_id}}",\r\n        "url": "{{navigation_url}}"\r\n}',
+    },
+  ];
+  authPurchReturn.selected_filter = "";
+  authPurchReturn.items = authPurchItems;
+  authPurchReturn.available_filters = [{ sys_id: "", label: null }];
+
+  // ======================== Billing Addresses ========================
+  var billingAddresses = records.billingAddresses._results;
+  var billAddrReturn = {};
+  var billAddrItems = [];
+
+  for (i = 0; i < billingAddresses.length; i++) {
+    newRec = {};
+    record = billingAddresses[i];
+
+    newRec.template = "now-card-evam-record";
+    newRec.propValues = {
+      textHeaderLabel: record.company.displayValue,
+      titleLabel: record.display_name.displayValue,
+      // subtitle: ,
+
+      detailLabelOne: "Street 1",
+      detailValueOne: record.street_1.displayValue,
+
+      detailLabelTwo: "Street 2",
+      detailValueTwo: record.street_2.displayValue,
+
+      detailLabelThree: "City",
+      detailValueThree: record.city.displayValue,
+
+      detailLabelFour: "State, Zip",
+      detailValueFour:
+        record.state.displayValue + ", " + record.zip_code.displayValue,
+
+      mainActions: [],
+
+      overflowActions: [
+        {
+          label: record.suite.displayValue,
+          sublabel: "Suite",
+          presence: "away",
+        },
+        {
+          label: record.building.displayValue,
+          sublabel: "Building",
+          presence: "away",
+        },
+        {
+          label: record.county.displayValue,
+          sublabel: "County",
+          presence: "away",
+        },
+        {
+          label: record.country.displayValue,
+          sublabel: "Country",
+          presence: "away",
+        },
+        {
+          label: record.sys_id.value,
+          sublabel: "Address ID",
+          presence: "away",
+        },
+      ],
+      clickAction: {
+        assignmentId: "2a",
+        name: "navigation",
+        label: "Navigation",
+        actionType: "uxf_client_action",
+        icon: "",
+        buttonType: "primary",
+        actionDispatch: "NAVIGATION",
+        serverScript: "",
+        confirmationRequired: false,
+        confirmationMessage: "",
+        actionPayload: {
+          table: { recordType: "billingAddresses", record: record },
+          sysId: record.sys_id.value,
+          url: "",
+        },
+      },
+      model: {
+        short_description: "",
+        "author.avatar": "",
+        "author.name": "",
+        description: "",
+        sys_view_count: "",
+        rating: "",
+        sysId: "",
+        sys_id: "",
+        table: "",
+      },
+
+      cardLabel: record.display_name.displayValue,
+      buttonLabel: "Click to interact with record.",
+    };
+
+    billAddrItems.push(newRec);
+  }
+
+  billAddrReturn.page_cursor =
+    "ezI4ZjEyYzUwMTAxMjMwMTBiNjlkNTBhYTE2Nzc3ODgyPTIwfQ";
+  billAddrReturn.page_size = 20;
+  billAddrReturn.page_number = 0;
+  billAddrReturn.is_last_page = false;
+  billAddrReturn.all_actions = [
+    {
+      assignmentId: "2a",
+      name: "navigation",
+      label: "Navigation",
+      actionType: "uxf_client_action",
+      actionDispatch: "NAVIGATION",
+      actionPayload:
+        '{\r\n        "table": "{{table}}",\r\n        "sysId": "{{sys_id}}",\r\n        "url": "{{navigation_url}}"\r\n}',
+    },
+  ];
+
+  billAddrReturn.selected_filter = "";
+  billAddrReturn.items = billAddrItems;
+  billAddrReturn.available_filters = [{ sys_id: "", label: null }];
+
+  // // ======================== SHIPPING Addresses ========================
+  var shippingAddresses = records.shippingAddresses._results;
+  var shipAddrReturn = {};
+  var shipAddrItems = [];
+
+  for (i = 0; i < shippingAddresses.length; i++) {
+    newRec = {};
+    record = shippingAddresses[i];
+
+    newRec.template = "now-card-evam-record";
+    newRec.propValues = {
+      textHeaderLabel: record.company.displayValue,
+      titleLabel: record.display_name.displayValue,
+
+      detailLabelOne: "Street 1",
+      detailValueOne: record.street_1.displayValue,
+
+      detailLabelTwo: "Street 2",
+      detailValueTwo: record.street_2.displayValue,
+
+      detailLabelThree: "City",
+      detailValueThree: record.city.displayValue,
+
+      detailLabelFour: "State, Zip",
+      detailValueFour:
+        record.state.displayValue + ", " + record.zip_code.displayValue,
+
+      mainActions: [],
+
+      overflowActions: [
+        {
+          label: record.suite.displayValue,
+          sublabel: "Suite",
+          presence: "away",
+        },
+        {
+          label: record.building.displayValue,
+          sublabel: "Building",
+          presence: "away",
+        },
+        {
+          label: record.county.displayValue,
+          sublabel: "County",
+          presence: "away",
+        },
+        {
+          label: record.country.displayValue,
+          sublabel: "Country",
+          presence: "away",
+        },
+        {
+          label: record.sys_id.value,
+          sublabel: "Address ID",
+          presence: "away",
+        },
+      ],
+      clickAction: {
+        assignmentId: "3a",
+        name: "navigation",
+        label: "Navigation",
+        actionType: "uxf_client_action",
+        icon: "",
+        buttonType: "primary",
+        actionDispatch: "NAVIGATION",
+        serverScript: "",
+        confirmationRequired: false,
+        confirmationMessage: "",
+        actionPayload: {
+          table: { recordType: "shippingAddresses", record: record },
+          sysId: record.sys_id.value,
+          url: "",
+        },
+      },
+      model: {
+        short_description: "",
+        "author.avatar": "",
+        "author.name": "",
+        description: "",
+        sys_view_count: "",
+        rating: "",
+        sysId: "",
+        sys_id: "",
+        table: "",
+      },
+
+      cardLabel: record.display_name.displayValue,
+      buttonLabel: "Click to interact with record.",
+    };
+
+    shipAddrItems.push(newRec);
+  }
+
+  shipAddrReturn.page_cursor =
+    "ezI4ZjEyYzUwMTAxMjMwMTBiNjlkNTBhYTE2Nzc3ODgyPTIwfQ";
+  shipAddrReturn.page_size = 20;
+  shipAddrReturn.page_number = 0;
+  shipAddrReturn.is_last_page = false;
+  shipAddrReturn.all_actions = [
+    {
+      assignmentId: "3a",
+      name: "navigation",
+      label: "Navigation",
+      actionType: "uxf_client_action",
+      actionDispatch: "NAVIGATION",
+      actionPayload:
+        '{\r\n        "table": "{{table}}",\r\n        "sysId": "{{sys_id}}",\r\n        "url": "{{navigation_url}}"\r\n}',
+    },
+  ];
+
+  shipAddrReturn.selected_filter = "";
+  shipAddrReturn.items = shipAddrItems;
+  shipAddrReturn.available_filters = [{ sys_id: "", label: null }];
+
+  // =================================== COMPILE DATA TO RETURN ===================================
+  var retData = {
+    companyDetails: companyReturn,
+    authPurchasers: authPurchReturn,
+    billingAddresses: billAddrReturn,
+    shippingAddresses: shipAddrReturn,
+  };
+
+  return retData;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 19:13:49</sys_created_on>
+        <sys_id>626b5ac20703701029a8f0269c1ed08a</sys_id>
+        <sys_mod_count>166</sys_mod_count>
+        <sys_name>Companies Related Info TRANSFORM BROKER</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_626b5ac20703701029a8f0269c1ed08a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-15 00:48:35</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=626b5ac20703701029a8f0269c1ed08a"/>
+</record_update>

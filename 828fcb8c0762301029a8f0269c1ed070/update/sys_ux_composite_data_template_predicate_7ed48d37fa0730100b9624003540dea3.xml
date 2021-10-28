@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_2_sc">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>related_sc_cat_item.category.title,related_sc_cat_item.picture,related_sc_cat_item.name,related_sc_cat_item.price,related_sc_cat_item.short_description,related_sc_cat_item.recurring_price,related_sc_cat_item.recurring_frequency</field_list>
+        <name>Custom portal - Related items predicate</name>
+        <order/>
+        <predicate_bundle display_value="Custom portal - Related items">fad48d375107301051fb1041d4a84fa2</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-13 23:18:24</sys_created_on>
+        <sys_id>7ed48d37fa0730100b9624003540dea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom portal - Related items predicate</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_7ed48d37fa0730100b9624003540dea3</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-13 23:18:24</sys_updated_on>
+        <table>sc_2_sc</table>
+        <ux_template display_value="Custom Portal Catalog item page - Related items template">f6d48d3742073010bc7224736af41da3</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

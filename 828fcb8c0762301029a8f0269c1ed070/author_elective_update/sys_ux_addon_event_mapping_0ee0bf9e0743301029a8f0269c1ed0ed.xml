@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="DELETE">
+        <active>true</active>
+        <description>EMAP v5</description>
+        <name>EMAP</name>
+        <parent_macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</parent_macroponent>
+        <source_da display_value="">1a</source_da>
+        <source_element_id>auth_purchasers_data_set</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 19:59:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ee0bf9e0743301029a8f0269c1ed0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EMAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_0ee0bf9e0743301029a8f0269c1ed0ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 19:59:09</sys_updated_on>
+        <target_event display_value="Handle Card Click">41fbeb9a0743301029a8f0269c1ed06f</target_event>
+        <target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "data": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "sysId"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_addon_event_mapping_0ee0bf9e0743301029a8f0269c1ed0ed</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping"><sys_ux_addon_event_mapping action="INSERT_OR_UPDATE"><active>true</active><description>EMAP v5</description><name>EMAP</name><parent_macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</parent_macroponent><source_da display_value="">1a</source_da><source_element_id>auth_purchasers_data_set</source_element_id><sys_class_name>sys_ux_addon_event_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-09 19:59:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0ee0bf9e0743301029a8f0269c1ed0ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EMAP</sys_name><sys_overrides/><sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package><sys_policy/><sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope><sys_update_name>sys_ux_addon_event_mapping_0ee0bf9e0743301029a8f0269c1ed0ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-09 19:59:09</sys_updated_on><target_event display_value="Handle Card Click">41fbeb9a0743301029a8f0269c1ed06f</target_event><target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "data": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "sysId"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping></sys_ux_addon_event_mapping></record_update>]]></payload>
+        <payload_hash>689764763</payload_hash>
+        <record_name>EMAP</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 19:59:09</sys_created_on>
+        <sys_id>cae0bf9e0743301029a8f0269c1ed0ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c66a3497b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 19:59:09</sys_updated_on>
+        <type>UX Add-on Event Mapping</type>
+        <update_guid>06e0bf9ea143301093000cde625297ef</update_guid>
+        <update_guid_history>06e0bf9ea143301093000cde625297ef:689764763</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-09 20:00:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_addon_event_mapping">sys_ux_addon_event_mapping</sys_db_object>
+        <sys_id>2659f4dd526c413d90b39a28ae0e2e29</sys_id>
+        <sys_metadata>0ee0bf9e0743301029a8f0269c1ed0ed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EMAP</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_addon_event_mapping_0ee0bf9e0743301029a8f0269c1ed0ed</sys_update_name>
+        <sys_update_version display_value="sys_ux_addon_event_mapping_0ee0bf9e0743301029a8f0269c1ed0ed">cae0bf9e0743301029a8f0269c1ed0ef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:00:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -10,25 +10,46 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7be238463e2301061372cf73bb1bdf8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>154</sys_mod_count>
         <sys_name>Light Theme</sys_name>
         <sys_overrides/>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_theme_f7be238463e2301061372cf73bb1bdf8</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-09-07 23:32:02</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-18 22:56:25</sys_updated_on>
         <theme>{&#13;
-    "canvas-nav-item--main-nav-navigation--selected--box-shadow": "var(--now-color--primary-3)",&#13;
-    "canvas-menu--background-color": "var(--now-color--primary-0)",&#13;
-    "--now-button--border-radius": "4px",&#13;
-    "--now-color--primary-0": "227, 235, 237",&#13;
-	"--now-color--primary-1": "71, 123, 138",&#13;
-	"--now-color--primary-2": "53, 92, 104",&#13;
-	"--now-color--primary-3": "36, 62, 69",&#13;
-    "--now-button--border-width": "0",&#13;
-	"--now-card--border-radius": "4px"&#13;
+      "canvas-header-container--background-color": "var(--pallet2--0)",&#13;
+      "canvas-nav-item--main-nav-navigation--selected--box-shadow": "--now-color--primary-3",&#13;
+&#13;
+      "canvas-menu--background-color": "var(--now-color--primary-0)",&#13;
+    &#13;
+      "-now-grid--border-top": "solid var(--pallet3--3) 5px",&#13;
+&#13;
+      "--now-button--border-width": "0",&#13;
+      "--now-button--border-color": "var(--now-color--primary-3)",&#13;
+      "--now-button--border-radius": "4px",&#13;
+      "--now-button--primary--background-color": "var(--pallet3--0)",&#13;
+      "--now-button--primary--background-color--hover": "var(--pallet3--4)",&#13;
+&#13;
+      "--now-color--primary-0": "231, 231, 231",&#13;
+      "--now-color--primary-1": "53, 92, 104",&#13;
+      "--now-color--primary-2": "58, 62, 64",&#13;
+      "--now-color--primary-3": "101, 123, 136",&#13;
+      "--now-color--dark-0": "#2222ff",&#13;
+    &#13;
+      "--pallet2--0": "242, 242, 242",&#13;
+      &#13;
+      "--pallet3--0": "46, 132, 166",&#13;
+      "--pallet3--1": "10, 166, 122",&#13;
+      "--pallet3--2": "147, 191, 175",&#13;
+      "--pallet3--3": "217, 197, 173",&#13;
+      "--pallet3--4": "31, 31, 31",&#13;
+&#13;
+      "--now-card--border-radius": "6px",&#13;
+    &#13;
+      "--box-shadow-lg": "0 5px 7px #555555"&#13;
 }</theme>
     </sys_ux_theme>
 </record_update>

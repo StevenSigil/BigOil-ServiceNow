@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_683715_big_oil_2.Companies Authorized Purchasers GQL Broker</api_name>
+        <description>NO LONGER USED - Used for page: ".../big-oil-2-portal/customer-details/{{sysid}}" - NO LONGER USED</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Companies Authorized Purchasers GQL Broker</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+  "name": "companyID",&#13;
+  "label": "Company SysID",&#13;
+  "description": "Condition string to look up user profile record",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": { "table": "x_683715_big_oil_2_user_profile" }&#13;
+}]</props>
+        <query>query ($companyID: String) {&#13;
+  GlideRecord_Query {&#13;
+    x_683715_big_oil_2_user_profile(queryConditions: $companyID) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        number {&#13;
+          value&#13;
+        }&#13;
+        authorized_purchaser {&#13;
+          value&#13;
+        }&#13;
+        external_company {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        type {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        user {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        department {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+        title {&#13;
+          displayValue&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+GlideRecord_Query {&#13;
+    x_683715_big_oil_2_authorization_request(sys_id: "d282172e0736701029a8f0269c1ed045") {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        sys_created_on {&#13;
+          displayValue&#13;
+        }&#13;
+        sys_updated_on {&#13;
+          displayValue&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[{"message":"Condition string to look up user profile record","comment":""},{"message":"Company SysID","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 18:10:09</sys_created_on>
+        <sys_id>49293b5d0703301029a8f0269c1ed0fa</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>Companies Authorized Purchasers GQL Broker</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_49293b5d0703301029a8f0269c1ed0fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 20:16:52</sys_updated_on>
+        <type>query</type>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=49293b5d0703301029a8f0269c1ed0fa"/>
+</record_update>

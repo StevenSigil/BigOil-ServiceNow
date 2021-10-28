@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>big_oil_view</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-06 17:33:18</sys_created_on>
+        <sys_id>a0c2b3190703301029a8f0269c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Big Oil View</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ui_view_a0c2b3190703301029a8f0269c1ed0d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-06 17:33:18</sys_updated_on>
+        <title>Big Oil View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

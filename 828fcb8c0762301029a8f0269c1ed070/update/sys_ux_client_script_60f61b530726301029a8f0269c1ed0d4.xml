@@ -10,31 +10,46 @@
  * @param {any} params.event
  * @param {any} params.imports
  */
-function handler({api, event, helpers, imports}) {
-    const stepper = api.state.stepperDetails;
-    const newStep = event.payload.newStep;
+function handler({ api, event, helpers, imports }) {
+  
 
-    if (newStep == 1) {
-        helpers.navigate.to("sales-order-new", {sOrder: api.context.props.salesorder}, {stepidx: newStep});
-        return;
-    }
-    
-    api.setState('stepperDetails', stepper);
-    api.setState('step', Number(newStep));
-    
+  console.log(api.state.step, '\n', api.state.stepperDetails);
+
+  const newStep = Number(event.payload.newStep);
+
+  const initialStepperState = [
+    { id: 0, label: "Start", progress: "done", disabled: false },
+    { id: 1, label: "Configure Order", progress: "done", disabled: false },
+    { id: 2, label: "Add Items", progress: "partial", disabled: false },
+    { id: 3, label: "Confirm", progress: "partial", disabled: true },
+    { id: 4, label: "Submit", progress: "partial", disabled: true },
+  ];
+
+  // Reset state of stepper to guarentee validity on later navigation
+  api.setState("stepperDetails", initialStepperState);
+  api.setState("step", 4);
+  api.setState("step", 2);
+
+  if (newStep === 0 || newStep === 1) {
+    helpers.navigate.to(
+      "sales-order-new",
+      { sOrder: api.context.props.salesorder },
+      { stepidx: newStep.toString() }
+    );
+  }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-18 00:08:15</sys_created_on>
         <sys_id>60f61b530726301029a8f0269c1ed0d4</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>updateStepper</sys_name>
         <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
         <sys_policy/>
         <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
         <sys_update_name>sys_ux_client_script_60f61b530726301029a8f0269c1ed0d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-18 00:26:20</sys_updated_on>
+        <sys_updated_on>2021-10-05 20:17:39</sys_updated_on>
     </sys_ux_client_script>
 </record_update>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Customer Details">5fb70c1d0747301029a8f0269c1ed032</macroponent>
+        <name>TEST Data for Contact Cards</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[// function handler({ api, event, helpers, imports }) {
+//   const gqlData =
+//     api.data.get_company_related_information_1.output.data.GlideRecord_Query;
+
+//   const authPurchasers = gqlData.authPurchasers._results;
+
+//   var authPurchReturn = {};
+//   var authPurchItems = [];
+
+//   authPurchasers.forEach((record) => {
+//     var newRec = {};
+
+//     newRec.template = "sn-contact-card";
+//     newRec.propValues = {
+//       avatarSrc: "/4a31e5d43740310042106710ce41f1a0.iix?t=small",
+//       headingName: "Julie Lewis",
+//       headingLevel: "1",
+//       content: [
+//         {
+//           label: "Mobile Phone",
+//           value: "+1 858 867 5306",
+//           clickable: true,
+//           id: "mobile-link",
+//         },
+//         {
+//           label: "Business Phone",
+//           value: "+1 858 867 5306",
+//           clickable: true,
+//           id: "phone-link",
+//         },
+//         {
+//           label: "Email",
+//           value: "julie.lewis@boxeo.com",
+//           clickable: true,
+//           id: "email-link",
+//         },
+//         { label: "City", value: "San Diego" },
+//         { label: "State", value: "California" },
+//       ],
+//       hideBorder: false,
+//     };
+
+//     newRec.actions = [
+//       {
+//         eventMappingId: "ckuilggbbeeiiaaaaccbddiihhzqjjajveeii",
+//         isConfiguration: false,
+//         offRowStorageId: null,
+//         sourceEventApiName: "sn_contact_card.SN_CONTACT_CARD#ITEM_CLICKED",
+//         sourceEventDefinition: {
+//           apiName: "sn_contact_card.SN_CONTACT_CARD#ITEM_CLICKED",
+//           id: null,
+//           type: "UXEVENT",
+//         },
+//         sourceEventSysId: null,
+//         targets: [
+//           {
+//             broker: null,
+//             clientScript: null,
+//             declarativeAction: null,
+//             event: {
+//               apiName: "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+//               payload: {
+//                 type: "JSON_LITERAL",
+//                 value: {
+//                   items: [
+//                     {
+//                       type: "info",
+//                       message: "ABCDEFG",
+//                     },
+//                   ],
+//                 },
+//               },
+//               sysId: "49fe7d575f983bb3f8eea3fa8d40694c",
+//             },
+//             operation: null,
+//             targetId: "ckuilgaaxaaaaaccnddiihhzffjeadddse",
+//             type: "EVENT",
+//           },
+//         ],
+//       },
+//     ];
+
+//     authPurchItems.push(newRec);
+//   });
+
+//   authPurchReturn.items = authPurchItems;
+//   authPurchReturn.page_size = 2;
+
+//   api.setState("testData", authPurchReturn);
+// }]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 17:24:02</sys_created_on>
+        <sys_id>c8d3820607cf301029a8f0269c1ed0ba</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>TEST Data for Contact Cards</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_update_name>sys_ux_client_script_c8d3820607cf301029a8f0269c1ed0ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 19:54:33</sys_updated_on>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</application>
+        <file_path/>
+        <instance_id>7c673b3cdbe58c189df22f17d496197a</instance_id>
+        <instance_name>dev95659</instance_name>
+        <name>sys_ux_client_script_c8d3820607cf301029a8f0269c1ed0ba</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Customer Details"&gt;5fb70c1d0747301029a8f0269c1ed032&lt;/macroponent&gt;&lt;name&gt;TEST Data for Contact Cards&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[// function handler({ api, event, helpers, imports }) {
+//   const gqlData =
+//     api.data.get_company_related_information_1.output.data.GlideRecord_Query;
+
+//   const authPurchasers = gqlData.authPurchasers._results;
+
+//   var authPurchReturn = {};
+//   var authPurchItems = [];
+
+//   authPurchasers.forEach((record) =&gt; {
+//     var newRec = {};
+
+//     newRec.template = "sn-contact-card";
+//     newRec.propValues = {
+//       avatarSrc: "/4a31e5d43740310042106710ce41f1a0.iix?t=small",
+//       headingName: "Julie Lewis",
+//       headingLevel: "1",
+//       content: [
+//         {
+//           label: "Mobile Phone",
+//           value: "+1 858 867 5306",
+//           clickable: true,
+//           id: "mobile-link",
+//         },
+//         {
+//           label: "Business Phone",
+//           value: "+1 858 867 5306",
+//           clickable: true,
+//           id: "phone-link",
+//         },
+//         {
+//           label: "Email",
+//           value: "julie.lewis@boxeo.com",
+//           clickable: true,
+//           id: "email-link",
+//         },
+//         { label: "City", value: "San Diego" },
+//         { label: "State", value: "California" },
+//       ],
+//       hideBorder: false,
+//     };
+
+//     newRec.actions = [
+//       {
+//         eventMappingId: "ckuilggbbeeiiaaaaccbddiihhzqjjajveeii",
+//         isConfiguration: false,
+//         offRowStorageId: null,
+//         sourceEventApiName: "sn_contact_card.SN_CONTACT_CARD#ITEM_CLICKED",
+//         sourceEventDefinition: {
+//           apiName: "sn_contact_card.SN_CONTACT_CARD#ITEM_CLICKED",
+//           id: null,
+//           type: "UXEVENT",
+//         },
+//         sourceEventSysId: null,
+//         targets: [
+//           {
+//             broker: null,
+//             clientScript: null,
+//             declarativeAction: null,
+//             event: {
+//               apiName: "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+//               payload: {
+//                 type: "JSON_LITERAL",
+//                 value: {
+//                   items: [
+//                     {
+//                       type: "info",
+//                       message: "ABCDEFG",
+//                     },
+//                   ],
+//                 },
+//               },
+//               sysId: "49fe7d575f983bb3f8eea3fa8d40694c",
+//             },
+//             operation: null,
+//             targetId: "ckuilgaaxaaaaaccnddiihhzffjeadddse",
+//             type: "EVENT",
+//           },
+//         ],
+//       },
+//     ];
+
+//     authPurchItems.push(newRec);
+//   });
+
+//   authPurchReturn.items = authPurchItems;
+//   authPurchReturn.page_size = 2;
+
+//   api.setState("testData", authPurchReturn);
+// }]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-08 17:24:02&lt;/sys_created_on&gt;&lt;sys_id&gt;c8d3820607cf301029a8f0269c1ed0ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;TEST Data for Contact Cards&lt;/sys_name&gt;&lt;sys_package display_value="Big Oil 2" source="x_683715_big_oil_2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Big Oil 2"&gt;828fcb8c0762301029a8f0269c1ed070&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c8d3820607cf301029a8f0269c1ed0ba&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-08 19:54:33&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1517585575</payload_hash>
+        <record_name>TEST Data for Contact Cards</record_name>
+        <reverted_from/>
+        <source>30afb3b00772301029a8f0269c1ed014</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 19:54:33</sys_created_on>
+        <sys_id>4946aa4e0703701029a8f0269c1ed0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c6178b7720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 19:54:33</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>0146aa4eac03701077990f88e7f2e2d2</update_guid>
+        <update_guid_history>0146aa4eac03701077990f88e7f2e2d2:1517585575,83c09e4ee6cf3010ed3c3d4d8b627404:1728769327,76af024ec0cf301036dba07d81ffecc3:325681056,c4ed06ca91cf30108dc7dbef5be3dc74:-91665090,1a2d02ca4ecf3010138ed4c708ec3b76:159595235,e24bce4a93cf301068b998fb3d6fe803:-200229969,976a8a0a99cf3010fb569daf3d992387:1874267465,b5f9ce0a53cf3010f8bc36db8594b211:-472474074,ac898a865bcf301012a95382a65e932e:82035541,93b80ac6eccf30100ec1a5cc4c8157ef:513017442,d2e7ce8651cf30100b0895bf23ae3647:1750507400,5147ce86c2cf3010e52053382751053d:-1664864622,62e68a869dcf3010ffb3ac54ef3f483f:1142428315,c4d34a0635cf301084ef169f3e58b64f:-656410732</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-08 20:02:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>83bc06e1f45f4520a14c050b5e43b900</sys_id>
+        <sys_metadata>c8d3820607cf301029a8f0269c1ed0ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEST Data for Contact Cards</sys_name>
+        <sys_package display_value="Big Oil 2" source="x_683715_big_oil_2">828fcb8c0762301029a8f0269c1ed070</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Big Oil 2">828fcb8c0762301029a8f0269c1ed070</sys_scope>
+        <sys_scope_delete display_value="">16624054e44341ae820fbd2146eef9e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c8d3820607cf301029a8f0269c1ed0ba</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c8d3820607cf301029a8f0269c1ed0ba">4946aa4e0703701029a8f0269c1ed0d2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-08 20:02:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
